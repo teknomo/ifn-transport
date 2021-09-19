@@ -20,38 +20,47 @@ import networkx as nx
 
 
 class IFN_Transport():
-    def __init__(self, scenario):
-        self.readScenario(scenario)
+    def __init__(self, scenarioFName):
+        self.readScenario(scenarioFName)
         
+
+    def runScenario(self):
         C=self.mLink2WeightedAdjacency(field='Capacity') # capacity
         S=ifn.capacity2stochastic(C)               # Markov stochastic
        
-        # first try at arbitrary kappa=100
-        pi=ifn.steadyStateMC(S,kappa=100)          # node values
+        # first try at kappa=1
+        pi=ifn.steadyStateMC(S,kappa=1)          # node values
         F=ifn.idealFlow(S,pi)                      # ideal flow
         G=self.HadamardDivision(F,C)               # congestion
         maxCongestion=np.max(G)
-
-        if self.calibrationBasis=="flow":
+        
+        if self.calibrationBasis=="totalFlow":
             # calibrate with new kappa to reach totalFlow
             kappa=self.totalFlow
-        else: # calibrationBasis=="congestion"
+        elif self.calibrationBasis=="maxCongestion":
             # calibrate with new kappa to reach max congestion level
-            kappa=100*float(self.maxAllowableCongestion)/maxCongestion # total flow
-
+            kappa=float(self.maxAllowableCongestion)/maxCongestion # total flow
+        elif self.calibrationBasis=="realFlow":
+            kappa=self.scalingFactor
+        
         # compute ideal flow and congestion
-        pi=ifn.steadyStateMC(S,kappa)                         # node values
-        F=ifn.idealFlow(S,pi)                                 # scaled ideal flow
-        G=self.HadamardDivision(F,C)                               # congestion
+        # scaling=ifn.globalScaling(F,'min',1)        
+        # F1=ifn.equivalentIFN(F, scaling)
+        F1=ifn.equivalentIFN(F, kappa)
+        # pi=ifn.steadyStateMC(S,kappa)               # node values
+        # F3=ifn.idealFlow(S,pi)                       # scaled ideal flow
+        G=self.HadamardDivision(F1,C)                # congestion
         maxCongestion=np.max(G)
-
+        
         # compute link performances
-        self.addField2dfLink(F,'Flow') # fieldNo=7 flow
-        self.addField2dfLink(G,'Congestion') # fieldNo=8 congestion level
-        self.computeLinkPerformance() # fieldNo=9 to 11
+        self.addField2dfLink(G,'Congestion') 
+        self.addField2dfLink(F,"BasisFlow")
+        self.addField2dfLink(F1,"EstFlow")
+        self.computeLinkPerformance() 
+        
     
         # save output mLink
-        self.dfLink.to_csv(self.folder+self.scenarioName+'.csv',quoting=csv.QUOTE_NONNUMERIC)
+        self.dfLink.to_csv(self.folder+self.scenarioFileName+".csv",quoting=csv.QUOTE_NONNUMERIC)
         
         # network performance
         avgSpeed=np.nanmean(self.dfLink['Speed'])
@@ -60,7 +69,7 @@ class IFN_Transport():
         avgDist=np.nanmean(self.dfLink['Distance'])
        
         # report
-        report=self.scenarioName+"\n"+\
+        report=self.scenarioFileName+"\n"+\
             "Network performance:\n"+\
             "\tTotal Flow = "+ str(round(kappa,2))+" pcu/hour"+"\n"+\
             "\tMax Congestion = "+str(round(maxCongestion,4))+"\n"+\
@@ -73,10 +82,9 @@ class IFN_Transport():
             "\tAvg Link Delay = "+str(round(3600*avgDelay,4))+ " seconds/link\n"
         print(report)        
         # save network performance
-        with open(self.folder+self.scenarioName+'.net', 'w') as fh:
+        with open(self.folder+self.scenarioFileName+'.net', 'w') as fh:
             fh.write(report)              # i
             
-        
         plt=self.display_network('Congestion') # display network congestion
         plt.show()
 
@@ -100,28 +108,35 @@ class IFN_Transport():
         if self.folder!="":
             self.folder=self.folder+"\\"
         lines=open(scenario,"r").read().splitlines()
+        base=os.path.basename(scenario)
+        self.scenarioFileName=os.path.splitext(base)[0] # scn filename without extension
 
         # parsing scenario
         for item in lines:
-            (lhs,rhs)=item.split('=')
-            if lhs=='ScenarioName':
-                self.scenarioName=rhs
-            if lhs=='Node':
-                self.dfNode=pd.read_csv(self.folder+rhs,index_col='NodeID')
-            if lhs=="Link":
-                self.dfLink=pd.read_csv(self.folder+rhs,index_col='LinkID')
-            if lhs=='maxAllowableCongestion':
-                self.maxAllowableCongestion=rhs
-            if lhs=='travelTimeModel':
-                self.travelTimeModel=rhs
-            if lhs=='totalFlow':
-                self.totalFlow=float(rhs)
-            if lhs=='calibrationBasis':
-                self.calibrationBasis=rhs
-            if lhs=='cloudNode':
-                self.cloudNode=rhs
-            if lhs=='capacityBasis':
-                self.capacityBasis=rhs
+            if "=" in item:
+                (lhs,rhs)=item.split('=')
+                if lhs=='ScenarioName':
+                    self.scenarioName=rhs
+                if lhs=='Node':
+                    self.dfNode=pd.read_csv(self.folder+rhs,index_col='NodeID')
+                if lhs=="Link":
+                    self.dfLink=pd.read_csv(self.folder+rhs,index_col='LinkID')
+                # if lhs=="Output":
+                #     self.outputFileName=rhs
+                if lhs=='maxAllowableCongestion':
+                    self.maxAllowableCongestion=rhs
+                if lhs=='travelTimeModel':
+                    self.travelTimeModel=rhs
+                if lhs=='totalFlow':
+                    self.totalFlow=float(rhs)
+                if lhs=='scalingFactor':
+                    self.scalingFactor=float(rhs)
+                if lhs=='calibrationBasis':
+                    self.calibrationBasis=rhs
+                if lhs=='cloudNode':
+                    self.cloudNode=rhs
+                if lhs=='capacityBasis':
+                    self.capacityBasis=rhs
 
 
     def HadamardDivision(self,A,B):
@@ -146,6 +161,117 @@ class IFN_Transport():
             arrF.append(v)
         self.dfLink[field]=arrF        
     
+
+    def findOptScaling(self,linkFName,realFlowFName):
+        '''
+        search for optimal scaling factor
+
+        Parameters
+        ----------
+        linkFName : string
+            link input file name
+        realFlowFName : string
+            real flow file name
+
+        Returns
+        -------
+        opt_scaling : float
+            optimal scaling factor
+        opt_Rsq : float
+            R^2 at optimal scaling
+        dicRsq : dictionary
+            dictionary to compute R^2
+        dicSSE : dictionary
+            dictionary to compute SSE
+        SST : float
+            Sum Square Total (to be used to compute R^2)
+
+        '''
+        # dfLink=pd.read_csv(linkFName,index_col='LinkID')
+        dfFlow=pd.read_csv(realFlowFName,index_col='LinkID')
+        
+        # Check if all links in actual flow match the link file
+        for linkID, row in dfFlow.iterrows():
+            a_link=self.dfLink.loc[linkID]
+            if not (a_link.Node1==row.Node1 and a_link.Node2==row.Node2):
+                return None
+
+        if "BasisFlow" not in self.dfLink:
+            C=self.mLink2WeightedAdjacency(field='Capacity')
+            F=ifn.capacity2idealFlow(C)
+            scaling=ifn.globalScaling(F,'min',1)
+            F1=ifn.equivalentIFN(F, scaling)
+            self.addField2dfLink(F1,"BasisFlow")
+        
+        avgScale=0
+        count=0
+        avgFlow=0
+        for linkID, row in dfFlow.iterrows():
+            basis=self.dfLink["BasisFlow"].loc[linkID]
+            flow=row["ActualFlow"]
+            scaling=flow/basis
+            count=count+1
+            avgScale=(count-1)/count*avgScale+scaling/count
+            avgFlow=(count-1)/count*avgFlow+flow/count
+            # print('linkID',linkID,'basis',basis,'flow',flow,'scaling',scaling,'avgScale',avgScale)
+        
+        SST=0
+        for linkID, row in dfFlow.iterrows():
+            flow=row["ActualFlow"]
+            SST=SST+math.pow(flow-avgFlow,2)
+        # print('SST',SST)
+        
+        dicSSE={}
+        dicRsq={}
+        for scale in range(int(avgScale)-50,int(avgScale)+50):
+            SSE=0
+            for linkID, row in dfFlow.iterrows():
+                basis=self.dfLink["BasisFlow"].loc[linkID]
+                flow=row["ActualFlow"]
+                estFlow=scale*basis
+                sqErr=math.pow(flow-estFlow,2)
+                SSE=SSE+sqErr
+            Rsq=1-SSE/SST
+            dicRsq[scale]=Rsq
+            dicSSE[scale]=SSE
+                        
+        opt_scaling = max(dicRsq, key=dicRsq.get)
+        opt_Rsq=dicRsq[opt_scaling]
+        return opt_scaling,opt_Rsq,dicRsq,dicSSE,SST
+
+
+    # def calibrate(self,linkFName,opt_scaling):
+    #     '''
+    #     calibrate based on real flow
+
+    #     Parameters
+    #     ----------
+    #     linkFName : string
+    #         link input file name
+    #     opt_scaling : float
+    #         get the optimzal scaling from self.findOptScaling
+
+    #     Returns
+    #     -------
+    #     dfLink : df link
+    #         pandas datafame of link with additional fields
+    #         of BasisFlow, EstFlow,Congestion
+
+    #     '''
+    #     dfLink=pd.read_csv(linkFName,index_col='LinkID')
+        
+    #     C=self.mLink2WeightedAdjacency(dfLink)        
+    #     F=ifn.capacity2idealFlow(C)        
+    #     scaling=ifn.globalScaling(F,'int')        
+    #     F1=ifn.equivalentIFN(F, scaling)
+    #     F2=ifn.equivalentIFN(F1, opt_scaling)
+    #     G=self.HadamardDivision(F2,C)
+    #     dfLink=self.addField2dfLink(dfLink,F1,"BasisFlow")
+    #     dfLink=self.addField2dfLink(dfLink,F2,"EstFlow")
+    #     dfLink=self.addField2dfLink(dfLink,G,'Congestion')
+        
+    #     return dfLink
+
 
     def computeLinkPerformance(self):
         '''
@@ -225,6 +351,7 @@ class IFN_Transport():
             A[int(r)-1,int(c)-1]=float(k)
         return A
 
+
     def display_network(self,field='Capacity'):
         '''
         display network based on field in self.dfLink
@@ -276,6 +403,9 @@ if __name__ == '__main__':
         if scenario=="":
             print("to use: input the scenario file (including the folder name)")
     else:
-        scenario='Scenario.scn'
-    IFN_Transport(scenario)
+        folder='C:\\Users\\Kardi\\Documents\\Kardi\\Personal\\Tutorial\\NetworkScience\\IdealFlow\\Software\\Python\\Transportation\\Dev\\IFN9\\sample\\SimplestScenario\\'
+        scenario=folder+'Scenario3.scn'
+    net=IFN_Transport(scenario)
+    net.runScenario()
+    
     

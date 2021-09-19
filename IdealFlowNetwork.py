@@ -3,13 +3,14 @@ IdealFlowNetwork.py
 
 Ideal Flow Network Core Library
 
+version 0.9
+
 @author: Kardi Teknomo
 http://people.revoledu.com/kardi/
 
 (c) 2014-2021 Kardi Teknomo
 Available in https://github.com/teknomo/IdealFlowNetwork
 '''
-
 import numpy as np
 from fractions import Fraction
 from math import gcd
@@ -106,6 +107,7 @@ def capacity2idealFlow(C,kappa=1):
     S=capacity2stochastic(C)
     pi=steadyStateMC(S,kappa)
     return idealFlow(S,pi)
+
 
 def sumOfRow(M):
     '''
@@ -212,43 +214,49 @@ def entropyRatio(S):
     return h1/h0
 
 
-def globalScaling(F,scalingType='min',val=1):
+def equivalentIFN(F,scaling):
     '''
     return scaled ideal flow matrix
     input:
     F = ideal flow matrix
+    scaling = global scaling value
+    '''
+    F1=F*scaling
+    return F1
+    
+
+def globalScaling(F,scalingType='min',val=1):
+    '''
+    return scaling factor to ideal flow matrix
+    to get equivalentIFN
+    input:
+    F = ideal flow matrix
     scalingType = {'min','max','sum','int'}
     val = value of the min, max, or sum
+    'int' means basis IFN (minimum integer)
     '''
-    
-    f=F[np.nonzero(F)] # list of non-zero values in F
+    f=np.ravel(F[np.nonzero(F)]) # list of non-zero values in F
+    # print('f',f)
     if scalingType=='min':
         opt=min(f)
-        F=np.multiply(F,val/opt)
+        scaling=val/opt
     elif scalingType=='max':
-        opt=max(f)
-        print('opt =',opt)
-        F=np.multiply(F,val/opt)
+        scaling=val/max(f)
     elif scalingType=='sum':
-        S=idealFlow2stochastic(F)
-        pi=steadyStateMC(S,kappa=val)
-        F=idealFlow(S,pi)
+        scaling=val/sum(f)
     elif scalingType=='int':
-        # this works only up to 100 by 100 matrix size
         denomSet=set()
         for g in f:
-            h=Fraction(g).limit_denominator(100000)
+            h=Fraction(g).limit_denominator(1000000000)
             denomSet.add(h.denominator)
-        opt=1
+        scaling=1
         for d in denomSet:
-            opt=lcm(opt,d)
-        F=F*opt
-        F=np.rint(F)
-        F=F.astype(int)
-        print('kappa =',opt)
+            scaling=lcm(scaling,d)
     else:
         raise ValueError("unknown scalingType")
-    return F
+    return scaling
+    
+
 
 
 if __name__=='__main__':
@@ -258,13 +266,13 @@ if __name__=='__main__':
        [0, 0, 0, 0, 2],      # d
        [1, 0, 1, 2, 0]]      # e
     A=capacity2adj(C)
-    print('A:',A)
+    print('A:\n',A)
     S=capacity2stochastic(C)
     print('S:',S)
     F=capacity2idealFlow(C)
-    print('F:',F)
-    # F=globalScaling(F,'int')
-    # print('scaled F:',F)
-#    import pandas as pd
-#    print(pd.DataFrame(S))
-#    print(pd.DataFrame(F))
+    print('F:\n',F)
+    scaling=globalScaling(F,'int')
+    F=equivalentIFN(F,scaling)
+    print('scaled F:\n',F)
+    print("is Premagic F?",isPremagic(F))
+

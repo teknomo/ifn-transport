@@ -3,7 +3,7 @@
 Created on Sat Jul  3 18:01:17 2021
 OSM2IFN.py
 
-version 0.4
+version 0.4.1
 
 @author: Kardi Teknomo
 http://people.revoledu.com/kardi/
@@ -14,10 +14,164 @@ import matplotlib.pyplot as plt
 import networkx as nx
 import numpy as np
 import overpy
+import webbrowser
 import math
 import tarjan
 import requests
 import scenario
+
+
+def gui():
+    '''
+    graphical user interface to download OSM data
+
+    Returns
+    -------
+    None.
+
+    '''
+    sg.ChangeLookAndFeel('TealMono')
+    
+            
+    layout = [ 
+              [sg.Text('Download OSM Road Map Data, Cleaning and Convert to IFN Format', size=(55, 1), justification='center', font=("Helvetica", 12), relief=sg.RELIEF_RIDGE)],
+              [sg.Text("City Name ",size=(15, 1)),
+               sg.InputText("Surabaya",key='txtCity',size=(15, 1),tooltip='Type City Name to get Boundary'),
+               sg.Button("Get Boundary", key='btnGetBBox'),
+               sg.Button("Goto OSM Page", key='btnOpenOSMBrowser')
+              ],
+              [sg.Text("Specify Top, Left, Right, Bottom Coordinates ",size=(50, 1))
+              ],
+              [sg.Text("Top ",size=(15, 1)),
+               sg.InputText("-7.3158727",key='txtTop',size=(15, 1),tooltip='Max Latitude'),
+              ],
+              [sg.Text("Left ",size=(7, 1)),
+               sg.InputText("112.7170073",key='txtLeft',size=(15, 1),tooltip='Min Longitude'),
+               sg.InputText("112.7500923",key='txtRight',size=(15, 1),tooltip='Max Longitude'),
+               sg.Text("Right ",size=(15, 1)),
+              ],
+              [sg.Text("Bottom ",size=(15, 1)),
+               sg.InputText("-7.3453847",key='txtBottom',size=(15, 1),tooltip='Min Latitude'),
+              ],
+              [sg.Text("")],
+              [sg.Text("Select Road Type",size=(25, 1))],
+              [sg.Checkbox("motorway",key='chkMotorway',default=True, enable_events=True,tooltip='motorway',size=(10, 1)),
+               sg.Checkbox("trunk",key='chkTrunk',default=True, enable_events=True,tooltip='trunk road',size=(10, 1)),
+               sg.Checkbox("primary",key='chkPrimary',default=True, enable_events=True,tooltip='primary road',size=(10, 1)),
+               sg.Checkbox("secondary",key='chkSecondary',default=True, enable_events=True,tooltip='secondary road',size=(10, 1))],
+              [sg.Checkbox("tertiary",key='chkTertiary',default=True, enable_events=True,tooltip='tertiary road',size=(10, 1)),
+               sg.Checkbox("service",key='chkService',default=False, enable_events=True,tooltip='service road',size=(10, 1)),
+               sg.Checkbox("residential",key='chkResidential',default=False, enable_events=True,tooltip='residential street',size=(10, 1)),
+               sg.Checkbox("living_street",key='chkLiving',default=False, enable_events=True,tooltip='living street',size=(10, 1)),
+               sg.Checkbox("unclassified",key='chkUnclassified',default=False, enable_events=True,tooltip='unclassified road',size=(10, 1))],
+              [sg.Text("")],
+              [sg.Text("Select Data Cleaning Scheme",size=(25, 1))],
+              [sg.Checkbox("Largest Strongly Connected Component",key='chkSCC',default=True, enable_events=True,tooltip='clean the data into the largest strongly connected component',size=(50, 1))],
+              [sg.Text("")],
+              [sg.Text("Specify File Name",size=(25, 1))],
+              [sg.Text("Node File Name ",size=(15, 1)),
+               sg.InputText("Node.txt",key='txtNodeFileName',size=(25, 1),tooltip='Node File Name'),
+              ],          
+              [sg.Text("Link File Name ",size=(15, 1)),
+               sg.InputText("Link.txt",key='txtLinkFileName',size=(25, 1),tooltip='Link File Name'),
+              ],
+              [sg.Text("")],
+              [sg.Button("Download Map", key='btnDownload'),
+               sg.Text("",size=(5, 1)),
+               sg.Button("Display Network", key='btnDisplay'),
+               sg.Text("",size=(5, 1)),
+               sg.Button("Define Scenario", key='btnScenario'),
+               sg.Text("",size=(5, 1)),
+               sg.Button("Exit", key='btnExit')],
+              [sg.Text("",key='txtInfo',size=(55, 3))]]
+    
+    # Create the window
+    window = sg.Window("IFN-Transport: Download OpenStreetMap", layout,
+                       finalize=True,
+                       icon='ifn-transport.ico',
+                       location=(300, 50), 
+                       return_keyboard_events=True,
+                       use_default_focus=False, 
+                       grab_anywhere=False)
+    
+    window['txtInfo'].update("")
+    # Create an event loop
+    while True:
+        event, values = window.read()
+        # End program if user closes window or presses the Exit button
+        if event == "Exit" or event == "btnExit" or event == sg.WIN_CLOSED:
+            break
+        
+        if event=='btnGetBBox':
+            try:
+                city=values['txtCity']
+                [minLat,maxLat,minLon,maxLon]=getBoundingBox(city)
+                window['txtLeft'].update(minLon)   # west
+                window['txtRight'].update(maxLon)  # east
+                window['txtTop'].update(maxLat)    # north
+                window['txtBottom'].update(minLat) # south
+                window['txtInfo'].update('['+str(minLat)+','+str(maxLat)+','+str(minLon)+','+str(maxLon)+']')
+            except Exception as err:
+                window['txtInfo'].update("Error:"+str(err.args))
+        
+        if event == 'btnOpenOSMBrowser':
+            try:
+                webbrowser.open("https://www.openstreetmap.org/export")
+            except Exception as err:
+                window['txtInfo'].update("Error:"+str(err.args))
+            
+        if event=='btnDownload': 
+            west=values['txtLeft']
+            east=values['txtRight']
+            north=values['txtTop']
+            south=values['txtBottom']
+            bbox=west,east,north,south
+            nodeFName=values['txtNodeFileName']
+            linkFName=values['txtLinkFileName']
+            roadTypes=[]
+            if values['chkMotorway']:
+                roadTypes.append("motorway")
+            if values['chkTrunk']:
+                roadTypes.append("trunk")
+            if values['chkPrimary']:
+                roadTypes.append("primary")
+            if values['chkSecondary']:
+                roadTypes.append("secondary")
+            if values['chkTertiary']:
+                roadTypes.append("tertiary")
+            if values['chkService']:
+                roadTypes.append("service")
+            if values['chkResidential']:
+                roadTypes.append("residential")
+            if values['chkLiving']:
+                roadTypes.append("living_street")
+            if values['chkUnclassified']:
+                roadTypes.append("unclassified")
+            
+            isSCC=values['chkSCC']   
+            
+            try:
+                totalNodes, totalLinks=downloadOSMdata(bbox,roadTypes,nodeFName,linkFName,isSCC)
+                window['txtInfo'].update("Downloaded Network. Total nodes="+str(totalNodes)+"; Total links="+str(totalLinks))
+            except Exception as err:
+                window['txtInfo'].update("Error:"+str(err.args))
+        
+        if event=='btnDisplay':
+            try:
+                nodeFName=values['txtNodeFileName']
+                linkFName=values['txtLinkFileName']
+                mLink=readCSVFileSkipOneRow(linkFName)
+                mNode=readCSVFileSkipOneRow(nodeFName)
+        
+                plt=display_network(mLink,mNode)
+                plt.show()
+            except Exception as err:
+                window['txtInfo'].update("Error:"+str(err.args))
+        
+        if event == 'btnScenario':
+            scenario.gui()
+            
+    window.close()
 
 
 def readCSVFileSkipOneRow(fileName):
@@ -252,12 +406,6 @@ def downloadOSMdata(bbox,roadTypes,nodeFName,linkFName,isSCC):
     '''
     
     west,east,north,south=bbox
-    
-    # validate min max long lat
-    # if float(west)>float(east):
-    #     west,east=east,west # swap
-    # if float(south)>float(north):
-    #     south,north=north,south # swap
     bbox=str(south)+","+str(west)+","+str(north)+","+str(east)
     print(bbox)
     api = overpy.Overpass()
@@ -468,146 +616,7 @@ def getBoundingBox(city):
     return [minLat,maxLat,minLon,maxLon]
 
 
-def gui():
-    '''
-    graphical user interface to download OSM data
 
-    Returns
-    -------
-    None.
-
-    '''
-    sg.ChangeLookAndFeel('TealMono')
-    
-            
-    layout = [ 
-              [sg.Text('Download OSM Road Map Data, Cleaning and Convert to IFN Format', size=(55, 1), justification='center', font=("Helvetica", 12), relief=sg.RELIEF_RIDGE)],
-              [sg.Text("City Name ",size=(15, 1)),
-               sg.InputText("Surabaya",key='txtCity',size=(15, 1),tooltip='Type City Name to get Boundary'),
-               sg.Button("Get Boundary", key='btnGetBBox')
-              ],
-              [sg.Text("Specify Top, Left, Right, Bottom Coordinates ",size=(50, 1))
-              ],
-              [sg.Text("Top ",size=(15, 1)),
-               sg.InputText("-7.3158727",key='txtTop',size=(15, 1),tooltip='Max Latitude'),
-              ],
-              [sg.Text("Left ",size=(7, 1)),
-               sg.InputText("112.7170073",key='txtLeft',size=(15, 1),tooltip='Min Longitude'),
-               sg.InputText("112.7500923",key='txtRight',size=(15, 1),tooltip='Max Longitude'),
-               sg.Text("Right ",size=(15, 1)),
-              ],
-              [sg.Text("Bottom ",size=(15, 1)),
-               sg.InputText("-7.3453847",key='txtBottom',size=(15, 1),tooltip='Min Latitude'),
-              ],
-              [sg.Text("")],
-              [sg.Text("Select Road Type",size=(25, 1))],
-              [sg.Checkbox("motorway",key='chkMotorway',default=True, enable_events=True,tooltip='motorway',size=(10, 1)),
-               sg.Checkbox("trunk",key='chkTrunk',default=True, enable_events=True,tooltip='trunk road',size=(10, 1)),
-               sg.Checkbox("primary",key='chkPrimary',default=True, enable_events=True,tooltip='primary road',size=(10, 1)),
-               sg.Checkbox("secondary",key='chkSecondary',default=True, enable_events=True,tooltip='secondary road',size=(10, 1))],
-              [sg.Checkbox("tertiary",key='chkTertiary',default=True, enable_events=True,tooltip='tertiary road',size=(10, 1)),
-               sg.Checkbox("service",key='chkService',default=False, enable_events=True,tooltip='service road',size=(10, 1)),
-               sg.Checkbox("residential",key='chkResidential',default=False, enable_events=True,tooltip='residential street',size=(10, 1)),
-               sg.Checkbox("living_street",key='chkLiving',default=False, enable_events=True,tooltip='living street',size=(10, 1)),
-               sg.Checkbox("unclassified",key='chkUnclassified',default=False, enable_events=True,tooltip='unclassified road',size=(10, 1))],
-              [sg.Text("")],
-              [sg.Text("Select Data Cleaning Scheme",size=(25, 1))],
-              [sg.Checkbox("Largest Strongly Connected Component",key='chkSCC',default=True, enable_events=True,tooltip='clean the data into the largest strongly connected component',size=(50, 1))],
-              [sg.Text("")],
-              [sg.Text("Specify Output File Name",size=(25, 1))],
-              [sg.Text("Node File Name ",size=(15, 1)),
-               sg.InputText("Node.txt",key='txtNodeFileName',size=(25, 1),tooltip='Node File Name'),
-              ],          
-              [sg.Text("Link File Name ",size=(15, 1)),
-               sg.InputText("Link.txt",key='txtLinkFileName',size=(25, 1),tooltip='Link File Name'),
-              ],
-              [sg.Text("")],
-              [sg.Button("Download Map", key='btnDownload'),
-               sg.Text("",size=(5, 1)),
-               sg.Button("Display Network", key='btnDisplay'),
-               sg.Text("",size=(5, 1)),
-               sg.Button("Define Scenario", key='btnScenario'),
-               sg.Text("",size=(5, 1)),
-               sg.Button("Exit", key='btnExit')],
-              [sg.Text("",key='txtInfo',size=(55, 3))]]
-    
-    # Create the window
-    window = sg.Window("OSM to IFN", layout,
-                       finalize=True,
-                       location=(300, 50), 
-                       return_keyboard_events=True,
-                       use_default_focus=False, 
-                       grab_anywhere=False)
-    
-    window['txtInfo'].update("")
-    # Create an event loop
-    while True:
-        event, values = window.read()
-        # End program if user closes window or presses the Exit button
-        if event == "Exit" or event == "btnExit" or event == sg.WIN_CLOSED:
-            break
-        
-        if event=='btnGetBBox':
-            city=values['txtCity']
-            [minLat,maxLat,minLon,maxLon]=getBoundingBox(city)
-            window['txtLeft'].update(minLon)   # west
-            window['txtRight'].update(maxLon)  # east
-            window['txtTop'].update(maxLat)    # north
-            window['txtBottom'].update(minLat) # south
-            window['txtInfo'].update('['+str(minLat)+','+str(maxLat)+','+str(minLon)+','+str(maxLon)+']')
-        
-        if event=='btnDownload': 
-            west=values['txtLeft']
-            east=values['txtRight']
-            north=values['txtTop']
-            south=values['txtBottom']
-            bbox=west,east,north,south
-            nodeFName=values['txtNodeFileName']
-            linkFName=values['txtLinkFileName']
-            roadTypes=[]
-            if values['chkMotorway']:
-                roadTypes.append("motorway")
-            if values['chkTrunk']:
-                roadTypes.append("trunk")
-            if values['chkPrimary']:
-                roadTypes.append("primary")
-            if values['chkSecondary']:
-                roadTypes.append("secondary")
-            if values['chkTertiary']:
-                roadTypes.append("tertiary")
-            if values['chkService']:
-                roadTypes.append("service")
-            if values['chkResidential']:
-                roadTypes.append("residential")
-            if values['chkLiving']:
-                roadTypes.append("living_street")
-            if values['chkUnclassified']:
-                roadTypes.append("unclassified")
-            
-            isSCC=values['chkSCC']   
-            
-            try:
-                totalNodes, totalLinks=downloadOSMdata(bbox,roadTypes,nodeFName,linkFName,isSCC)
-                window['txtInfo'].update("Downloaded Network. Total nodes="+str(totalNodes)+"; Total links="+str(totalLinks))
-            except Exception as err:
-                window['txtInfo'].update("Error:"+str(err.args))
-        
-        if event=='btnDisplay':
-            try:
-                nodeFName=values['txtNodeFileName']
-                linkFName=values['txtLinkFileName']
-                mLink=readCSVFileSkipOneRow(linkFName)
-                mNode=readCSVFileSkipOneRow(nodeFName)
-        
-                plt=display_network(mLink,mNode)
-                plt.show()
-            except Exception as err:
-                window['txtInfo'].update("Error:"+str(err.args))
-        
-        if event == 'btnScenario':
-            scenario.gui()
-            
-    window.close()
 
 if __name__ == '__main__':
     gui()
