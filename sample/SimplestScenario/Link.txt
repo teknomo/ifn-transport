@@ -1,0 +1,4 @@
+LinkID,Node1,Node2,Capacity,Distance,MaxSpeed
+1,1,2,2000,250,40
+2,2,3,2000,250,40
+3,3,1,2000,250,40

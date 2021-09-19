@@ -1,0 +1,7 @@
+ScenarioName=Base Scenario
+
+Node=Node.txt
+Link=Link.txt
+travelTimeModel=BPR
+maxAllowableCongestion=0.9
+calibrationBasis=maxCongestion

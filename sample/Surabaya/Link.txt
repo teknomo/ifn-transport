@@ -1,0 +1,1099 @@
+LinkID,Node1,Node2,Capacity,Distance,MaxSpeed,NumLane,RoadWidth,RoadType,RoadName
+1,50,49,1500,19,20,1,2.75,tertiary,Jalan Siwalankerto
+2,49,294,1500,52,20,1,2.75,tertiary,Jalan Siwalankerto
+3,101,100,8000.0,15,85.0,4,16,trunk_link,Jalan Jenderal Ahmad Yani
+4,100,99,8000.0,10,85.0,4,16,trunk_link,Jalan Jenderal Ahmad Yani
+5,99,98,8000.0,8,85.0,4,16,trunk_link,Jalan Jenderal Ahmad Yani
+6,98,97,8000.0,4,85.0,4,16,trunk_link,Jalan Jenderal Ahmad Yani
+7,97,96,8000.0,4,85.0,4,16,trunk_link,Jalan Jenderal Ahmad Yani
+8,96,95,8000.0,4,85.0,4,16,trunk_link,Jalan Jenderal Ahmad Yani
+9,95,203,8000.0,1,85.0,4,16,trunk_link,Jalan Jenderal Ahmad Yani
+10,417,418,2250.0,9,50.0,2,4.5,tertiary,Jalan Gayungsari Barat X
+11,418,417,2250.0,9,50.0,2,4.5,tertiary,Jalan Gayungsari Barat X
+12,418,407,2250.0,15,50.0,2,4.5,tertiary,Jalan Gayungsari Barat X
+13,407,418,2250.0,15,50.0,2,4.5,tertiary,Jalan Gayungsari Barat X
+14,407,406,2250.0,52,50.0,2,4.5,tertiary,Jalan Gayungsari Barat X
+15,406,407,2250.0,52,50.0,2,4.5,tertiary,Jalan Gayungsari Barat X
+16,406,405,2250.0,56,50.0,2,4.5,tertiary,Jalan Gayungsari Barat X
+17,405,406,2250.0,56,50.0,2,4.5,tertiary,Jalan Gayungsari Barat X
+18,405,404,2250.0,7,50.0,2,4.5,tertiary,Jalan Gayungsari Barat X
+19,404,405,2250.0,7,50.0,2,4.5,tertiary,Jalan Gayungsari Barat X
+20,404,403,2250.0,49,50.0,2,4.5,tertiary,Jalan Gayungsari Barat X
+21,403,404,2250.0,49,50.0,2,4.5,tertiary,Jalan Gayungsari Barat X
+22,403,402,2250.0,49,50.0,2,4.5,tertiary,Jalan Gayungsari Barat X
+23,402,403,2250.0,49,50.0,2,4.5,tertiary,Jalan Gayungsari Barat X
+24,402,401,2250.0,53,50.0,2,4.5,tertiary,Jalan Gayungsari Barat X
+25,401,402,2250.0,53,50.0,2,4.5,tertiary,Jalan Gayungsari Barat X
+26,401,400,2250.0,13,50.0,2,4.5,tertiary,Jalan Gayungsari Barat X
+27,400,401,2250.0,13,50.0,2,4.5,tertiary,Jalan Gayungsari Barat X
+28,400,399,2250.0,68,50.0,2,4.5,tertiary,Jalan Gayungsari Barat X
+29,399,400,2250.0,68,50.0,2,4.5,tertiary,Jalan Gayungsari Barat X
+30,399,398,2250.0,58,50.0,2,4.5,tertiary,Jalan Gayungsari Barat X
+31,398,399,2250.0,58,50.0,2,4.5,tertiary,Jalan Gayungsari Barat X
+32,398,397,2250.0,29,50.0,2,4.5,tertiary,Jalan Gayungsari Barat X
+33,397,398,2250.0,29,50.0,2,4.5,tertiary,Jalan Gayungsari Barat X
+34,397,396,2250.0,11,50.0,2,4.5,tertiary,Jalan Gayungsari Barat X
+35,396,397,2250.0,11,50.0,2,4.5,tertiary,Jalan Gayungsari Barat X
+36,396,395,2250.0,14,50.0,2,4.5,tertiary,Jalan Gayungsari Barat X
+37,395,396,2250.0,14,50.0,2,4.5,tertiary,Jalan Gayungsari Barat X
+38,395,394,2250.0,15,50.0,2,4.5,tertiary,Jalan Gayungsari Barat X
+39,394,395,2250.0,15,50.0,2,4.5,tertiary,Jalan Gayungsari Barat X
+40,394,393,2250.0,16,50.0,2,4.5,tertiary,Jalan Gayungsari Barat X
+41,393,394,2250.0,16,50.0,2,4.5,tertiary,Jalan Gayungsari Barat X
+42,393,392,2250.0,15,50.0,2,4.5,tertiary,Jalan Gayungsari Barat X
+43,392,393,2250.0,15,50.0,2,4.5,tertiary,Jalan Gayungsari Barat X
+44,392,391,2250.0,4,50.0,2,4.5,tertiary,Jalan Gayungsari Barat X
+45,391,392,2250.0,4,50.0,2,4.5,tertiary,Jalan Gayungsari Barat X
+46,391,390,2250.0,5,50.0,2,4.5,tertiary,Jalan Gayungsari Barat X
+47,390,391,2250.0,5,50.0,2,4.5,tertiary,Jalan Gayungsari Barat X
+48,390,389,2250.0,2,50.0,2,4.5,tertiary,Jalan Gayungsari Barat X
+49,389,390,2250.0,2,50.0,2,4.5,tertiary,Jalan Gayungsari Barat X
+50,389,388,2250.0,2,50.0,2,4.5,tertiary,Jalan Gayungsari Barat X
+51,388,389,2250.0,2,50.0,2,4.5,tertiary,Jalan Gayungsari Barat X
+52,456,455,3000.0,13,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+53,455,454,3000.0,39,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+54,454,453,3000.0,48,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+55,453,452,3000.0,123,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+56,452,451,3000.0,7,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+57,451,450,3000.0,101,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+58,450,449,3000.0,3,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+59,449,448,3000.0,45,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+60,448,447,3000.0,1,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+61,447,446,3000.0,31,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+62,446,445,3000.0,45,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+63,445,444,3000.0,39,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+64,444,443,3000.0,18,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+65,443,442,3000.0,14,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+66,442,441,3000.0,20,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+67,441,440,3000.0,6,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+68,440,530,3000.0,40,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+69,530,529,3000.0,8,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+70,529,528,3000.0,123,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+71,414,413,1500,4,20,1,2.75,tertiary,Jalan Gayungsari Barat
+72,413,412,1500,19,20,1,2.75,tertiary,Jalan Gayungsari Barat
+73,412,411,1500,24,20,1,2.75,tertiary,Jalan Gayungsari Barat
+74,411,410,1500,23,20,1,2.75,tertiary,Jalan Gayungsari Barat
+75,410,409,1500,7,20,1,2.75,tertiary,Jalan Gayungsari Barat
+76,409,408,1500,23,20,1,2.75,tertiary,Jalan Gayungsari Barat
+77,471,470,1500.0,28,35.0,2,3.0,tertiary,Jalan Manunggal Kebonsari
+78,470,471,1500.0,28,35.0,2,3.0,tertiary,Jalan Manunggal Kebonsari
+79,470,469,1500.0,45,35.0,2,3.0,tertiary,Jalan Manunggal Kebonsari
+80,469,470,1500.0,45,35.0,2,3.0,tertiary,Jalan Manunggal Kebonsari
+81,469,468,1500.0,33,35.0,2,3.0,tertiary,Jalan Manunggal Kebonsari
+82,468,469,1500.0,33,35.0,2,3.0,tertiary,Jalan Manunggal Kebonsari
+83,468,467,1500.0,30,35.0,2,3.0,tertiary,Jalan Manunggal Kebonsari
+84,467,468,1500.0,30,35.0,2,3.0,tertiary,Jalan Manunggal Kebonsari
+85,467,466,1500.0,76,35.0,2,3.0,tertiary,Jalan Manunggal Kebonsari
+86,466,467,1500.0,76,35.0,2,3.0,tertiary,Jalan Manunggal Kebonsari
+87,466,465,1500.0,37,35.0,2,3.0,tertiary,Jalan Manunggal Kebonsari
+88,465,466,1500.0,37,35.0,2,3.0,tertiary,Jalan Manunggal Kebonsari
+89,465,464,1500.0,10,35.0,2,3.0,tertiary,Jalan Manunggal Kebonsari
+90,464,465,1500.0,10,35.0,2,3.0,tertiary,Jalan Manunggal Kebonsari
+91,464,463,1500.0,27,35.0,2,3.0,tertiary,Jalan Manunggal Kebonsari
+92,463,464,1500.0,27,35.0,2,3.0,tertiary,Jalan Manunggal Kebonsari
+93,463,462,1500.0,64,35.0,2,3.0,tertiary,Jalan Manunggal Kebonsari
+94,462,463,1500.0,64,35.0,2,3.0,tertiary,Jalan Manunggal Kebonsari
+95,462,461,1500.0,66,35.0,2,3.0,tertiary,Jalan Manunggal Kebonsari
+96,461,462,1500.0,66,35.0,2,3.0,tertiary,Jalan Manunggal Kebonsari
+97,461,460,1500.0,96,35.0,2,3.0,tertiary,Jalan Manunggal Kebonsari
+98,460,461,1500.0,96,35.0,2,3.0,tertiary,Jalan Manunggal Kebonsari
+99,316,315,1500,1,20.0,1,3,trunk_link,n/a
+100,315,314,1500,1,20.0,1,3,trunk_link,n/a
+101,314,313,1500,2,20.0,1,3,trunk_link,n/a
+102,313,312,1500,3,20.0,1,3,trunk_link,n/a
+103,312,311,1500,5,20.0,1,3,trunk_link,n/a
+104,311,310,1500,5,20.0,1,3,trunk_link,n/a
+105,310,309,1500,5,20.0,1,3,trunk_link,n/a
+106,309,308,1500,2,20.0,1,3,trunk_link,n/a
+107,308,307,1500,1,20.0,1,3,trunk_link,n/a
+108,689,688,1500,8,20.0,1,3,trunk_link,n/a
+109,688,687,1500,6,20.0,1,3,trunk_link,n/a
+110,687,686,1500,10,20.0,1,3,trunk_link,n/a
+111,686,685,1500,8,20.0,1,3,trunk_link,n/a
+112,685,684,1500,7,20.0,1,3,trunk_link,n/a
+113,684,683,1500,7,20.0,1,3,trunk_link,n/a
+114,683,682,1500,12,20.0,1,3,trunk_link,n/a
+115,574,573,1500.0,0,35.0,2,3.0,tertiary,Jalan Ketintang Madya
+116,573,574,1500.0,0,35.0,2,3.0,tertiary,Jalan Ketintang Madya
+117,573,572,1500.0,23,35.0,2,3.0,tertiary,Jalan Ketintang Madya
+118,572,573,1500.0,23,35.0,2,3.0,tertiary,Jalan Ketintang Madya
+119,572,571,1500.0,15,35.0,2,3.0,tertiary,Jalan Ketintang Madya
+120,571,572,1500.0,15,35.0,2,3.0,tertiary,Jalan Ketintang Madya
+121,571,570,1500.0,19,35.0,2,3.0,tertiary,Jalan Ketintang Madya
+122,570,571,1500.0,19,35.0,2,3.0,tertiary,Jalan Ketintang Madya
+123,570,569,1500.0,17,35.0,2,3.0,tertiary,Jalan Ketintang Madya
+124,569,570,1500.0,17,35.0,2,3.0,tertiary,Jalan Ketintang Madya
+125,569,568,1500.0,29,35.0,2,3.0,tertiary,Jalan Ketintang Madya
+126,568,569,1500.0,29,35.0,2,3.0,tertiary,Jalan Ketintang Madya
+127,568,567,1500.0,23,35.0,2,3.0,tertiary,Jalan Ketintang Madya
+128,567,568,1500.0,23,35.0,2,3.0,tertiary,Jalan Ketintang Madya
+129,567,566,1500.0,5,35.0,2,3.0,tertiary,Jalan Ketintang Madya
+130,566,567,1500.0,5,35.0,2,3.0,tertiary,Jalan Ketintang Madya
+131,566,565,1500.0,2,35.0,2,3.0,tertiary,Jalan Ketintang Madya
+132,565,566,1500.0,2,35.0,2,3.0,tertiary,Jalan Ketintang Madya
+133,565,564,1500.0,43,35.0,2,3.0,tertiary,Jalan Ketintang Madya
+134,564,565,1500.0,43,35.0,2,3.0,tertiary,Jalan Ketintang Madya
+135,564,563,1500.0,33,35.0,2,3.0,tertiary,Jalan Ketintang Madya
+136,563,564,1500.0,33,35.0,2,3.0,tertiary,Jalan Ketintang Madya
+137,563,562,1500.0,3,35.0,2,3.0,tertiary,Jalan Ketintang Madya
+138,562,563,1500.0,3,35.0,2,3.0,tertiary,Jalan Ketintang Madya
+139,562,561,1500.0,14,35.0,2,3.0,tertiary,Jalan Ketintang Madya
+140,561,562,1500.0,14,35.0,2,3.0,tertiary,Jalan Ketintang Madya
+141,561,560,1500.0,3,35.0,2,3.0,tertiary,Jalan Ketintang Madya
+142,560,561,1500.0,3,35.0,2,3.0,tertiary,Jalan Ketintang Madya
+143,560,559,1500.0,4,35.0,2,3.0,tertiary,Jalan Ketintang Madya
+144,559,560,1500.0,4,35.0,2,3.0,tertiary,Jalan Ketintang Madya
+145,559,558,1500.0,25,35.0,2,3.0,tertiary,Jalan Ketintang Madya
+146,558,559,1500.0,25,35.0,2,3.0,tertiary,Jalan Ketintang Madya
+147,558,557,1500.0,6,35.0,2,3.0,tertiary,Jalan Ketintang Madya
+148,557,558,1500.0,6,35.0,2,3.0,tertiary,Jalan Ketintang Madya
+149,557,556,1500.0,14,35.0,2,3.0,tertiary,Jalan Ketintang Madya
+150,556,557,1500.0,14,35.0,2,3.0,tertiary,Jalan Ketintang Madya
+151,556,555,1500.0,11,35.0,2,3.0,tertiary,Jalan Ketintang Madya
+152,555,556,1500.0,11,35.0,2,3.0,tertiary,Jalan Ketintang Madya
+153,555,554,1500.0,30,35.0,2,3.0,tertiary,Jalan Ketintang Madya
+154,554,555,1500.0,30,35.0,2,3.0,tertiary,Jalan Ketintang Madya
+155,554,553,1500.0,3,35.0,2,3.0,tertiary,Jalan Ketintang Madya
+156,553,554,1500.0,3,35.0,2,3.0,tertiary,Jalan Ketintang Madya
+157,553,552,1500.0,4,35.0,2,3.0,tertiary,Jalan Ketintang Madya
+158,552,553,1500.0,4,35.0,2,3.0,tertiary,Jalan Ketintang Madya
+159,50,48,1000.0,1,25.0,2,2.0,tertiary,Jalan Siwalankerto 3A
+160,48,50,1000.0,1,25.0,2,2.0,tertiary,Jalan Siwalankerto 3A
+161,48,47,1000.0,17,25.0,2,2.0,tertiary,Jalan Siwalankerto 3A
+162,47,48,1000.0,17,25.0,2,2.0,tertiary,Jalan Siwalankerto 3A
+163,47,46,1000.0,4,25.0,2,2.0,tertiary,Jalan Siwalankerto 3A
+164,46,47,1000.0,4,25.0,2,2.0,tertiary,Jalan Siwalankerto 3A
+165,46,45,1000.0,6,25.0,2,2.0,tertiary,Jalan Siwalankerto 3A
+166,45,46,1000.0,6,25.0,2,2.0,tertiary,Jalan Siwalankerto 3A
+167,45,44,1000.0,5,25.0,2,2.0,tertiary,Jalan Siwalankerto 3A
+168,44,45,1000.0,5,25.0,2,2.0,tertiary,Jalan Siwalankerto 3A
+169,44,43,1000.0,4,25.0,2,2.0,tertiary,Jalan Siwalankerto 3A
+170,43,44,1000.0,4,25.0,2,2.0,tertiary,Jalan Siwalankerto 3A
+171,43,42,1000.0,2,25.0,2,2.0,tertiary,Jalan Siwalankerto 3A
+172,42,43,1000.0,2,25.0,2,2.0,tertiary,Jalan Siwalankerto 3A
+173,42,41,1000.0,1,25.0,2,2.0,tertiary,Jalan Siwalankerto 3A
+174,41,42,1000.0,1,25.0,2,2.0,tertiary,Jalan Siwalankerto 3A
+175,41,40,1000.0,1,25.0,2,2.0,tertiary,Jalan Siwalankerto 3A
+176,40,41,1000.0,1,25.0,2,2.0,tertiary,Jalan Siwalankerto 3A
+177,40,39,1000.0,1,25.0,2,2.0,tertiary,Jalan Siwalankerto 3A
+178,39,40,1000.0,1,25.0,2,2.0,tertiary,Jalan Siwalankerto 3A
+179,39,38,1000.0,0,25.0,2,2.0,tertiary,Jalan Siwalankerto 3A
+180,38,39,1000.0,0,25.0,2,2.0,tertiary,Jalan Siwalankerto 3A
+181,38,37,1000.0,0,25.0,2,2.0,tertiary,Jalan Siwalankerto 3A
+182,37,38,1000.0,0,25.0,2,2.0,tertiary,Jalan Siwalankerto 3A
+183,37,36,1000.0,0,25.0,2,2.0,tertiary,Jalan Siwalankerto 3A
+184,36,37,1000.0,0,25.0,2,2.0,tertiary,Jalan Siwalankerto 3A
+185,36,35,1000.0,0,25.0,2,2.0,tertiary,Jalan Siwalankerto 3A
+186,35,36,1000.0,0,25.0,2,2.0,tertiary,Jalan Siwalankerto 3A
+187,35,34,1000.0,0,25.0,2,2.0,tertiary,Jalan Siwalankerto 3A
+188,34,35,1000.0,0,25.0,2,2.0,tertiary,Jalan Siwalankerto 3A
+189,34,33,1000.0,3,25.0,2,2.0,tertiary,Jalan Siwalankerto 3A
+190,33,34,1000.0,3,25.0,2,2.0,tertiary,Jalan Siwalankerto 3A
+191,33,32,1000.0,0,25.0,2,2.0,tertiary,Jalan Siwalankerto 3A
+192,32,33,1000.0,0,25.0,2,2.0,tertiary,Jalan Siwalankerto 3A
+193,32,31,1000.0,1,25.0,2,2.0,tertiary,Jalan Siwalankerto 3A
+194,31,32,1000.0,1,25.0,2,2.0,tertiary,Jalan Siwalankerto 3A
+195,31,30,1000.0,1,25.0,2,2.0,tertiary,Jalan Siwalankerto 3A
+196,30,31,1000.0,1,25.0,2,2.0,tertiary,Jalan Siwalankerto 3A
+197,618,617,1500.0,18,35.0,1,3.0,tertiary,Jalan Ketintang Baru Selatan I
+198,617,618,1500.0,18,35.0,1,3.0,tertiary,Jalan Ketintang Baru Selatan I
+199,617,616,1500.0,31,35.0,1,3.0,tertiary,Jalan Ketintang Baru Selatan I
+200,616,617,1500.0,31,35.0,1,3.0,tertiary,Jalan Ketintang Baru Selatan I
+201,616,615,1500.0,33,35.0,1,3.0,tertiary,Jalan Ketintang Baru Selatan I
+202,615,616,1500.0,33,35.0,1,3.0,tertiary,Jalan Ketintang Baru Selatan I
+203,615,614,1500.0,32,35.0,1,3.0,tertiary,Jalan Ketintang Baru Selatan I
+204,614,615,1500.0,32,35.0,1,3.0,tertiary,Jalan Ketintang Baru Selatan I
+205,614,613,1500.0,63,35.0,1,3.0,tertiary,Jalan Ketintang Baru Selatan I
+206,613,614,1500.0,63,35.0,1,3.0,tertiary,Jalan Ketintang Baru Selatan I
+207,613,612,1500.0,27,35.0,1,3.0,tertiary,Jalan Ketintang Baru Selatan I
+208,612,613,1500.0,27,35.0,1,3.0,tertiary,Jalan Ketintang Baru Selatan I
+209,612,611,1500.0,27,35.0,1,3.0,tertiary,Jalan Ketintang Baru Selatan I
+210,611,612,1500.0,27,35.0,1,3.0,tertiary,Jalan Ketintang Baru Selatan I
+211,611,610,1500.0,39,35.0,1,3.0,tertiary,Jalan Ketintang Baru Selatan I
+212,610,611,1500.0,39,35.0,1,3.0,tertiary,Jalan Ketintang Baru Selatan I
+213,610,609,1500.0,35,35.0,1,3.0,tertiary,Jalan Ketintang Baru Selatan I
+214,609,610,1500.0,35,35.0,1,3.0,tertiary,Jalan Ketintang Baru Selatan I
+215,609,608,1500.0,46,35.0,1,3.0,tertiary,Jalan Ketintang Baru Selatan I
+216,608,609,1500.0,46,35.0,1,3.0,tertiary,Jalan Ketintang Baru Selatan I
+217,608,607,1500.0,72,35.0,1,3.0,tertiary,Jalan Ketintang Baru Selatan I
+218,607,608,1500.0,72,35.0,1,3.0,tertiary,Jalan Ketintang Baru Selatan I
+219,607,606,1500.0,46,35.0,1,3.0,tertiary,Jalan Ketintang Baru Selatan I
+220,606,607,1500.0,46,35.0,1,3.0,tertiary,Jalan Ketintang Baru Selatan I
+221,606,605,1500.0,26,35.0,1,3.0,tertiary,Jalan Ketintang Baru Selatan I
+222,605,606,1500.0,26,35.0,1,3.0,tertiary,Jalan Ketintang Baru Selatan I
+223,605,604,1500.0,19,35.0,1,3.0,tertiary,Jalan Ketintang Baru Selatan I
+224,604,605,1500.0,19,35.0,1,3.0,tertiary,Jalan Ketintang Baru Selatan I
+225,604,603,1500.0,45,35.0,1,3.0,tertiary,Jalan Ketintang Baru Selatan I
+226,603,604,1500.0,45,35.0,1,3.0,tertiary,Jalan Ketintang Baru Selatan I
+227,603,602,1500.0,7,35.0,1,3.0,tertiary,Jalan Ketintang Baru Selatan I
+228,602,603,1500.0,7,35.0,1,3.0,tertiary,Jalan Ketintang Baru Selatan I
+229,602,601,1500.0,1,35.0,1,3.0,tertiary,Jalan Ketintang Baru Selatan I
+230,601,602,1500.0,1,35.0,1,3.0,tertiary,Jalan Ketintang Baru Selatan I
+231,601,600,1500.0,0,35.0,1,3.0,tertiary,Jalan Ketintang Baru Selatan I
+232,600,601,1500.0,0,35.0,1,3.0,tertiary,Jalan Ketintang Baru Selatan I
+233,10,9,2000.0,5,25.0,2,4,tertiary,Jalan Raya Kendangsari
+234,9,801,2000.0,14,25.0,2,4,tertiary,Jalan Raya Kendangsari
+235,801,800,2000.0,13,25.0,2,4,tertiary,Jalan Raya Kendangsari
+236,800,806,2000.0,12,25.0,2,4,tertiary,Jalan Raya Kendangsari
+237,806,805,2000.0,7,25.0,2,4,tertiary,Jalan Raya Kendangsari
+238,805,804,2000.0,4,25.0,2,4,tertiary,Jalan Raya Kendangsari
+239,804,815,2000.0,3,25.0,2,4,tertiary,Jalan Raya Kendangsari
+240,815,814,2000.0,10,25.0,2,4,tertiary,Jalan Raya Kendangsari
+241,814,813,2000.0,2,25.0,2,4,tertiary,Jalan Raya Kendangsari
+242,813,812,2000.0,3,25.0,2,4,tertiary,Jalan Raya Kendangsari
+243,812,811,2000.0,6,25.0,2,4,tertiary,Jalan Raya Kendangsari
+244,811,810,2000.0,17,25.0,2,4,tertiary,Jalan Raya Kendangsari
+245,810,821,2000.0,58,25.0,2,4,tertiary,Jalan Raya Kendangsari
+246,802,801,1000.0,12,25.0,2,2.0,tertiary_link,n/a
+247,801,802,1000.0,12,25.0,2,2.0,tertiary_link,n/a
+248,816,815,1000.0,14,25.0,2,2.0,tertiary_link,n/a
+249,815,816,1000.0,14,25.0,2,2.0,tertiary_link,n/a
+250,806,807,1000.0,14,25.0,2,2.0,tertiary_link,n/a
+251,807,806,1000.0,14,25.0,2,2.0,tertiary_link,n/a
+252,822,821,1000.0,5,25.0,2,2.0,tertiary_link,n/a
+253,821,822,1000.0,5,25.0,2,2.0,tertiary_link,n/a
+254,796,795,1500,0,20,1,2.75,tertiary,n/a
+255,795,794,1500,9,20,1,2.75,secondary,n/a
+256,6,5,1000.0,0,25.0,2,2.0,secondary_link,n/a
+257,5,6,1000.0,0,25.0,2,2.0,secondary_link,n/a
+258,285,284,1500,5,20,1,2.75,trunk_link,n/a
+259,284,283,1500,1,20,1,2.75,trunk_link,n/a
+260,283,282,1500,3,20,1,2.75,trunk_link,n/a
+261,282,281,1500,4,20,1,2.75,trunk_link,n/a
+262,281,280,1500,3,20,1,2.75,trunk_link,n/a
+263,280,279,1500,1,20,1,2.75,trunk_link,n/a
+264,279,278,1500,1,20,1,2.75,trunk_link,n/a
+265,278,277,1500,0,20,1,2.75,trunk_link,n/a
+266,277,276,1500,2,20,1,2.75,trunk_link,n/a
+267,276,275,1500,2,20,1,2.75,trunk_link,n/a
+268,275,274,1500,2,20,1,2.75,trunk_link,n/a
+269,274,273,1500,1,20,1,2.75,trunk_link,n/a
+270,273,272,1500,3,20,1,2.75,trunk_link,n/a
+271,272,271,1500,0,20,1,2.75,trunk_link,n/a
+272,271,270,1500,3,20,1,2.75,trunk_link,n/a
+273,743,742,3500.0,49,40.0,3,7,secondary,Jalan Jemursari
+274,742,741,3500.0,149,40.0,3,7,secondary,Jalan Jemursari
+275,741,740,3500.0,73,40.0,3,7,secondary,Jalan Jemursari
+276,740,739,3500.0,48,40.0,3,7,secondary,Jalan Jemursari
+277,739,738,3500.0,58,40.0,3,7,secondary,Jalan Jemursari
+278,738,737,3500.0,49,40.0,3,7,secondary,Jalan Jemursari
+279,737,736,3500.0,206,40.0,3,7,secondary,Jalan Jemursari
+280,736,735,3500.0,389,40.0,3,7,secondary,Jalan Jemursari
+281,735,734,3500.0,98,40.0,3,7,secondary,Jalan Jemursari
+282,734,733,3500.0,2,40.0,3,7,secondary,Jalan Jemursari
+283,733,732,3500.0,1,40.0,3,7,secondary,Jalan Jemursari
+284,732,731,3500.0,0,40.0,3,7,secondary,Jalan Jemursari
+285,731,730,3500.0,1,40.0,3,7,secondary,Jalan Jemursari
+286,730,729,3500.0,0,40.0,3,7,secondary,Jalan Jemursari
+287,729,728,3500.0,4,40.0,3,7,secondary,Jalan Jemursari
+288,728,727,3500.0,14,40.0,3,7,secondary,Jalan Jemursari
+289,770,769,1500,0,20,1,2.75,secondary,n/a
+290,731,715,1500,5,20,1,2.75,secondary_link,n/a
+291,715,714,1500,3,20,1,2.75,secondary_link,n/a
+292,714,713,1500,1,20,1,2.75,secondary_link,n/a
+293,713,712,1500,2,20,1,2.75,secondary_link,n/a
+294,712,711,1500,3,20,1,2.75,secondary_link,n/a
+295,711,710,1500,1,20,1,2.75,secondary_link,n/a
+296,710,759,1500,1,20,1,2.75,secondary_link,n/a
+297,727,726,1500,0,20,1,2.75,secondary,Jalan Jemursari
+298,726,725,1500,1,20,1,2.75,secondary,Jalan Jemursari
+299,725,724,1500,2,20,1,2.75,secondary,Jalan Jemursari
+300,724,723,1500,2,20,1,2.75,secondary,Jalan Jemursari
+301,191,190,1500,2,20,1,2.75,secondary,Jalan Jemursari
+302,190,189,1500,11,20,1,2.75,secondary,Jalan Jemursari
+303,189,188,1500,10,20,1,2.75,secondary,Jalan Jemursari
+304,188,187,1500,11,20,1,2.75,secondary,Jalan Jemursari
+305,187,186,1500,22,20,1,2.75,secondary,Jalan Jemursari
+306,186,761,1500,37,20,1,2.75,secondary,Jalan Jemursari
+307,199,198,4500,24,50.0,3,9,secondary,Jalan Jemur Wonosari
+308,198,197,4500,30,50.0,3,9,secondary,Jalan Jemur Wonosari
+309,197,196,4500,18,50.0,3,9,secondary,Jalan Jemur Wonosari
+310,196,195,4500,25,50.0,3,9,secondary,Jalan Jemur Wonosari
+311,195,194,4500,82,50.0,3,9,secondary,Jalan Jemur Wonosari
+312,194,193,4500,44,50.0,3,9,secondary,Jalan Jemur Wonosari
+313,193,192,4500,30,50.0,3,9,secondary,Jalan Jemur Wonosari
+314,192,191,4500,26,50.0,3,9,secondary,Jalan Jemur Wonosari
+315,10,796,1500,9,20,1,2.75,secondary,n/a
+316,794,793,3000.0,69,35.0,2,6,secondary,Jalan Jemur Andayani
+317,793,792,3000.0,33,35.0,2,6,secondary,Jalan Jemur Andayani
+318,792,791,3000.0,29,35.0,2,6,secondary,Jalan Jemur Andayani
+319,791,790,3000.0,5,35.0,2,6,secondary,Jalan Jemur Andayani
+320,790,789,3000.0,9,35.0,2,6,secondary,Jalan Jemur Andayani
+321,794,10,1500,0,20,1,2.75,tertiary,Kendang Sari
+322,80,79,8000.0,1,85.0,4,16,tertiary,Jalan Jenderal Ahmad Yani
+323,79,78,8000.0,2,85.0,4,16,tertiary,Jalan Jenderal Ahmad Yani
+324,78,77,8000.0,5,85.0,4,16,tertiary,Jalan Jenderal Ahmad Yani
+325,77,76,8000.0,5,85.0,4,16,tertiary,Jalan Jenderal Ahmad Yani
+326,76,75,8000.0,11,85.0,4,16,tertiary,Jalan Jenderal Ahmad Yani
+327,75,74,8000.0,15,85.0,4,16,tertiary,Jalan Jenderal Ahmad Yani
+328,206,205,8000.0,1,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+329,205,204,8000.0,172,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+330,204,203,8000.0,9,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+331,203,202,8000.0,5,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+332,202,201,8000.0,2,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+333,201,693,8000.0,1,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+334,693,692,8000.0,1,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+335,692,691,8000.0,1,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+336,179,178,5000.0,45,55.0,2,10,tertiary,Jalan Margorejo Indah
+337,178,177,5000.0,28,55.0,2,10,tertiary,Jalan Margorejo Indah
+338,177,176,5000.0,24,55.0,2,10,tertiary,Jalan Margorejo Indah
+339,176,175,5000.0,25,55.0,2,10,tertiary,Jalan Margorejo Indah
+340,175,174,5000.0,13,55.0,2,10,tertiary,Jalan Margorejo Indah
+341,210,213,1500,13,20,1,2.75,tertiary,n/a
+342,167,166,1500.0,33,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+343,166,167,1500.0,33,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+344,166,165,1500.0,86,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+345,165,166,1500.0,86,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+346,165,164,1500.0,54,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+347,164,165,1500.0,54,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+348,164,163,1500.0,23,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+349,163,164,1500.0,23,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+350,163,162,1500.0,57,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+351,162,163,1500.0,57,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+352,162,161,1500.0,4,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+353,161,162,1500.0,4,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+354,161,160,1500.0,74,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+355,160,161,1500.0,74,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+356,160,159,1500.0,40,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+357,159,160,1500.0,40,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+358,159,158,1500.0,40,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+359,158,159,1500.0,40,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+360,158,157,1500.0,28,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+361,157,158,1500.0,28,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+362,157,156,1500.0,51,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+363,156,157,1500.0,51,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+364,156,155,1500.0,5,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+365,155,156,1500.0,5,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+366,155,154,1500.0,63,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+367,154,155,1500.0,63,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+368,154,153,1500.0,84,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+369,153,154,1500.0,84,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+370,153,152,1500.0,115,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+371,152,153,1500.0,115,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+372,152,151,1500.0,36,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+373,151,152,1500.0,36,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+374,151,150,1500.0,18,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+375,150,151,1500.0,18,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+376,150,149,1500.0,39,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+377,149,150,1500.0,39,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+378,149,148,1500.0,12,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+379,148,149,1500.0,12,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+380,148,147,1500.0,9,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+381,147,148,1500.0,9,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+382,147,146,1500.0,15,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+383,146,147,1500.0,15,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+384,146,145,1500.0,18,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+385,145,146,1500.0,18,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+386,145,144,1500.0,41,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+387,144,145,1500.0,41,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+388,144,143,1500.0,11,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+389,143,144,1500.0,11,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+390,143,142,1500.0,15,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+391,142,143,1500.0,15,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+392,142,141,1500.0,18,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+393,141,142,1500.0,18,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+394,141,140,1500.0,28,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+395,140,141,1500.0,28,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+396,140,139,1500.0,22,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+397,139,140,1500.0,22,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+398,139,138,1500.0,56,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+399,138,139,1500.0,56,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+400,138,137,1500.0,49,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+401,137,138,1500.0,49,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+402,137,136,1500.0,117,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+403,136,137,1500.0,117,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+404,136,135,1500.0,9,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+405,135,136,1500.0,9,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+406,135,134,1500.0,12,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+407,134,135,1500.0,12,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+408,134,133,1500.0,15,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+409,133,134,1500.0,15,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+410,133,132,1500.0,19,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+411,132,133,1500.0,19,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+412,132,131,1500.0,41,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+413,131,132,1500.0,41,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+414,131,130,1500.0,162,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+415,130,131,1500.0,162,35.0,1,3.0,tertiary,Jalan Raya Margorejo Indah
+416,124,123,5000.0,9,55.0,2,10,tertiary,Jalan Margorejo Indah
+417,123,122,5000.0,27,55.0,2,10,tertiary,Jalan Margorejo Indah
+418,122,121,5000.0,26,55.0,2,10,tertiary,Jalan Margorejo Indah
+419,121,120,5000.0,18,55.0,2,10,tertiary,Jalan Margorejo Indah
+420,120,119,5000.0,49,55.0,2,10,tertiary,Jalan Margorejo Indah
+421,119,118,5000.0,4,55.0,2,10,tertiary,Jalan Margorejo Indah
+422,723,722,1500,27,20,1,2.75,secondary,Jalan Jemur Andayani
+423,722,721,1500,134,20,1,2.75,secondary,Jalan Jemur Andayani
+424,721,720,1500,261,20,1,2.75,secondary,Jalan Jemur Andayani
+425,191,185,6000,23,65.0,4,12,secondary,Jalan Jemur Wonosari
+426,185,184,6000,13,65.0,4,12,secondary,Jalan Jemur Wonosari
+427,184,183,6000,18,65.0,4,12,secondary,Jalan Jemur Wonosari
+428,183,182,6000,15,65.0,4,12,secondary,Jalan Jemur Wonosari
+429,182,181,6000,35,65.0,4,12,secondary,Jalan Jemur Wonosari
+430,181,769,6000,7,65.0,4,12,secondary,Jalan Jemur Wonosari
+431,776,775,1500,305,20,1,2.75,secondary,Jalan Jemur Andayani
+432,775,774,1500,26,20,1,2.75,secondary,Jalan Jemur Andayani
+433,774,773,1500,38,20,1,2.75,secondary,Jalan Jemur Andayani
+434,773,772,1500,47,20,1,2.75,secondary,Jalan Jemur Andayani
+435,772,771,1500,11,20,1,2.75,secondary,Jalan Jemur Andayani
+436,769,768,3500.0,5,40.0,3,7,secondary,Jalan Jemursari
+437,768,767,3500.0,4,40.0,3,7,secondary,Jalan Jemursari
+438,767,766,3500.0,3,40.0,3,7,secondary,Jalan Jemursari
+439,766,765,3500.0,1,40.0,3,7,secondary,Jalan Jemursari
+440,765,764,3500.0,0,40.0,3,7,secondary,Jalan Jemursari
+441,764,763,3500.0,1,40.0,3,7,secondary,Jalan Jemursari
+442,763,762,3500.0,0,40.0,3,7,secondary,Jalan Jemursari
+443,762,761,3500.0,1,40.0,3,7,secondary,Jalan Jemursari
+444,761,760,3500.0,1,40.0,3,7,secondary,Jalan Jemursari
+445,760,759,3500.0,3,40.0,3,7,secondary,Jalan Jemursari
+446,759,758,3500.0,14,40.0,3,7,secondary,Jalan Jemursari
+447,758,757,3500.0,11,40.0,3,7,secondary,Jalan Jemursari
+448,757,756,3500.0,82,40.0,3,7,secondary,Jalan Jemursari
+449,756,755,3500.0,101,40.0,3,7,secondary,Jalan Jemursari
+450,755,754,3500.0,163,40.0,3,7,secondary,Jalan Jemursari
+451,754,753,3500.0,122,40.0,3,7,secondary,Jalan Jemursari
+452,753,752,3500.0,48,40.0,3,7,secondary,Jalan Jemursari
+453,752,751,3500.0,46,40.0,3,7,secondary,Jalan Jemursari
+454,751,750,3500.0,2,40.0,3,7,secondary,Jalan Jemursari
+455,750,749,3500.0,33,40.0,3,7,secondary,Jalan Jemursari
+456,749,748,3500.0,3,40.0,3,7,secondary,Jalan Jemursari
+457,748,747,3500.0,53,40.0,3,7,secondary,Jalan Jemursari
+458,747,746,3500.0,101,40.0,3,7,secondary,Jalan Jemursari
+459,746,745,3500.0,176,40.0,3,7,secondary,Jalan Jemursari
+460,745,744,3500.0,174,40.0,3,7,secondary,Jalan Jemursari
+461,723,771,1500,6,20,1,2.75,secondary,n/a
+462,19,18,3000.0,7,35.0,2,6,secondary,Jalan Jemur Andayani
+463,18,17,3000.0,33,35.0,2,6,secondary,Jalan Jemur Andayani
+464,17,16,3000.0,15,35.0,2,6,secondary,Jalan Jemur Andayani
+465,16,15,3000.0,16,35.0,2,6,secondary,Jalan Jemur Andayani
+466,15,14,3000.0,20,35.0,2,6,secondary,Jalan Jemur Andayani
+467,14,13,3000.0,19,35.0,2,6,secondary,Jalan Jemur Andayani
+468,13,12,3000.0,57,35.0,2,6,secondary,Jalan Jemur Andayani
+469,12,11,3000.0,51,35.0,2,6,secondary,Jalan Jemur Andayani
+470,11,10,3000.0,18,35.0,2,6,secondary,Jalan Jemur Andayani
+471,769,723,1500,18,20,1,2.75,secondary,n/a
+472,778,779,1000.0,14,25.0,2,2.0,secondary,Jalan Jemur Andayani
+473,779,778,1000.0,14,25.0,2,2.0,secondary,Jalan Jemur Andayani
+474,779,780,1000.0,40,25.0,2,2.0,secondary,Jalan Jemur Andayani
+475,780,779,1000.0,40,25.0,2,2.0,secondary,Jalan Jemur Andayani
+476,780,781,1000.0,48,25.0,2,2.0,secondary,Jalan Jemur Andayani
+477,781,780,1000.0,48,25.0,2,2.0,secondary,Jalan Jemur Andayani
+478,781,782,1000.0,25,25.0,2,2.0,secondary,Jalan Jemur Andayani
+479,782,781,1000.0,25,25.0,2,2.0,secondary,Jalan Jemur Andayani
+480,782,783,1000.0,86,25.0,2,2.0,secondary,Jalan Jemur Andayani
+481,783,782,1000.0,86,25.0,2,2.0,secondary,Jalan Jemur Andayani
+482,770,709,6000,18,65.0,4,12,secondary,Jalan Jemur Wonosari
+483,709,708,6000,28,65.0,4,12,secondary,Jalan Jemur Wonosari
+484,708,707,6000,19,65.0,4,12,secondary,Jalan Jemur Wonosari
+485,707,706,6000,14,65.0,4,12,secondary,Jalan Jemur Wonosari
+486,706,705,6000,32,65.0,4,12,secondary,Jalan Jemur Wonosari
+487,705,704,6000,26,65.0,4,12,secondary,Jalan Jemur Wonosari
+488,704,703,6000,30,65.0,4,12,secondary,Jalan Jemur Wonosari
+489,703,702,6000,43,65.0,4,12,secondary,Jalan Jemur Wonosari
+490,702,701,6000,47,65.0,4,12,secondary,Jalan Jemur Wonosari
+491,822,820,2000.0,60,25.0,2,4,tertiary,Jalan Raya Kendangsari
+492,820,819,2000.0,12,25.0,2,4,tertiary,Jalan Raya Kendangsari
+493,819,818,2000.0,5,25.0,2,4,tertiary,Jalan Raya Kendangsari
+494,818,817,2000.0,4,25.0,2,4,tertiary,Jalan Raya Kendangsari
+495,817,816,2000.0,7,25.0,2,4,tertiary,Jalan Raya Kendangsari
+496,816,809,2000.0,2,25.0,2,4,tertiary,Jalan Raya Kendangsari
+497,809,808,2000.0,5,25.0,2,4,tertiary,Jalan Raya Kendangsari
+498,808,807,2000.0,7,25.0,2,4,tertiary,Jalan Raya Kendangsari
+499,807,803,2000.0,11,25.0,2,4,tertiary,Jalan Raya Kendangsari
+500,696,695,1500,5,20,1,2.75,secondary,Jalan Jemur Wonosari
+501,695,694,1500,7,20,1,2.75,secondary,Jalan Jemur Wonosari
+502,694,693,1500,14,20,1,2.75,secondary,Jalan Jemur Wonosari
+503,387,386,2000.0,1,45.0,2,4.0,tertiary,Jalan Menanggal V
+504,386,387,2000.0,1,45.0,2,4.0,tertiary,Jalan Menanggal V
+505,386,385,2000.0,6,45.0,2,4.0,tertiary,Jalan Menanggal V
+506,385,386,2000.0,6,45.0,2,4.0,tertiary,Jalan Menanggal V
+507,385,384,2000.0,10,45.0,2,4.0,tertiary,Jalan Menanggal V
+508,384,385,2000.0,10,45.0,2,4.0,tertiary,Jalan Menanggal V
+509,384,383,2000.0,11,45.0,2,4.0,tertiary,Jalan Menanggal V
+510,383,384,2000.0,11,45.0,2,4.0,tertiary,Jalan Menanggal V
+511,383,382,2000.0,20,45.0,2,4.0,tertiary,Jalan Menanggal V
+512,382,383,2000.0,20,45.0,2,4.0,tertiary,Jalan Menanggal V
+513,382,381,2000.0,53,45.0,2,4.0,tertiary,Jalan Menanggal V
+514,381,382,2000.0,53,45.0,2,4.0,tertiary,Jalan Menanggal V
+515,381,380,2000.0,8,45.0,2,4.0,tertiary,Jalan Menanggal V
+516,380,381,2000.0,8,45.0,2,4.0,tertiary,Jalan Menanggal V
+517,380,379,2000.0,54,45.0,2,4.0,tertiary,Jalan Menanggal V
+518,379,380,2000.0,54,45.0,2,4.0,tertiary,Jalan Menanggal V
+519,379,378,2000.0,20,45.0,2,4.0,tertiary,Jalan Menanggal V
+520,378,379,2000.0,20,45.0,2,4.0,tertiary,Jalan Menanggal V
+521,378,377,2000.0,48,45.0,2,4.0,tertiary,Jalan Menanggal V
+522,377,378,2000.0,48,45.0,2,4.0,tertiary,Jalan Menanggal V
+523,377,376,2000.0,33,45.0,2,4.0,tertiary,Jalan Menanggal V
+524,376,377,2000.0,33,45.0,2,4.0,tertiary,Jalan Menanggal V
+525,376,375,2000.0,19,45.0,2,4.0,tertiary,Jalan Menanggal V
+526,375,376,2000.0,19,45.0,2,4.0,tertiary,Jalan Menanggal V
+527,375,374,2000.0,65,45.0,2,4.0,tertiary,Jalan Menanggal VI
+528,374,375,2000.0,65,45.0,2,4.0,tertiary,Jalan Menanggal VI
+529,374,373,2000.0,48,45.0,2,4.0,tertiary,Jalan Menanggal VI
+530,373,374,2000.0,48,45.0,2,4.0,tertiary,Jalan Menanggal VI
+531,373,372,2000.0,17,45.0,2,4.0,tertiary,Jalan Menanggal VI
+532,372,373,2000.0,17,45.0,2,4.0,tertiary,Jalan Menanggal VI
+533,372,371,2000.0,9,45.0,2,4.0,tertiary,Jalan Menanggal VI
+534,371,372,2000.0,9,45.0,2,4.0,tertiary,Jalan Menanggal VI
+535,371,370,2000.0,32,45.0,2,4.0,tertiary,Jalan Menanggal VI
+536,370,371,2000.0,32,45.0,2,4.0,tertiary,Jalan Menanggal VI
+537,370,369,2000.0,55,45.0,2,4.0,tertiary,Jalan Menanggal VI
+538,369,370,2000.0,55,45.0,2,4.0,tertiary,Jalan Menanggal VI
+539,369,368,2000.0,27,45.0,2,4.0,tertiary,Jalan Menanggal VI
+540,368,369,2000.0,27,45.0,2,4.0,tertiary,Jalan Menanggal VI
+541,433,432,1500,21,20,1,2.75,tertiary,Jalan Gayungsari Barat
+542,432,431,1500,3,20,1,2.75,tertiary,Jalan Gayungsari Barat
+543,431,430,1500,2,20,1,2.75,tertiary,Jalan Gayungsari Barat
+544,430,429,1500,1,20,1,2.75,tertiary,Jalan Gayungsari Barat
+545,429,428,1500,1,20,1,2.75,tertiary,Jalan Gayungsari Barat
+546,428,427,1500,25,20,1,2.75,tertiary,Jalan Gayungsari Barat
+547,427,426,1500,8,20,1,2.75,tertiary,Jalan Gayungsari Barat
+548,426,425,1500,14,20,1,2.75,tertiary,Jalan Gayungsari Barat
+549,425,424,1500,15,20,1,2.75,tertiary,Jalan Gayungsari Barat
+550,424,423,1500,7,20,1,2.75,tertiary,Jalan Gayungsari Barat
+551,423,422,1500,4,20,1,2.75,tertiary,Jalan Gayungsari Barat
+552,528,527,3000.0,14,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+553,527,526,3000.0,11,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+554,526,525,3000.0,14,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+555,525,524,3000.0,19,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+556,524,523,3000.0,52,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+557,523,522,3000.0,6,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+558,522,521,3000.0,34,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+559,521,520,3000.0,54,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+560,520,519,3000.0,42,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+561,519,518,3000.0,44,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+562,518,517,3000.0,13,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+563,517,516,3000.0,19,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+564,516,515,3000.0,32,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+565,515,514,3000.0,62,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+566,322,321,1500,4,20,1,2.75,trunk,Jalan Jenderal Ahmad Yani
+567,244,243,8000.0,2,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+568,243,242,8000.0,2,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+569,242,241,8000.0,1,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+570,241,240,8000.0,2,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+571,240,239,8000.0,0,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+572,239,238,8000.0,2,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+573,238,237,8000.0,0,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+574,237,236,8000.0,4,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+575,236,235,8000.0,10,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+576,235,234,8000.0,6,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+577,234,233,8000.0,5,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+578,233,334,8000.0,20,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+579,334,333,8000.0,11,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+580,333,332,8000.0,16,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+581,332,331,8000.0,16,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+582,540,539,1000.0,1,25.0,1,2.0,tertiary,Jalan Gayung Kebonsari Timur
+583,539,540,1000.0,1,25.0,1,2.0,tertiary,Jalan Gayung Kebonsari Timur
+584,539,538,1000.0,0,25.0,1,2.0,tertiary,Jalan Gayung Kebonsari Timur
+585,538,539,1000.0,0,25.0,1,2.0,tertiary,Jalan Gayung Kebonsari Timur
+586,538,537,1000.0,1,25.0,1,2.0,tertiary,Jalan Gayung Kebonsari Timur
+587,537,538,1000.0,1,25.0,1,2.0,tertiary,Jalan Gayung Kebonsari Timur
+588,537,536,1000.0,1,25.0,1,2.0,tertiary,Jalan Gayung Kebonsari Timur
+589,536,537,1000.0,1,25.0,1,2.0,tertiary,Jalan Gayung Kebonsari Timur
+590,536,535,1000.0,24,25.0,1,2.0,tertiary,Jalan Gayung Kebonsari Timur
+591,535,536,1000.0,24,25.0,1,2.0,tertiary,Jalan Gayung Kebonsari Timur
+592,535,534,1000.0,9,25.0,1,2.0,tertiary,Jalan Gayung Kebonsari Timur
+593,534,535,1000.0,9,25.0,1,2.0,tertiary,Jalan Gayung Kebonsari Timur
+594,534,533,1000.0,8,25.0,1,2.0,tertiary,Jalan Gayung Kebonsari Timur
+595,533,534,1000.0,8,25.0,1,2.0,tertiary,Jalan Gayung Kebonsari Timur
+596,533,532,1000.0,11,25.0,1,2.0,tertiary,Jalan Gayung Kebonsari Timur
+597,532,533,1000.0,11,25.0,1,2.0,tertiary,Jalan Gayung Kebonsari Timur
+598,532,531,1000.0,10,25.0,1,2.0,tertiary,Jalan Gayung Kebonsari Timur
+599,531,532,1000.0,10,25.0,1,2.0,tertiary,Jalan Gayung Kebonsari Timur
+600,531,530,1000.0,5,25.0,1,2.0,tertiary,Jalan Gayung Kebonsari Timur
+601,530,531,1000.0,5,25.0,1,2.0,tertiary,Jalan Gayung Kebonsari Timur
+602,422,421,1500,2,20,1,2.75,tertiary,Jalan Gayungsari Barat
+603,415,414,1500,2,20,1,2.75,tertiary,Jalan Gayungsari Barat
+604,421,420,4000.0,4,45.0,2,8,tertiary,Jalan Gayungsari Barat
+605,420,419,4000.0,27,45.0,2,8,tertiary,Jalan Gayungsari Barat
+606,419,418,4000.0,2,45.0,2,8,tertiary,Jalan Gayungsari Barat
+607,388,387,2250.0,6,50.0,2,4.5,tertiary,Jalan Gayungsari Barat X
+608,387,388,2250.0,6,50.0,2,4.5,tertiary,Jalan Gayungsari Barat X
+609,59,58,1500,4,20,1,2.75,tertiary,Jalan Jenderal Achmad Yani Frontage Timur
+610,58,57,1500,10,20,1,2.75,tertiary,Jalan Jenderal Achmad Yani Frontage Timur
+611,57,56,1500,10,20,1,2.75,tertiary,Jalan Jenderal Achmad Yani Frontage Timur
+612,56,55,1500,6,20,1,2.75,tertiary,Jalan Jenderal Achmad Yani Frontage Timur
+613,55,54,1500,7,20,1,2.75,tertiary,Jalan Jenderal Achmad Yani Frontage Timur
+614,54,53,1500,7,20,1,2.75,tertiary,Jalan Jenderal Achmad Yani Frontage Timur
+615,53,52,1500,7,20,1,2.75,tertiary,Jalan Jenderal Achmad Yani Frontage Timur
+616,52,51,1500,7,20,1,2.75,tertiary,Jalan Jenderal Achmad Yani Frontage Timur
+617,51,50,1500,1,20,1,2.75,tertiary,Jalan Jenderal Achmad Yani Frontage Timur
+618,298,297,8000.0,7,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+619,297,296,8000.0,61,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+620,296,295,8000.0,10,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+621,295,294,8000.0,6,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+622,294,293,8000.0,2,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+623,293,292,8000.0,1,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+624,292,291,8000.0,1,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+625,291,290,8000.0,4,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+626,290,289,8000.0,3,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+627,289,288,8000.0,1,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+628,288,287,8000.0,0,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+629,287,286,8000.0,1,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+630,286,285,8000.0,2,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+631,299,298,1500,4,20,1,2.75,trunk,Jalan Jenderal Ahmad Yani
+632,305,304,1500,5,20,1,2.75,trunk,Jalan Jenderal Ahmad Yani
+633,331,330,1500,4,20,1,2.75,trunk,Jalan Jenderal Ahmad Yani
+634,330,329,8000.0,9,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+635,329,328,8000.0,5,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+636,328,327,8000.0,10,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+637,327,326,8000.0,12,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+638,326,325,8000.0,7,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+639,325,324,8000.0,9,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+640,324,323,8000.0,20,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+641,323,322,8000.0,16,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+642,302,301,8000.0,23,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+643,301,300,8000.0,15,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+644,300,299,8000.0,18,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+645,632,631,1000.0,4,25.0,2,2.0,tertiary,n/a
+646,631,632,1000.0,4,25.0,2,2.0,tertiary,n/a
+647,631,630,1000.0,24,25.0,2,2.0,tertiary,n/a
+648,630,631,1000.0,24,25.0,2,2.0,tertiary,n/a
+649,630,629,1000.0,29,25.0,2,2.0,tertiary,n/a
+650,629,630,1000.0,29,25.0,2,2.0,tertiary,n/a
+651,629,628,1000.0,3,25.0,2,2.0,tertiary,n/a
+652,628,629,1000.0,3,25.0,2,2.0,tertiary,n/a
+653,628,627,1000.0,4,25.0,2,2.0,tertiary,n/a
+654,627,628,1000.0,4,25.0,2,2.0,tertiary,n/a
+655,627,626,1000.0,11,25.0,2,2.0,tertiary,n/a
+656,626,627,1000.0,11,25.0,2,2.0,tertiary,n/a
+657,626,625,1000.0,8,25.0,2,2.0,tertiary,n/a
+658,625,626,1000.0,8,25.0,2,2.0,tertiary,n/a
+659,625,624,1000.0,7,25.0,2,2.0,tertiary,n/a
+660,624,625,1000.0,7,25.0,2,2.0,tertiary,n/a
+661,624,623,1000.0,1,25.0,2,2.0,tertiary,n/a
+662,623,624,1000.0,1,25.0,2,2.0,tertiary,n/a
+663,623,622,1000.0,6,25.0,2,2.0,tertiary,n/a
+664,622,623,1000.0,6,25.0,2,2.0,tertiary,n/a
+665,622,621,1000.0,2,25.0,2,2.0,tertiary,n/a
+666,621,622,1000.0,2,25.0,2,2.0,tertiary,n/a
+667,621,620,1000.0,2,25.0,2,2.0,tertiary,n/a
+668,620,621,1000.0,2,25.0,2,2.0,tertiary,n/a
+669,620,619,1000.0,3,25.0,2,2.0,tertiary,n/a
+670,619,620,1000.0,3,25.0,2,2.0,tertiary,n/a
+671,619,618,1000.0,1,25.0,2,2.0,tertiary,n/a
+672,618,619,1000.0,1,25.0,2,2.0,tertiary,n/a
+673,640,641,1000.0,9,25.0,2,2.0,tertiary,n/a
+674,641,640,1000.0,9,25.0,2,2.0,tertiary,n/a
+675,632,230,2500.0,2,30.0,1,5,tertiary,Jalan Jetis Seraten
+676,230,229,2500.0,6,30.0,1,5,tertiary,Jalan Jetis Seraten
+677,229,228,2500.0,12,30.0,1,5,tertiary,Jalan Jetis Seraten
+678,228,227,2500.0,38,30.0,1,5,tertiary,Jalan Jetis Seraten
+679,227,226,2500.0,25,30.0,1,5,tertiary,Jalan Jetis Seraten
+680,226,225,2500.0,2,30.0,1,5,tertiary,Jalan Jetis Seraten
+681,225,224,2500.0,12,30.0,1,5,tertiary,Jalan Jetis Seraten
+682,224,223,2500.0,23,30.0,1,5,tertiary,Jalan Jetis Seraten
+683,223,222,2500.0,11,30.0,1,5,tertiary,Jalan Jetis Seraten
+684,222,221,2500.0,36,30.0,1,5,tertiary,Jalan Jetis Seraten
+685,221,220,2500.0,29,30.0,1,5,tertiary,Jalan Jetis Seraten
+686,220,640,2500.0,6,30.0,1,5,tertiary,Jalan Jetis Seraten
+687,641,639,2500.0,5,30.0,1,5,tertiary,Jalan Jetis Seraten
+688,639,638,2500.0,3,30.0,1,5,tertiary,Jalan Jetis Seraten
+689,638,637,2500.0,109,30.0,1,5,tertiary,Jalan Jetis Seraten
+690,637,636,2500.0,3,30.0,1,5,tertiary,Jalan Jetis Seraten
+691,636,635,2500.0,19,30.0,1,5,tertiary,Jalan Jetis Seraten
+692,635,634,2500.0,22,30.0,1,5,tertiary,Jalan Jetis Seraten
+693,634,633,2500.0,44,30.0,1,5,tertiary,Jalan Jetis Seraten
+694,575,574,500.0,6,15.0,2,1.0,tertiary,Jalan Ketintang Madya
+695,574,575,500.0,6,15.0,2,1.0,tertiary,Jalan Ketintang Madya
+696,111,110,1500,2,20,1,2.75,tertiary,Jalan Jenderal Achmad Yani Frontage Timur
+697,110,109,1500,1,20,1,2.75,tertiary,Jalan Jenderal Achmad Yani Frontage Timur
+698,109,108,1500,6,20,1,2.75,tertiary,Jalan Jenderal Achmad Yani Frontage Timur
+699,108,107,1500,39,20,1,2.75,tertiary,Jalan Jenderal Achmad Yani Frontage Timur
+700,107,106,1500,22,20,1,2.75,tertiary,Jalan Jenderal Achmad Yani Frontage Timur
+701,106,105,1500,26,20,1,2.75,tertiary,Jalan Jenderal Achmad Yani Frontage Timur
+702,105,104,1500,21,20,1,2.75,tertiary,Jalan Jenderal Achmad Yani Frontage Timur
+703,104,103,1500,27,20,1,2.75,tertiary,Jalan Jenderal Achmad Yani Frontage Timur
+704,103,102,1500,45,20,1,2.75,tertiary,Jalan Jenderal Achmad Yani Frontage Timur
+705,102,199,1500,2,20,1,2.75,tertiary,Jalan Jenderal Achmad Yani Frontage Timur
+706,540,541,1000.0,0,25.0,1,2.0,tertiary,Jalan Gayung Kebonsari Timur
+707,541,540,1000.0,0,25.0,1,2.0,tertiary,Jalan Gayung Kebonsari Timur
+708,541,542,1000.0,1,25.0,1,2.0,tertiary,Jalan Gayung Kebonsari Timur
+709,542,541,1000.0,1,25.0,1,2.0,tertiary,Jalan Gayung Kebonsari Timur
+710,542,543,1000.0,1,25.0,1,2.0,tertiary,Jalan Gayung Kebonsari Timur
+711,543,542,1000.0,1,25.0,1,2.0,tertiary,Jalan Gayung Kebonsari Timur
+712,543,618,1000.0,2,25.0,1,2.0,tertiary,Jalan Gayung Kebonsari Timur
+713,618,543,1000.0,2,25.0,1,2.0,tertiary,Jalan Gayung Kebonsari Timur
+714,600,599,500.0,0,15.0,2,1.0,tertiary,Jalan Ketintang Madya
+715,599,600,500.0,0,15.0,2,1.0,tertiary,Jalan Ketintang Madya
+716,599,598,500.0,0,15.0,2,1.0,tertiary,Jalan Ketintang Madya
+717,598,599,500.0,0,15.0,2,1.0,tertiary,Jalan Ketintang Madya
+718,598,597,500.0,11,15.0,2,1.0,tertiary,Jalan Ketintang Madya
+719,597,598,500.0,11,15.0,2,1.0,tertiary,Jalan Ketintang Madya
+720,597,596,500.0,3,15.0,2,1.0,tertiary,Jalan Ketintang Madya
+721,596,597,500.0,3,15.0,2,1.0,tertiary,Jalan Ketintang Madya
+722,596,595,500.0,5,15.0,2,1.0,tertiary,Jalan Ketintang Madya
+723,595,596,500.0,5,15.0,2,1.0,tertiary,Jalan Ketintang Madya
+724,595,594,500.0,26,15.0,2,1.0,tertiary,Jalan Ketintang Madya
+725,594,595,500.0,26,15.0,2,1.0,tertiary,Jalan Ketintang Madya
+726,594,593,500.0,4,15.0,2,1.0,tertiary,Jalan Ketintang Madya
+727,593,594,500.0,4,15.0,2,1.0,tertiary,Jalan Ketintang Madya
+728,593,592,500.0,5,15.0,2,1.0,tertiary,Jalan Ketintang Madya
+729,592,593,500.0,5,15.0,2,1.0,tertiary,Jalan Ketintang Madya
+730,592,591,500.0,9,15.0,2,1.0,tertiary,Jalan Ketintang Madya
+731,591,592,500.0,9,15.0,2,1.0,tertiary,Jalan Ketintang Madya
+732,591,590,500.0,12,15.0,2,1.0,tertiary,Jalan Ketintang Madya
+733,590,591,500.0,12,15.0,2,1.0,tertiary,Jalan Ketintang Madya
+734,590,589,500.0,29,15.0,2,1.0,tertiary,Jalan Ketintang Madya
+735,589,590,500.0,29,15.0,2,1.0,tertiary,Jalan Ketintang Madya
+736,589,588,500.0,4,15.0,2,1.0,tertiary,Jalan Ketintang Madya
+737,588,589,500.0,4,15.0,2,1.0,tertiary,Jalan Ketintang Madya
+738,588,587,500.0,3,15.0,2,1.0,tertiary,Jalan Ketintang Madya
+739,587,588,500.0,3,15.0,2,1.0,tertiary,Jalan Ketintang Madya
+740,587,586,500.0,1,15.0,2,1.0,tertiary,Jalan Ketintang Madya
+741,586,587,500.0,1,15.0,2,1.0,tertiary,Jalan Ketintang Madya
+742,455,435,1500,0,20,1,2.75,tertiary,Jalan Gayungsari Barat
+743,435,434,1500,1,20,1,2.75,tertiary,Jalan Gayungsari Barat
+744,458,457,3000.0,0,35.0,2,6,tertiary,Jalan Gayungsari Barat
+745,457,456,3000.0,0,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+746,691,690,8000.0,3,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+747,690,689,8000.0,17,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+748,689,307,8000.0,11,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+749,307,306,8000.0,16,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+750,306,305,8000.0,6,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+751,471,459,3000.0,0,35.0,2,6,tertiary,Jalan Gayungsari Barat
+752,459,458,3000.0,0,35.0,2,6,tertiary,Jalan Gayungsari Barat
+753,250,368,3000,0,35,2,8,tertiary,Jalan A. Yani Frontage Barat
+754,368,367,3000,2,35,2,8,tertiary,Jalan A. Yani Frontage Barat
+755,367,366,3000,1,35,2,8,tertiary,Jalan A. Yani Frontage Barat
+756,366,365,3000,3,35,2,8,tertiary,Jalan A. Yani Frontage Barat
+757,365,364,3000,3,35,2,8,tertiary,Jalan A. Yani Frontage Barat
+758,364,363,3000,5,35,2,8,tertiary,Jalan A. Yani Frontage Barat
+759,363,362,3000,13,35,2,8,tertiary,Jalan A. Yani Frontage Barat
+760,362,361,3000,6,35,2,8,tertiary,Jalan A. Yani Frontage Barat
+761,361,360,3000,2,35,2,8,tertiary,Jalan A. Yani Frontage Barat
+762,360,359,3000,6,35,2,8,tertiary,Jalan A. Yani Frontage Barat
+763,359,358,3000,17,35,2,8,tertiary,Jalan A. Yani Frontage Barat
+764,358,357,3000,22,35,2,8,tertiary,Jalan A. Yani Frontage Barat
+765,357,356,3000,1,35,2,8,tertiary,Jalan A. Yani Frontage Barat
+766,356,355,3000,5,35,2,8,tertiary,Jalan A. Yani Frontage Barat
+767,355,354,3000,2,35,2,8,tertiary,Jalan A. Yani Frontage Barat
+768,340,339,3000.0,35,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+769,339,338,3000.0,28,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+770,338,337,3000.0,29,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+771,337,506,3000.0,19,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+772,506,505,3000.0,13,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+773,505,504,3000.0,44,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+774,504,503,3000.0,42,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+775,503,502,3000.0,4,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+776,502,501,3000.0,48,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+777,501,500,3000.0,2,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+778,500,499,3000.0,22,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+779,499,498,3000.0,11,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+780,498,497,3000.0,50,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+781,497,496,3000.0,4,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+782,496,495,3000.0,3,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+783,495,494,3000.0,1,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+784,494,493,3000.0,45,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+785,493,492,3000.0,97,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+786,492,491,3000.0,54,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+787,491,490,3000.0,40,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+788,490,489,3000.0,16,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+789,489,488,3000.0,14,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+790,488,487,3000.0,2,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+791,487,486,3000.0,20,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+792,486,485,3000.0,71,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+793,485,484,3000.0,12,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+794,484,483,3000.0,21,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+795,483,482,3000.0,9,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+796,482,481,3000.0,46,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+797,481,480,3000.0,2,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+798,480,479,3000.0,11,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+799,479,478,3000.0,18,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+800,478,477,3000.0,16,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+801,477,476,3000.0,64,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+802,476,475,3000.0,17,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+803,475,474,3000.0,55,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+804,474,473,3000.0,68,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+805,473,472,3000.0,72,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+806,472,471,3000.0,13,35.0,2,6,tertiary,Jalan Gayung Kebonsari
+807,340,336,3000,1,35,2,8,tertiary,Jalan A. Yani Frontage Barat
+808,513,512,3000,3,35,2,8,tertiary,Jalan A. Yani Frontage Barat
+809,512,511,3000,0,35,2,8,tertiary,Jalan A. Yani Frontage Barat
+810,511,510,3000,0,35,2,8,tertiary,Jalan A. Yani Frontage Barat
+811,510,509,3000,0,35,2,8,tertiary,Jalan A. Yani Frontage Barat
+812,664,663,1500,1,20,1,2.75,tertiary,Jalan Jenderal Ahmad Yani Frontage Barat
+813,663,662,1500,11,20,1,2.75,tertiary,Jalan Jenderal Ahmad Yani Frontage Barat
+814,662,661,1500,6,20,1,2.75,tertiary,Jalan Jenderal Ahmad Yani Frontage Barat
+815,661,660,1500,9,20,1,2.75,tertiary,Jalan Jenderal Ahmad Yani Frontage Barat
+816,660,659,1500,2,20,1,2.75,tertiary,Jalan Jenderal Ahmad Yani Frontage Barat
+817,659,658,1500,17,20,1,2.75,tertiary,Jalan Jenderal Ahmad Yani Frontage Barat
+818,658,657,1500,26,20,1,2.75,tertiary,Jalan Jenderal Ahmad Yani Frontage Barat
+819,657,656,1500,30,20,1,2.75,tertiary,Jalan Jenderal Ahmad Yani Frontage Barat
+820,656,655,1500,4,20,1,2.75,tertiary,Jalan Jenderal Ahmad Yani Frontage Barat
+821,655,654,1500,21,20,1,2.75,tertiary,Jalan Jenderal Ahmad Yani Frontage Barat
+822,654,653,1500,3,20,1,2.75,tertiary,Jalan Jenderal Ahmad Yani Frontage Barat
+823,653,652,1500,19,20,1,2.75,tertiary,Jalan Jenderal Ahmad Yani Frontage Barat
+824,652,651,1500,18,20,1,2.75,tertiary,Jalan Jenderal Ahmad Yani Frontage Barat
+825,651,650,1500.0,45,35.0,2,3.0,tertiary,Jalan Ketintang Baru I
+826,650,651,1500.0,45,35.0,2,3.0,tertiary,Jalan Ketintang Baru I
+827,650,649,1500.0,9,35.0,2,3.0,tertiary,Jalan Ketintang Baru I
+828,649,650,1500.0,9,35.0,2,3.0,tertiary,Jalan Ketintang Baru I
+829,649,648,1500.0,79,35.0,2,3.0,tertiary,Jalan Ketintang Baru I
+830,648,649,1500.0,79,35.0,2,3.0,tertiary,Jalan Ketintang Baru I
+831,648,647,1500.0,23,35.0,2,3.0,tertiary,Jalan Ketintang Baru I
+832,647,648,1500.0,23,35.0,2,3.0,tertiary,Jalan Ketintang Baru I
+833,647,646,1500.0,40,35.0,2,3.0,tertiary,Jalan Ketintang Baru I
+834,646,647,1500.0,40,35.0,2,3.0,tertiary,Jalan Ketintang Baru I
+835,646,645,1500.0,56,35.0,2,3.0,tertiary,Jalan Ketintang Baru I
+836,645,646,1500.0,56,35.0,2,3.0,tertiary,Jalan Ketintang Baru I
+837,645,644,1500.0,75,35.0,2,3.0,tertiary,Jalan Ketintang Baru I
+838,644,645,1500.0,75,35.0,2,3.0,tertiary,Jalan Ketintang Baru I
+839,644,643,1500.0,5,35.0,2,3.0,tertiary,Jalan Ketintang Baru I
+840,643,644,1500.0,5,35.0,2,3.0,tertiary,Jalan Ketintang Baru I
+841,643,642,1500.0,8,35.0,2,3.0,tertiary,Jalan Ketintang Baru I
+842,642,643,1500.0,8,35.0,2,3.0,tertiary,Jalan Ketintang Baru I
+843,642,641,1500.0,59,35.0,2,3.0,tertiary,Jalan Ketintang Baru I
+844,641,642,1500.0,59,35.0,2,3.0,tertiary,Jalan Ketintang Baru I
+845,359,334,1500,30,20,1,2.75,trunk_link,n/a
+846,244,254,1500,28,20,1,2.75,trunk_link,n/a
+847,353,352,3000,7,35,2,8,tertiary,Jalan A. Yani Frontage Barat
+848,352,351,3000,11,35,2,8,tertiary,Jalan A. Yani Frontage Barat
+849,351,350,3000,8,35,2,8,tertiary,Jalan A. Yani Frontage Barat
+850,350,349,3000,1,35,2,8,tertiary,Jalan A. Yani Frontage Barat
+851,349,348,3000,11,35,2,8,tertiary,Jalan A. Yani Frontage Barat
+852,348,347,3000,1,35,2,8,tertiary,Jalan A. Yani Frontage Barat
+853,347,346,3000,8,35,2,8,tertiary,Jalan A. Yani Frontage Barat
+854,346,345,3000,9,35,2,8,tertiary,Jalan A. Yani Frontage Barat
+855,345,344,3000,25,35,2,8,tertiary,Jalan A. Yani Frontage Barat
+856,344,343,3000,0,35,2,8,tertiary,Jalan A. Yani Frontage Barat
+857,343,342,3000,6,35,2,8,tertiary,Jalan A. Yani Frontage Barat
+858,354,353,1500,2,20,1,2.75,tertiary,Jalan A. Yani Frontage Barat
+859,261,260,3000,0,35,2,8,tertiary,Jalan A. Yani Frontage Barat
+860,260,259,3000,1,35,2,8,tertiary,Jalan A. Yani Frontage Barat
+861,259,258,3000,1,35,2,8,tertiary,Jalan A. Yani Frontage Barat
+862,258,257,3000,1,35,2,8,tertiary,Jalan A. Yani Frontage Barat
+863,257,256,3000,2,35,2,8,tertiary,Jalan A. Yani Frontage Barat
+864,328,350,1500,13,20,1,2.75,trunk_link,n/a
+865,803,802,2000.0,15,25.0,2,4,tertiary,Jalan Raya Kendangsari
+866,802,799,2000.0,13,25.0,2,4,tertiary,Jalan Raya Kendangsari
+867,799,798,2000.0,2,25.0,2,4,tertiary,Jalan Raya Kendangsari
+868,798,797,2000.0,5,25.0,2,4,tertiary,Jalan Raya Kendangsari
+869,797,796,2000.0,2,25.0,2,4,tertiary,Jalan Raya Kendangsari
+870,514,513,3000,15,35,2,8,tertiary,Jalan A. Yani Frontage Barat
+871,207,206,8000.0,3,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+872,218,217,8000.0,2,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+873,509,508,1500,2,20,1,2.75,tertiary,Jalan Jenderal Ahmad Yani Frontage Barat
+874,633,632,1500,10,20,1,2.75,tertiary,n/a
+875,577,576,1000.0,1,25.0,2,2.0,tertiary,n/a
+876,576,577,1000.0,1,25.0,2,2.0,tertiary,n/a
+877,576,575,1000.0,2,25.0,2,2.0,tertiary,n/a
+878,575,576,1000.0,2,25.0,2,2.0,tertiary,n/a
+879,744,743,1000.0,12,25.0,2,2.0,secondary_link,n/a
+880,743,744,1000.0,12,25.0,2,2.0,secondary_link,n/a
+881,81,80,8000.0,1,85.0,4,16,tertiary,Jalan Jenderal Ahmad Yani
+882,508,682,8000.0,3,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+883,682,681,8000.0,8,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+884,681,680,8000.0,4,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+885,680,679,8000.0,3,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+886,679,678,8000.0,1,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+887,678,677,8000.0,1,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+888,677,676,8000.0,2,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+889,676,675,8000.0,5,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+890,675,674,8000.0,4,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+891,674,673,8000.0,3,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+892,673,672,8000.0,5,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+893,672,671,8000.0,7,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+894,671,670,8000.0,8,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+895,670,669,8000.0,10,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+896,341,340,3000,0,35,2,8,tertiary,Jalan A. Yani Frontage Barat
+897,342,341,3000,1,35,2,8,tertiary,Jalan A. Yani Frontage Barat
+898,336,335,3000,2,35,2,8,tertiary,Jalan A. Yani Frontage Barat
+899,335,514,3000,0,35,2,8,tertiary,Jalan A. Yani Frontage Barat
+900,63,62,1500,24,20,1,2.75,tertiary,Jalan Jenderal Achmad Yani Frontage Timur
+901,62,61,1500,4,20,1,2.75,tertiary,Jalan Jenderal Achmad Yani Frontage Timur
+902,61,60,1500,6,20,1,2.75,tertiary,Jalan Jenderal Achmad Yani Frontage Timur
+903,60,59,1500,5,20,1,2.75,tertiary,Jalan Jenderal Achmad Yani Frontage Timur
+904,65,64,1500,3,20,1,2.75,tertiary,Jalan Jenderal Achmad Yani Frontage Timur
+905,417,416,4000.0,28,45.0,2,8,tertiary,Jalan Gayungsari Barat
+906,416,415,4000.0,5,45.0,2,8,tertiary,Jalan Gayungsari Barat
+907,701,700,6000,35,65.0,4,12,secondary,Jalan Jemur Wonosari
+908,700,699,6000,25,65.0,4,12,secondary,Jalan Jemur Wonosari
+909,699,698,6000,20,65.0,4,12,secondary,Jalan Jemur Wonosari
+910,698,697,6000,29,65.0,4,12,secondary,Jalan Jemur Wonosari
+911,697,696,6000,23,65.0,4,12,secondary,Jalan Jemur Wonosari
+912,270,269,8000.0,4,85.0,4,16,trunk_link,n/a
+913,269,268,8000.0,2,85.0,4,16,trunk_link,n/a
+914,268,267,8000.0,1,85.0,4,16,trunk_link,n/a
+915,267,266,8000.0,2,85.0,4,16,trunk_link,n/a
+916,266,265,8000.0,2,85.0,4,16,trunk_link,n/a
+917,265,264,8000.0,2,85.0,4,16,trunk_link,n/a
+918,264,263,8000.0,1,85.0,4,16,trunk_link,n/a
+919,263,262,8000.0,3,85.0,4,16,trunk_link,n/a
+920,262,261,8000.0,3,85.0,4,16,trunk_link,n/a
+921,246,247,4000.0,8,85.0,4,8.0,trunk_link,n/a
+922,247,246,4000.0,8,85.0,4,8.0,trunk_link,n/a
+923,247,248,4000.0,3,85.0,4,8.0,trunk_link,n/a
+924,248,247,4000.0,3,85.0,4,8.0,trunk_link,n/a
+925,248,249,4000.0,4,85.0,4,8.0,trunk_link,n/a
+926,249,248,4000.0,4,85.0,4,8.0,trunk_link,n/a
+927,249,262,4000.0,6,85.0,4,8.0,trunk_link,n/a
+928,262,249,4000.0,6,85.0,4,8.0,trunk_link,n/a
+929,679,86,8000.0,8,85.0,4,16,tertiary,Jalan Jenderal Ahmad Yani
+930,86,85,8000.0,2,85.0,4,16,tertiary,Jalan Jenderal Ahmad Yani
+931,85,84,8000.0,1,85.0,4,16,tertiary,Jalan Jenderal Ahmad Yani
+932,84,83,8000.0,1,85.0,4,16,tertiary,Jalan Jenderal Ahmad Yani
+933,83,82,8000.0,0,85.0,4,16,tertiary,Jalan Jenderal Ahmad Yani
+934,82,81,8000.0,0,85.0,4,16,tertiary,Jalan Jenderal Ahmad Yani
+935,101,94,8000.0,23,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+936,94,93,8000.0,19,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+937,93,92,8000.0,8,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+938,92,91,8000.0,5,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+939,91,90,8000.0,4,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+940,90,89,8000.0,56,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+941,89,88,8000.0,31,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+942,88,87,8000.0,36,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+943,87,219,8000.0,33,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+944,219,218,8000.0,0,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+945,669,668,1500,8,20,1,2.75,trunk_link,n/a
+946,668,667,1500,5,20,1,2.75,trunk_link,n/a
+947,667,666,1500,5,20,1,2.75,trunk_link,n/a
+948,666,665,1500,6,20,1,2.75,trunk_link,n/a
+949,665,664,1500,3,20,1,2.75,trunk_link,n/a
+950,304,303,8000.0,16,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+951,303,302,8000.0,20,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+952,64,63,1500,30,20,1,2.75,tertiary,Jalan Jenderal Achmad Yani Frontage Timur
+953,74,73,1500,26,20,1,2.75,tertiary,Jalan Jenderal Ahmad Yani Frontage Barat
+954,73,664,1500,24,20,1,2.75,tertiary,Jalan Jenderal Ahmad Yani Frontage Barat
+955,669,101,8000.0,9,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+956,321,320,8000.0,17,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+957,320,319,8000.0,0,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+958,319,318,8000.0,0,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+959,318,317,8000.0,1,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+960,317,316,8000.0,3,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+961,316,508,8000.0,17,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+962,210,209,8000.0,43,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+963,209,208,8000.0,17,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+964,208,207,8000.0,3,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+965,217,216,8000.0,21,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+966,216,215,8000.0,39,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+967,215,214,8000.0,2,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+968,214,213,8000.0,1,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+969,232,493,1000.0,0,25.0,2,2.0,tertiary_link,n/a
+970,493,232,1000.0,0,25.0,2,2.0,tertiary_link,n/a
+971,231,232,1000.0,1,25.0,2,2.0,tertiary_link,n/a
+972,232,231,1000.0,1,25.0,2,2.0,tertiary_link,n/a
+973,527,231,1000.0,0,25.0,2,2.0,tertiary_link,n/a
+974,231,527,1000.0,0,25.0,2,2.0,tertiary_link,n/a
+975,71,70,1500,1,20,1,2.75,tertiary,Jalan Jenderal Achmad Yani Frontage Timur
+976,70,69,1500,10,20,1,2.75,tertiary,Jalan Jenderal Achmad Yani Frontage Timur
+977,69,68,1500,10,20,1,2.75,tertiary,Jalan Jenderal Achmad Yani Frontage Timur
+978,68,67,1500,11,20,1,2.75,tertiary,Jalan Jenderal Achmad Yani Frontage Timur
+979,67,66,1500,18,20,1,2.75,tertiary,Jalan Jenderal Achmad Yani Frontage Timur
+980,66,65,1500,9,20,1,2.75,tertiary,Jalan Jenderal Achmad Yani Frontage Timur
+981,213,212,8000.0,1,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+982,129,128,5000.0,18,55.0,2,10,tertiary,Jalan Margorejo Indah
+983,128,127,5000.0,13,55.0,2,10,tertiary,Jalan Margorejo Indah
+984,127,126,5000.0,15,55.0,2,10,tertiary,Jalan Margorejo Indah
+985,126,125,5000.0,34,55.0,2,10,tertiary,Jalan Margorejo Indah
+986,125,124,5000.0,32,55.0,2,10,tertiary,Jalan Margorejo Indah
+987,174,173,5000.0,28,55.0,2,10,tertiary,Jalan Margorejo Indah
+988,173,172,5000.0,38,55.0,2,10,tertiary,Jalan Margorejo Indah
+989,172,171,5000.0,15,55.0,2,10,tertiary,Jalan Margorejo Indah
+990,171,170,5000.0,9,55.0,2,10,tertiary,Jalan Margorejo Indah
+991,170,169,5000.0,12,55.0,2,10,tertiary,Jalan Margorejo Indah
+992,169,168,5000.0,8,55.0,2,10,tertiary,Jalan Margorejo Indah
+993,778,777,1500,18,20,1,2.75,secondary,Jalan Jemur Andayani
+994,777,776,1500,88,20,1,2.75,secondary,Jalan Jemur Andayani
+995,720,719,1500,22,20,1,2.75,secondary,Jalan Jemur Andayani
+996,719,718,1500,66,20,1,2.75,secondary,Jalan Jemur Andayani
+997,718,778,1500,16,20,1,2.75,secondary,Jalan Jemur Andayani
+998,796,8,2500.0,77,30.0,1,5,secondary,Jalan Raya Kendangsari Industri
+999,8,7,2500.0,11,30.0,1,5,secondary,Jalan Raya Kendangsari Industri
+1000,7,6,2500.0,42,30.0,1,5,secondary,Jalan Raya Kendangsari Industri
+1001,5,4,2500.0,7,30.0,1,5,secondary,Jalan Raya Kendangsari Industri
+1002,4,3,2500.0,41,30.0,1,5,secondary,Jalan Raya Kendangsari Industri
+1003,3,2,2500.0,21,30.0,1,5,secondary,Jalan Raya Kendangsari Industri
+1004,2,1,2500.0,21,30.0,1,5,secondary,Jalan Raya Kendangsari Industri
+1005,1,0,2500.0,18,30.0,1,5,secondary,Jalan Raya Kendangsari Industri
+1006,0,795,2500.0,22,30.0,1,5,secondary,Jalan Raya Kendangsari Industri
+1007,212,211,5000.0,14,55.0,2,10,tertiary,Jalan Margorejo Indah
+1008,211,210,8000.0,2,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+1009,118,117,5000.0,13,55.0,2,10,tertiary,Jalan Margorejo Indah
+1010,117,210,5000.0,12,55.0,2,10,tertiary,Jalan Margorejo Indah
+1011,118,116,1500,21,20,1,2.75,tertiary,Jalan Jenderal Achmad Yani Frontage Timur
+1012,116,115,1500,7,20,1,2.75,tertiary,Jalan Jenderal Achmad Yani Frontage Timur
+1013,115,114,1500,1,20,1,2.75,tertiary,Jalan Jenderal Achmad Yani Frontage Timur
+1014,114,113,1500,22,20,1,2.75,tertiary,Jalan Jenderal Achmad Yani Frontage Timur
+1015,113,112,1500,1,20,1,2.75,tertiary,Jalan Jenderal Achmad Yani Frontage Timur
+1016,112,111,1500,8,20,1,2.75,tertiary,Jalan Jenderal Achmad Yani Frontage Timur
+1017,179,118,1500,2,20,1,2.75,tertiary,Jalan Jenderal Achmad Yani Frontage Timur
+1018,211,180,5000.0,11,55.0,2,10,tertiary,Jalan Margorejo Indah
+1019,180,179,5000.0,14,55.0,2,10,tertiary,Jalan Margorejo Indah
+1020,576,551,1000.0,4,15.0,1,2,tertiary,Jalan Ketintang Madya
+1021,551,550,1000.0,2,15.0,1,2,tertiary,Jalan Ketintang Madya
+1022,550,549,1000.0,1,15.0,1,2,tertiary,Jalan Ketintang Madya
+1023,549,548,1000.0,1,15.0,1,2,tertiary,Jalan Ketintang Madya
+1024,548,547,1000.0,3,15.0,1,2,tertiary,Jalan Ketintang Madya
+1025,547,546,1000.0,7,15.0,1,2,tertiary,Jalan Ketintang Madya
+1026,546,545,1000.0,9,15.0,1,2,tertiary,Jalan Ketintang Madya
+1027,545,544,1000.0,6,15.0,1,2,tertiary,Jalan Ketintang Madya
+1028,544,586,1000.0,7,15.0,1,2,tertiary,Jalan Ketintang Madya
+1029,586,585,1000.0,0,15.0,1,2,tertiary,Jalan Ketintang Madya
+1030,585,584,1000.0,4,15.0,1,2,tertiary,Jalan Ketintang Madya
+1031,584,583,1000.0,9,15.0,1,2,tertiary,Jalan Ketintang Madya
+1032,583,582,1000.0,7,15.0,1,2,tertiary,Jalan Ketintang Madya
+1033,582,581,1000.0,4,15.0,1,2,tertiary,Jalan Ketintang Madya
+1034,581,580,1000.0,0,15.0,1,2,tertiary,Jalan Ketintang Madya
+1035,580,579,1000.0,0,15.0,1,2,tertiary,Jalan Ketintang Madya
+1036,579,578,1000.0,0,15.0,1,2,tertiary,Jalan Ketintang Madya
+1037,578,577,1000.0,1,15.0,1,2,tertiary,Jalan Ketintang Madya
+1038,789,788,2000.0,19,25.0,2,4,secondary,Jalan Jemur Andayani
+1039,788,787,2000.0,16,25.0,2,4,secondary,Jalan Jemur Andayani
+1040,787,786,2000.0,16,25.0,2,4,secondary,Jalan Jemur Andayani
+1041,786,785,2000.0,31,25.0,2,4,secondary,Jalan Jemur Andayani
+1042,785,784,2000.0,8,25.0,2,4,secondary,Jalan Jemur Andayani
+1043,439,438,1000.0,0,25.0,2,2.0,tertiary_link,n/a
+1044,438,439,1000.0,0,25.0,2,2.0,tertiary_link,n/a
+1045,447,439,1000.0,0,25.0,2,2.0,tertiary_link,n/a
+1046,439,447,1000.0,0,25.0,2,2.0,tertiary_link,n/a
+1047,438,437,1000.0,0,25.0,2,2.0,tertiary_link,n/a
+1048,437,438,1000.0,0,25.0,2,2.0,tertiary_link,n/a
+1049,437,436,1000.0,0,25.0,2,2.0,tertiary_link,n/a
+1050,436,437,1000.0,0,25.0,2,2.0,tertiary_link,n/a
+1051,436,482,1000.0,0,25.0,2,2.0,tertiary_link,n/a
+1052,482,436,1000.0,0,25.0,2,2.0,tertiary_link,n/a
+1053,771,770,1500,11,20,1,2.75,secondary,Jalan Jemur Andayani
+1054,727,717,3500.0,9,40.0,3,7,secondary_link,Jalan Jemursari
+1055,717,716,3500.0,4,40.0,3,7,secondary_link,Jalan Jemursari
+1056,716,722,3500.0,6,40.0,3,7,secondary_link,Jalan Jemursari
+1057,199,696,1500,1,20,1,2.75,tertiary,Jalan Jenderal Achmad Yani Frontage Timur
+1058,72,71,1500,1,20,1,2.75,tertiary,Jalan Jenderal Achmad Yani Frontage Timur
+1059,167,129,3000.0,6,35.0,1,6,tertiary,Jalan Margorejo Indah
+1060,168,167,3000.0,4,35.0,1,6,tertiary,Jalan Margorejo Indah
+1061,507,506,1000.0,1,25.0,2,2.0,tertiary_link,n/a
+1062,506,507,1000.0,1,25.0,2,2.0,tertiary_link,n/a
+1063,517,507,1000.0,0,25.0,2,2.0,tertiary_link,n/a
+1064,507,517,1000.0,0,25.0,2,2.0,tertiary_link,n/a
+1065,504,519,1000.0,2,25.0,2,2.0,tertiary_link,n/a
+1066,519,504,1000.0,2,25.0,2,2.0,tertiary_link,n/a
+1067,784,783,2000.0,5,25.0,1,4,secondary,Jalan Jemur Andayani
+1068,783,19,3000.0,6,35.0,1,6,secondary,Jalan Jemur Andayani
+1069,701,29,6000,38,65.0,4,12,tertiary,Jalan Jemur Wonosari
+1070,29,28,6000,18,65.0,4,12,tertiary,Jalan Jemur Wonosari
+1071,28,27,6000,11,65.0,4,12,tertiary,Jalan Jemur Wonosari
+1072,27,26,6000,15,65.0,4,12,tertiary,Jalan Jemur Wonosari
+1073,26,25,6000,4,65.0,4,12,tertiary,Jalan Jemur Wonosari
+1074,25,24,6000,8,65.0,4,12,tertiary,Jalan Jemur Wonosari
+1075,24,23,6000,19,65.0,4,12,tertiary,Jalan Jemur Wonosari
+1076,23,71,6000,19,65.0,4,12,tertiary,Jalan Jemur Wonosari
+1077,23,22,1500,11,20,1,2.75,secondary_link,n/a
+1078,22,21,1500,1,20,1,2.75,secondary_link,n/a
+1079,21,20,1500,1,20,1,2.75,secondary_link,n/a
+1080,20,696,1500,2,20,1,2.75,secondary_link,n/a
+1081,216,209,1000.0,14,25.0,2,2.0,trunk_link,n/a
+1082,209,216,1000.0,14,25.0,2,2.0,trunk_link,n/a
+1083,651,219,1500,24,20,1,2.75,tertiary,n/a
+1084,696,72,1500,0,20,1,2.75,tertiary,Jalan Jenderal Achmad Yani Frontage Timur
+1085,201,200,1500,14,20,1,2.75,secondary,n/a
+1086,200,199,1500,13,20,1,2.75,secondary,n/a
+1087,408,471,1500,1,20,1,2.75,tertiary,Jalan Gayungsari Barat
+1088,472,433,1500,1,20,1,2.75,tertiary,Jalan Gayungsari Barat
+1089,434,472,1500,1,20,1,2.75,tertiary,Jalan Gayungsari Barat
+1090,270,246,8000.0,2,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+1091,246,245,8000.0,1,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+1092,245,244,8000.0,3,85.0,4,16,trunk,Jalan Jenderal Ahmad Yani
+1093,256,255,3000,0,35,2,8,tertiary,Jalan A. Yani Frontage Barat
+1094,255,254,3000,0,35,2,8,tertiary,Jalan A. Yani Frontage Barat
+1095,254,253,3000,0,35,2,8,tertiary,Jalan A. Yani Frontage Barat
+1096,253,252,3000,0,35,2,8,tertiary,Jalan A. Yani Frontage Barat
+1097,252,251,3000,0,35,2,8,tertiary,Jalan A. Yani Frontage Barat
+1098,251,250,3000,1,35,2,8,tertiary,Jalan A. Yani Frontage Barat

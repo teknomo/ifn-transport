@@ -1,0 +1,6 @@
+ScenarioName=Scenario1 scaling based on max congestion
+Node=Node.txt
+Link=Link.txt
+calibrationBasis=maxCongestion
+maxAllowableCongestion=0.9
+travelTimeModel=BPR

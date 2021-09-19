@@ -1,0 +1,5 @@
+ScenarioName=Scenario2 scaling based on total flow
+Node=Node.txt
+Link=Link.txt
+calibrationBasis=totalFlow
+totalFlow=15000

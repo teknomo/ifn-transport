@@ -1,0 +1,7 @@
+ScenarioName=Scenario3 scaling based on real flow
+
+Node=Node.txt
+Link=Link.txt
+travelTimeModel=BPR
+scalingFactor=2150
+calibrationBasis=realFlow

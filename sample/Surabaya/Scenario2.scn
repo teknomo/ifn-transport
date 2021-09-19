@@ -1,0 +1,7 @@
+ScenarioName= Calibration based on real flow produces scaling factor
+
+Node=Node.txt
+Link=Link.txt
+travelTimeModel=BPR
+scalingFactor=2150
+calibrationBasis=realFlow
