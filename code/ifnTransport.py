@@ -74,8 +74,8 @@ class IFN_Transport():
             "\tTotal Flow = "+ str(round(kappa,2))+" pcu/hour"+"\n"+\
             "\tMax Congestion = "+str(round(maxCongestion,4))+"\n"+\
             "\tAvg Link Speed ="+str(round(avgSpeed,4))+" km/hour\n"+\
-            "\tAvg Link Travel Time = "+str(round(1000*60*avgTravelTime/avgDist,4))+" min/km\n"+\
-            "\tAvg Link Delay = "+str(round(1000*3600*avgDelay/avgDist,4))+ " seconds/km\n"+\
+            "\tAvg Link Travel Time = "+str(round(60*avgTravelTime/avgDist,4))+" min/km\n"+\
+            "\tAvg Link Delay = "+str(round(3600*avgDelay/avgDist,4))+ " seconds/km\n"+\
             "Basis:\n"+\
             "\tAvg Link Distance = "+str(round(avgDist,4))+ " m/link\n"+\
             "\tAvg Link Travel Time = "+str(round(3600*avgTravelTime,4))+" seconds/link\n"+\
@@ -293,8 +293,8 @@ class IFN_Transport():
                 minTravelTime=np.nan    # t0
                 delay=np.nan            # delta
             else:
-                maxSpeed=row.MaxSpeed     # u in km/hour
-                dist=row.Distance/1000    # d in km; mLink[4,j] in meter
+                maxSpeed=row.MaxSpeed   # u in km/hour
+                dist=row.Distance       # d in km; mLink[4,j] in km
                 congestion=row.Congestion  # g
 
                 if travelTimeModel=='Greenshield':
@@ -312,7 +312,7 @@ class IFN_Transport():
                 else:
                     # based on BPR (by default)
                     minTravelTime=dist/maxSpeed    # t0  in hour
-                    travelTime=minTravelTime*(1+0.15*congestion**4) # t in hour
+                    travelTime=minTravelTime*(1+15*congestion**4) # t in hour
                     if travelTime>0:
                         speed=dist/travelTime          # v  in km/hour
                     else:
