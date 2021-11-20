@@ -51,7 +51,7 @@ You can open the scenario window from the main.py by clicking "Define and Run IF
 First, select the project folder by browsing into the project folder that you have prepared. If there are already available scenarios in the project folder, they would be listed in the dropdown for existing scenario that you can select. Otherwise, simply type the scenario name to create a new scenario.
 <img src="figs/guiScenario1.jpg">
 
-To define a scanrio, you need to specify the following:
+To define a scenario, you need to specify the following:
 1. Scenario file name (must end with .scn)
 2. Link file name 
 3. Node file name
@@ -61,10 +61,12 @@ To define a scanrio, you need to specify the following:
 The link file and node file has been created when you download map from OSM. The minimum fields for link file consists of the following field:
 > LinkID,Node1,Node2,Capacity,Distance,MaxSpeed
 
+You need to modify such that the capacity is in PCU/hour, distance is in km/hour and max speed is in km/hour.
+
 You can check the content of the link file by click "Show" button next to link file.
 <img src="figs/LinkTable.jpg">
 
-The capacity is in passenger car unit per hour (pcu/hour), the distance is in meter and the max speed is in km/hour. the minimum node file would consist of the following field:
+The capacity is in passenger car unit per hour (pcu/hour), the distance is in kilo meter and the max speed is in km/hour. The minimum node file would consist of the following field:
 
 > NodeID,X,Y
 
