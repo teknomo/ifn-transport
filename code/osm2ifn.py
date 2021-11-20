@@ -3,7 +3,7 @@
 Created on Sat Jul  3 18:01:17 2021
 OSM2IFN.py
 
-version 0.4.1
+version 0.4.2
 
 @author: Kardi Teknomo
 http://people.revoledu.com/kardi/
@@ -472,7 +472,7 @@ def downloadOSMdata(bbox,roadTypes,nodeFName,linkFName,isSCC):
             
     
     # create Links file
-    earthRadius=6371000 # m https://en.wikipedia.org/wiki/Great-circle_distance
+    earthRadius=6371 # km https://en.wikipedia.org/wiki/Great-circle_distance
     links=[]
     dicNodes2={}
     net={}
@@ -531,7 +531,7 @@ def downloadOSMdata(bbox,roadTypes,nodeFName,linkFName,isSCC):
             dLon=(lon2-lon1) * math.pi/180
             a=math.sin(dLat/2) * math.sin(dLat/2) +  math.cos(lat1) * math.cos(lat2) * math.sin(dLon/2) * math.sin(dLon/2)
             c = 2 * math.atan2(math.sqrt(a), math.sqrt(1-a))
-            dist = int(earthRadius * c)   # in m
+            dist = round(earthRadius * c,3)   # in km, (up to 3 decimal => last digit = meter)
 
             if isOneWay=='yes':
                 #             0  1   2        3          4       5        6        7        8
