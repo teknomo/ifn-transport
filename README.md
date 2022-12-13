@@ -1,6 +1,6 @@
 # IFN-Transport
 
-IFN-Transport is an extension of [Ideal Flow Network (IFN)](https://github.com/teknomo/IdealFlowNetwork) for transportation networks synthesis and analysis.  
+IFN-Transport is an extension of [Ideal Flow Network (IFN)](https://github.com/teknomo/IdealFlowNetwork) for transportation networks synthesis and analysis written in Python. The online version of IFN-Transport is also available in [Revoledu](https://people.revoledu.com/kardi/tutorial/IFN/IFN-transport.html).
 
 One appealing reason why transportation engineers should use IFN Transport is because the existing transportation models only encourage widening the road in order to solve traffic congestion. IFN provides an alternative model that enable the engineers to justify the reduction of road width in order to reduce traffic congestion. 
 
@@ -14,15 +14,17 @@ Implementing your ideas directly in the actual road construction would cost a lo
 Given a road network, we would like to know what would be the flow and congestion level and network performances. Traffic assignment is a model to help us in assigning the flow and determine the congestion level on each link. Knowing the congestion level on each link, the program would also help us in finding the other link characteristics such as speed, travel time, delay and other network performances. Our goal in creating this program is to equip you with the best tools to test your creativity such that it can democratize the task to solve the traffic congestion in your own city. We are hoping that anyone (not necessarily as transportation engineer or transportation expert), equipped with these tools, can help in solving the traffic congestion quantitatively through science rather than merely based on opinions.
 
 Many existing traffic assignment models exist but in general, most of them suffer several problems:
-1.	The traffic assignment software are very expensive (about $10,000 per license and you need to pay maintenance fee per year).
-2.	Many traffic assignment software are very complicated. The commercial demos are very nice with very lucrative animation but when it comes to solve the real world problem, you start to get a lot of doubt. You need to be a transport expert to input the data and to run the program.
-3.	Many traffic assignment software requires extensive data, especially Origin-Destination (OD) demand data. The data input are tremendously very expensive to gather and without those data, you are not able to model properly. If you input with any data, then garbage in garbage out.
-4.	The algorithm inside these commercial software are often heuristics and you treat them as black box without knowing how does it work and what are the assumptions behind the black box. 
+
+1. The traffic assignment software are very expensive (about $10,000 per license and you need to pay maintenance fee per year).
+2. Many traffic assignment software are very complicated. The commercial demos are very nice with very lucrative animation but when it comes to solve the real world problem, you start to get a lot of doubt. You need to be a transport expert to input the data and to run the program.
+3. Many traffic assignment software requires extensive data, especially Origin-Destination (OD) demand data. The data input are tremendously very expensive to gather and without those data, you are not able to model properly. If you input with any data, then garbage in garbage out.
+4. The algorithm inside these commercial software are often heuristics and you treat them as black box without knowing how does it work and what are the assumptions behind the black box. 
+5. They encourage road widening as the solution of traffic congestion. IFN-Transport is probably the only tool that provide the alternative way to justify road narrowing in order to balance the traffic congestion.
 
 In contrast, IFN is open source, free to use and free to modify and free to distribute. The usage is relatively very simple, which will be explained in this user guide and it does not requires extensive data. The ideal flow network itself has strong mathematical background, based on Markov Chain and Maximum Entropy maximization whose assumptions are clearly stated. The IFN model is based on mathematical theory and not based on heuristic approach. The more data you have, it would be more accurate but at the most parsimony level, the model can be run without any data aside from the network itself. Based on the maximum entropy principle, we assume the maximum doubt when you have no data.
 
 # References
-The following publications are the foundations of Ideal Flow analysis:
+If you would like to know more about the scientific basis of this work. The following publications are the foundations of Ideal Flow analysis.  Kindly read and cite any of the following papers in your references if you use this software.
 
 * Teknomo, K.(2019), Ideal Flow Network in Society 5.0 in Mahdi et al, Optimization in Large Scale Problems - Industry 4.0 and Society 5.0 Applications, Springer, p. 67-69
 * Teknomo, K. and Gardon, R.W. (2019) Traffic Assignment Based on Parsimonious Data: The Ideal Flow Network, 2019 IEEE Intelligent Transportation Systems Conference (ITSC), 1393-1398.
@@ -36,10 +38,12 @@ The following publications are the foundations of Ideal Flow analysis:
 
 
 # Installation
-There is no need for installation. Copy the whole code into a local folder. 
+There is no need for installation. [Download the zip file](https://github.com/teknomo/ifn-transport/archive/refs/heads/main.zip) and unzip the whole code into a local folder. You need to install the latest [Python 3.x](https://www.python.org/downloads/) in order to run this software.
 
 # Run the IFN-Transport
 Run **main.py** in Python.
+Alternatively, go into the folder where you unzip the code of IFN Transport and change directory into that folder in Command Line and type:
+> python main.py
 
 # IFN-Transport Tutorial
 The graphical user interface of the main program 
@@ -109,7 +113,7 @@ Similarly, you can also check the content of the node file by click "Show" butto
 
 There are there three calibration constraint:
 1. Maximum Congestion level (say set to 0.9)
-2. Total Flow (say set it to 14000 pcu/hour)
+2. Total Flow (for instance, you set it to 14000 pcu/hour)
 3. Real Flow 
 
 ## Calibration with real world flow data
