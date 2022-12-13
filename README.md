@@ -113,6 +113,7 @@ Similarly, you can also check the content of the node file by click "Show" butto
 <img src="figs/NodeTable.jpg">
 
 There are there three calibration constraint:
+
 1. Maximum Congestion level (say set to 0.9)
 2. Total Flow (for instance, you set it to 14000 pcu/hour)
 3. Real Flow 
@@ -144,9 +145,11 @@ Each scenario in IFN requires three files: scenario file, node file and link fil
 
 ## Scenario File
 At the minimum, the scenario file consists of scenario name, a pointer to the node file and a pointer to the link file. The keywords on the left hand side of the equal sign must be kept unaltered. The right hand side of the equal sign can be anything.
+
 > ScenarioName=MyScenario
 
 > Node=node.txt
+
 > Link=link.txt
 
 The scenario name would be used to determine the name of the output files.
