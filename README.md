@@ -38,10 +38,11 @@ If you would like to know more about the scientific basis of this work. The foll
 
 
 # Installation
-There is no need for installation. [Download the zip file](https://github.com/teknomo/ifn-transport/archive/refs/heads/main.zip) and unzip the whole code into a local folder. You need to install the latest [Python 3.x](https://www.python.org/downloads/) in order to run this software.
+There is no need for installation on the FN-Transport itself. Simply [download the zip file](https://github.com/teknomo/ifn-transport/archive/refs/heads/main.zip) and unzip the whole code into a local folder. You need to install the latest [Python 3.x](https://www.python.org/downloads/) in order to run this software.
 
 # Run the IFN-Transport
-Run **main.py** in Python.
+Run **main.py** in any Python IDE.
+
 Alternatively, go into the folder where you unzip the code of IFN Transport and change directory into that folder in Command Line and type:
 > python main.py
 
@@ -49,7 +50,7 @@ Alternatively, go into the folder where you unzip the code of IFN Transport and 
 The graphical user interface of the main program 
 <img src="figs/main.jpg">
 
-## Download OSM Data
+### Download OSM Data
 Select the "Download OSM Data" button from the main.py to get the OSM2IFN.py windows, which graphical user interface is as follow.
 <img src="figs/osm2ifn.jpg">
 
@@ -83,7 +84,7 @@ The network display can be zoomed, panned to get clearer view of the network.
 <img src="figs/Fig1-zoomIn2.jpg">
 
 
-## Defining Scenario
+### Defining Scenario
 You can open the scenario window from the main.py by clicking "Define and Run IFN Scenario" button , or from OSM2IFN window by clicking "Define Scenario" button.
 
 First, select the project folder by browsing into the project folder that you have prepared. If there are already available scenarios in the project folder, they would be listed in the dropdown for existing scenario that you can select. Otherwise, simply type the scenario name to create a new scenario.
@@ -116,7 +117,7 @@ There are there three calibration constraint:
 2. Total Flow (for instance, you set it to 14000 pcu/hour)
 3. Real Flow 
 
-## Calibration with real world flow data
+### Calibration with real world flow data
 When you set the calibration constraint based on real flow, you need to prepare Real-Flow file, which consist of:
 
 > LinkID,Node1,Node2,ActualFlow
@@ -130,12 +131,87 @@ The optimization is done by maximizing the R-square or minimizing the sum square
 
 Set the scaling factor based on the suggested scaling factor and save the scenario. 
 
-## Run the Scenario
+### Run the Scenario
 Click "Run Scenario" in Scenario window to get the results. The result would be at the same name of the scenario file name but with extension of .CSV and .NET.
+
+# IFN Transport Documentation
+This document is the user guide to use the python code for Traffic Assignment based on Ideal Flow Network (IFN). The current version of this program should be run in Python 3.7 or higher version. The code include sample scenarios and documentation.
+
+You do not need to know python programming language to use the program. You need to download python 3.7 or above including IDLE. If you know python programming language, it would be your advantage because you can analyze the results in more details than what explained in this document.
+
+## Agreement of the Inputs
+Each scenario in IFN requires three files: scenario file, node file and link file. 
+
+## Scenario File
+At the minimum, the scenario file consists of scenario name, a pointer to the node file and a pointer to the link file. The keywords on the left hand side of the equal sign must be kept unaltered. The right hand side of the equal sign can be anything.
+> ScenarioName=MyScenario
+
+> Node=node.txt
+> Link=link.txt
+
+The scenario name would be used to determine the name of the output files.
+
+Inside the scenario file, you can also add additional parameters of the model based on the following keywords. The keywords must be on the left hand side (LHS) of the equal sign. The order of the keyword does not matter.
+
+## Node File
+A node file can be any name but the format must be in CSV. The first row is fixed header
+> NodeID,X,Y
+
+The header itself can be in any language but the location of each field must be fixed. For instance, the following header is also valid.
+> myPointID,longitude,latitude
+
+From the second row, you can specify the actual node-ID and the coordinate location in X and Y. The node-ID must be an integer number. There is no limit of the number of node and the node-ID is not necessarily in order. The coordinate location can be floating numbers or integers
+
+## Link File
+A link file can be any name but the format must be in CSV. The first row is fixed header
+
+> LinkID,Node1,Node2,Capacity,Distance,MaxSpeed
+
+The header itself can be in any language but the location of each field must be fixed.  
+
+When downloading from OpenStreetMap (OSM), the program will first automatically compute the maximum speed and the capacity of each link before computing everything else. That means if you have your own maximum speed and link capacity for all links, then you can specify them in the links file. The result of this download frm OSM would be as follow:
+
+> LinkID,Node1,Node2,Capacity,Distance,MaxSpeed,NumLane,RoadWidth,RoadType,RoadName
+
+
+## Calibration Basis
+The IFN would automatically calibrate the result based on certain assumptions. You can select between the two assumptions below:
+
+1. Maintain the maximum congestion level
+2. Maintain the demand of flow in the entire network
+3.  Based on real observation flow from teh field survey
+
+Maintaining the maximum congestion level would require you to specify the maximum allowable congestion parameter. The default value of the maximum allowable congestion is one. This option would set the maximum congestion level to your specification. It means you want to keep the maximum congestion in any link to be a constant among the scenarios that you are comparing. This option will help you to know what would be the maximum demand of flow that you can accommodate in your network.
+
+Maintaining the total flow in the network indicates that you want to keep the demand to be constants among the scenarios that you are comparing. This option will set the total flow (including the flow in the dummy links) to be constant as to you total flow specification. This option will help you to know what would be the maximum congestion level given the total flow demand in the network.
+
+In the scenario file, you can optionally specify the basis of calibration. If you set *calibrationBasis=totalFlow* then the program maintains the total flow in the network. This means you want to keep the total demand in the network to be invariant among all the scenarios. If the *calibrationBasis=maxCongestion* then it would maintain the maximum congestion level to be equaled to specified maximum allowable congestion parameter. 
+
+When you have real flow data based on observation on the field survey,  you can  specify *calibrationBasis=realFlow*.
+
+
+## Travel Time Model
+There are two options of travel time models being used in IFN:
+
+1. Greenshield model
+2. BPR model
+
+Using Greenshield’s traffic model, we assume the speed-density relationship is linear and the congestion level (which is equal to the flow/capacity) is set to be between zero and one. Since the congestion level is normalized to be between zero and one, it is easier to interpret the meaning of congestion level. However, the Greenshield tends to have higher speed than BPR (for the same congestion level) and only operates when the traffic is not so congested. 
+
+BPR model produces better variation of speed and travel time even when the traffic is congested. However, in BPR model, the congestion level (which is equal to the flow/capacity) can go beyond 1, which make the definition of capacity somewhat confusing. Transportation engineers is often using BPR model in conjunction with the capacity derived from Highway Capacity Manual (HCM).  
+
+In the scenario file, you can optionally specify the travel time model. If you want to set the travel time model to be Greenshield, then you put the following line in the scenario file:
+travelTimeModel=Greenshield
+
+Without specifying the travel time model, the program will use BPR travel time model as the default model of IFN. If you want to explicitly state that the travel time model is BPR, then you put the following line in the scenario file:
+travelTimeModel=BPR
+
+## Cloud Node
+For more advance users, you need to know that the IFN requires the network to be strongly connected. If it happens that your network is weakly connected, then you need to create a cloud node and connect each of the source node (or source component) in the network into the cloud node through dummy links and connect the cloud node to each of the sink node (or sink component) in the network using dummy links. When you use a cloud node, you need to specify the node ID of the cloud node. This parameter will affect to hide all the dummy links from showing and the link performance of the dummy links would be set to nan (not-a-number). The network performance would be free from the dummy links. If you do not specify the cloud node, the program assume that your network has no cloud node and no dummy links and the network must be strongly connected.
 
 
 # Future Development
-There are a lot of fun stuff to develop further and if you have any critics, comments or suggestions to improve, drop me a note. I would welcome your contribution by any means, your programming time, donation or scientific ideas and so on.
+There are a lot of fun stuff to develop further and if you have any critics, comments or suggestions to improve, [drop me a note](https://github.com/teknomo/ifn-transport/issues). I would welcome your contribution by any means, your programming time, donation or scientific ideas and so on.
 
 # Do your part
 I hope you find this program useful for your study or work. You can help your own city by setting the base network on your city, and compute the scenarios that most likely will help to solve traffic congestion in your city. Share your ideas in social media and compare it with your friends. Talk with your city government about your ideas.
