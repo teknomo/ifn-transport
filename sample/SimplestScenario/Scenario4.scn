@@ -1,0 +1,8 @@
+ScenarioName=Scenario4 reducible (error)
+
+Node=Node.txt
+Link=Link3.txt
+travelTimeModel=BPR
+scalingFactor=2150
+calibrationBasis=maxCongestion
+maxAllowableCongestion=0.9

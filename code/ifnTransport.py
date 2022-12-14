@@ -27,11 +27,14 @@ class IFN_Transport():
     def runScenario(self):
         C=self.mLink2WeightedAdjacency(field='Capacity') # capacity
         S=ifn.capacity2stochastic(C)               # Markov stochastic
-       
+        if not ifn.isIrreducible(S):
+            print("Your network is not strongly connected. Clean the network data either by finding the largest strongly connected component or add a cloud node and dummy links.")
+            return None
+
         # first try at kappa=1
-        pi=ifn.steadyStateMC(S,kappa=1)          # node values
+        pi=ifn.markov(S,kappa=1)          # node values
         F=ifn.idealFlow(S,pi)                      # ideal flow
-        G=self.HadamardDivision(F,C)               # congestion
+        G=ifn.hadamardDivision(F,C)               # congestion
         maxCongestion=np.max(G)
         
         if self.calibrationBasis=="totalFlow":
@@ -47,9 +50,9 @@ class IFN_Transport():
         # scaling=ifn.globalScaling(F,'min',1)        
         # F1=ifn.equivalentIFN(F, scaling)
         F1=ifn.equivalentIFN(F, kappa)
-        # pi=ifn.steadyStateMC(S,kappa)               # node values
+        # pi=ifn.markov(S,kappa)               # node values
         # F3=ifn.idealFlow(S,pi)                       # scaled ideal flow
-        G=self.HadamardDivision(F1,C)                # congestion
+        G=ifn.hadamardDivision(F1,C)                # congestion
         maxCongestion=np.max(G)
         
         # compute link performances
@@ -98,7 +101,7 @@ class IFN_Transport():
         # initialize the default values
         self.travelTimeModel=None
         self.maxAllowableCongestion=1
-        self.totalFlow=1000
+        self.totalFlow=10000
         self.calibrationBasis=None
         self.cloudNode=None
         self.capacityBasis=None
@@ -139,12 +142,12 @@ class IFN_Transport():
                     self.capacityBasis=rhs
 
 
-    def HadamardDivision(self,A,B):
-        '''
-        return A./B with agreement 0/0=0
-        '''
-        B[B==0]=np.inf        
-        return np.divide(A,B)
+    # def HadamardDivision(self,A,B):
+    #     '''
+    #     return A./B with agreement 0/0=0
+    #     '''
+    #     B[B==0]=np.inf        
+    #     return np.divide(A,B)
 
 
     def addField2dfLink(self,F,field):
@@ -265,7 +268,7 @@ class IFN_Transport():
     #     scaling=ifn.globalScaling(F,'int')        
     #     F1=ifn.equivalentIFN(F, scaling)
     #     F2=ifn.equivalentIFN(F1, opt_scaling)
-    #     G=self.HadamardDivision(F2,C)
+    #     G=ifn.hadamardDivision(F2,C)
     #     dfLink=self.addField2dfLink(dfLink,F1,"BasisFlow")
     #     dfLink=self.addField2dfLink(dfLink,F2,"EstFlow")
     #     dfLink=self.addField2dfLink(dfLink,G,'Congestion')
@@ -299,16 +302,22 @@ class IFN_Transport():
 
                 if travelTimeModel=='Greenshield':
                     # based on greenshield
-                    speed=maxSpeed/2*(1+math.sqrt(1-congestion)) # v in km/hour
-                    if speed>0:
-                        travelTime=dist/speed       # t   in hour
+                    if congestion<=1:
+                        speed=maxSpeed/2*(1+math.sqrt(1-congestion)) # v in km/hour
+                        if speed>0:
+                            travelTime=dist/speed       # t   in hour
+                        else:
+                            travelTime=np.inf
+                        if maxSpeed>0:
+                            minTravelTime=dist/maxSpeed # t0  in hour
+                        else:
+                            minTravelTime=np.inf
+                        delay=travelTime-minTravelTime # delta in hour
                     else:
-                        travelTime=0
-                    if maxSpeed>0:
-                        minTravelTime=dist/maxSpeed # t0  in hour
-                    else:
-                        minTravelTime=0
-                    delay=travelTime-minTravelTime # delta in hour
+                        speed=0
+                        travelTime=np.inf
+                        minTravelTime=np.inf
+                        delay=np.inf
                 else:
                     # based on BPR (by default)
                     minTravelTime=dist/maxSpeed    # t0  in hour
@@ -403,8 +412,11 @@ if __name__ == '__main__':
         if scenario=="":
             print("to use: input the scenario file (including the folder name)")
     else:
-        folder='C:\\Users\\Kardi\\Documents\\Kardi\\Personal\\Tutorial\\NetworkScience\\IdealFlow\\Software\\Python\\Transportation\\Dev\\IFN9\\sample\\SimplestScenario\\'
-        scenario=folder+'Scenario3.scn'
+        folder=os.path.abspath('..')+'\\sample\\Surabaya\\'
+        # folder=os.path.abspath('..')+'\\sample\\SimplestScenario\\'
+        # scenario=folder+'Scenario2.scn'
+        scenario=folder+'BaseScenario.scn'
+        print('running ',scenario)
     net=IFN_Transport(scenario)
     net.runScenario()
     

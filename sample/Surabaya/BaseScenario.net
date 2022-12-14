@@ -1,0 +1,11 @@
+BaseScenario
+Network performance:
+	Total Flow = 248800.1 pcu/hour
+	Max Congestion = 0.9
+	Avg Link Speed =35.8781 km/hour
+	Avg Link Travel Time = 1.8096 min/km
+	Avg Link Delay = 1.9306 seconds/km
+Basis:
+	Avg Link Distance = 19.775 m/link
+	Avg Link Travel Time = 2147.0609 seconds/link
+	Avg Link Delay = 38.1771 seconds/link

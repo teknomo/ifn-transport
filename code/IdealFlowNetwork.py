@@ -3,12 +3,12 @@ IdealFlowNetwork.py
 
 Ideal Flow Network Core Library
 
-version 0.9
+version 0.91
 
 @author: Kardi Teknomo
 http://people.revoledu.com/kardi/
 
-(c) 2014-2021 Kardi Teknomo
+(c) 2014-2022 Kardi Teknomo
 Available in https://github.com/teknomo/IdealFlowNetwork
 '''
 import numpy as np
@@ -23,6 +23,12 @@ def lcm(a,b):
     '''
     return a*b // gcd(a,b)
 
+def hadamardDivision(A,B):
+    '''
+    return A./B with agreement 0/0=0
+    '''
+    B[B==0]=np.inf        
+    return np.divide(A,B)
 
 def capacity2adj(C):
     '''
@@ -62,7 +68,7 @@ def idealFlow2stochastic(F):
     return F/s[:,np.newaxis]
 
 
-def steadyStateMC(S,kappa=1):
+def markov(S,kappa=1):
     '''
     convert stochastic matrix into steady state Markov vector
     kappa is the total of Markov vector
@@ -95,7 +101,7 @@ def adj2idealFlow(A,kappa=1):
     kappa is the total flow
     '''
     S=adj2stochastic(A)
-    pi=steadyStateMC(S,kappa)
+    pi=markov(S,kappa)
     return idealFlow(S,pi)
     
     
@@ -105,7 +111,7 @@ def capacity2idealFlow(C,kappa=1):
     kappa is the total flow
     '''
     S=capacity2stochastic(C)
-    pi=steadyStateMC(S,kappa)
+    pi=markov(S,kappa)
     return idealFlow(S,pi)
 
 
@@ -152,7 +158,7 @@ def isPositive(M):
     '''
     return True of M is a positive matrix
     '''
-    if np.any(M<=0):
+    if np.any(M<=0) or np.any(np.isnan(M)):
         return False
     else:
         return True
