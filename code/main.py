@@ -12,7 +12,7 @@ v0.1.1
 import PySimpleGUI as sg
 import osm2ifn
 import scenario
-
+import networkcheck
    
  
 def main():
@@ -34,7 +34,11 @@ def main():
         [sg.Text('Transportation Model Based on Ideal Flow Network', size=(45, 1), justification='center', font=("Helvetica", 15), relief=sg.RELIEF_RIDGE)],
         [sg.Button("Download OSM Data", key='btnDownload'),
          sg.Button("Define and Run IFN Scenario", key='btnDefine'),
-         sg.Button("Exit", key='btnExit')],
+        ],
+        [sg.Button("Check if Network is Strongly Connected", key='btnIsIrreducible'),
+         # sg.Button("Find Path Between Two Points", key='btnShortestPath'),
+        ],
+        [sg.Button("Exit", key='btnExit')],
         ]
     
     # ------ Window ------ #
@@ -59,7 +63,8 @@ def main():
             osm2ifn.gui()
         if event == 'btnDefine':
             scenario.gui()
-        
+        if event == 'btnIsIrreducible':
+            networkcheck.gui()
         
     window.close()  
 

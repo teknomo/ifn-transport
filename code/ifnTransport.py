@@ -98,6 +98,9 @@ class IFN_Transport():
         return node matrix and link matrix
         the fields are in rows
         '''
+        if scenario=="":
+            return 0
+        
         # initialize the default values
         self.travelTimeModel=None
         self.maxAllowableCongestion=1
@@ -336,7 +339,14 @@ class IFN_Transport():
         self.dfLink['TravelTime']=arrTravelTime
         self.dfLink['Delay']=arrDelay
         
-    
+    def isStronglyConnectedNetwork(self):
+        C=self.mLink2WeightedAdjacency(field='Capacity') # capacity
+        S=ifn.capacity2stochastic(C)               # Markov stochastic
+        if ifn.isIrreducible(S):
+            return "Your network is strongly connected."
+        else:
+            return "Your network is not strongly connected. Clean the network data either by finding the largest strongly connected component or add a cloud node and dummy links."
+        
     def mLink2WeightedAdjacency(self,field='Capacity'):
         '''
         return capacity matrix (by default)
@@ -412,10 +422,10 @@ if __name__ == '__main__':
         if scenario=="":
             print("to use: input the scenario file (including the folder name)")
     else:
-        folder=os.path.abspath('..')+'\\sample\\Surabaya\\'
+        folder=os.path.abspath('..')+'\\sample\\SampleError\\'
         # folder=os.path.abspath('..')+'\\sample\\SimplestScenario\\'
-        # scenario=folder+'Scenario2.scn'
-        scenario=folder+'BaseScenario.scn'
+        scenario=folder+'Scenario2.scn'
+        # scenario=folder+'BaseScenario.scn'
         print('running ',scenario)
     net=IFN_Transport(scenario)
     net.runScenario()
