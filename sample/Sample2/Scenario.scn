@@ -1,0 +1,6 @@
+ScenarioName=Base Scenario
+Node=Node.txt
+Link=Link.txt
+travelTimeModel=Greenshield
+totalFlow=78591.12
+calibrationBasis=totalFlow

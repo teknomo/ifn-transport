@@ -1,0 +1,1 @@
+The link.txt file contains a network that is not strongly connected and therefore we cannot use in IFN.

@@ -39,7 +39,7 @@ def gui():
               
               [sg.Text("",size=(50, 2)), sg.Button("Check Network", key='btnRun'), ],
               [sg.Text(""), sg.Button("Exit", key='btnExit')],
-              [sg.Text("",key='txtInfo',size=(55, 2))]]
+              [sg.Text("",key='txtInfo',size=(65, 3))]]
     
     # Create the window
     window = sg.Window("IFN-Transport: Strongly Connected Network Check", layout,
@@ -80,7 +80,7 @@ def gui():
                 window['txtInfo'].update("Error:"+str(err.args))
         
         if event == 'btnRun':
-            window['txtInfo'].set_size((55,2))
+            window['txtInfo'].set_size((65,3))
             window['txtInfo'].update("")
             folder=values['txtFolderName']
             linkFName=values['txtLinkFileName']  

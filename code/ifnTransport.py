@@ -158,11 +158,15 @@ class IFN_Transport():
         update self.dfLink with additional column about matrix F
         matrix F size must be n by n, where n is number of nodes
         '''
+        if not self.nodeIds:
+            # get unique node IDs from second and third fields of mLink
+            self.nodeIds = list(np.union1d(self.dfLink.Node1, self.dfLink.Node2))
+
         mR,mC=self.dfLink.shape
         arrF=[]
         for index, row in self.dfLink.iterrows():
-            r=int(row.Node1)
-            c=int(row.Node2)
+            r=self.nodeIds.index(int(row.Node1))
+            c=self.nodeIds.index(int(row.Node2))
             v=F[r-1,c-1]
             arrF.append(v)
         self.dfLink[field]=arrF        
@@ -358,15 +362,15 @@ class IFN_Transport():
         '''
         mLink=self.dfLink
         # get unique node IDs from second and third fields of mLink
-        nodeIds=np.union1d(mLink.Node1,mLink.Node2)
-        n=np.prod(nodeIds.shape)
-        del nodeIds # to save memory
-        
+        self.nodeIds=list(np.union1d(mLink.Node1,mLink.Node2))
+        n=np.prod(len(self.nodeIds))
         A=np.zeros((n,n), dtype=np.float64)
         # fill up with 1 when there is a link
         coord=zip(mLink.Node1,mLink.Node2,mLink[field])
         for item in coord:
-            (r,c,k)=item
+            (node1,node2,k)=item
+            r=self.nodeIds.index(node1)
+            c=self.nodeIds.index(node2)
             A[int(r)-1,int(c)-1]=float(k)
         return A
 
@@ -423,9 +427,13 @@ if __name__ == '__main__':
             print("to use: input the scenario file (including the folder name)")
     else:
         folder=os.path.abspath('..')+'\\sample\\SampleError\\'
+        scenario = folder + 'Scenario.scn'
         # folder=os.path.abspath('..')+'\\sample\\SimplestScenario\\'
-        scenario=folder+'Scenario2.scn'
+        # scenario=folder+'Scenario2.scn'
         # scenario=folder+'BaseScenario.scn'
+        folder = os.path.abspath('..') + '\\sample\\errorscenario2\\'
+        scenario = folder + 'Scenario.scn'
+
         print('running ',scenario)
     net=IFN_Transport(scenario)
     net.runScenario()

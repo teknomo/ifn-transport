@@ -1,0 +1,1077 @@
+LinkID,Node1,Node2,Capacity,Distance,MaxSpeed,NumLane,RoadWidth,RoadType,RoadName
+1,966,965,1000.0,0.002,25.0,2,2.0,tertiary,Jalan Nginden Intan Raya
+2,965,966,1000.0,0.002,25.0,2,2.0,tertiary,Jalan Nginden Intan Raya
+3,495,496,1000.0,0.005,25.0,2,2.0,tertiary,Jalan Barata Jaya 17
+4,496,495,1000.0,0.005,25.0,2,2.0,tertiary,Jalan Barata Jaya 17
+5,496,497,1000.0,0.052,25.0,2,2.0,tertiary,Jalan Barata Jaya 17
+6,497,496,1000.0,0.052,25.0,2,2.0,tertiary,Jalan Barata Jaya 17
+7,497,498,1000.0,0.047,25.0,2,2.0,tertiary,Jalan Barata Jaya 17
+8,498,497,1000.0,0.047,25.0,2,2.0,tertiary,Jalan Barata Jaya 17
+9,498,499,1000.0,0.045,25.0,2,2.0,tertiary,Jalan Barata Jaya 17
+10,499,498,1000.0,0.045,25.0,2,2.0,tertiary,Jalan Barata Jaya 17
+11,499,500,1000.0,0.016,25.0,2,2.0,tertiary,Jalan Barata Jaya 17
+12,500,499,1000.0,0.016,25.0,2,2.0,tertiary,Jalan Barata Jaya 17
+13,500,501,1000.0,0.014,25.0,2,2.0,tertiary,Jalan Barata Jaya 17
+14,501,500,1000.0,0.014,25.0,2,2.0,tertiary,Jalan Barata Jaya 17
+15,501,502,1000.0,0.086,25.0,2,2.0,tertiary,Jalan Barata Jaya 17
+16,502,501,1000.0,0.086,25.0,2,2.0,tertiary,Jalan Barata Jaya 17
+17,502,503,1000.0,0.051,25.0,2,2.0,tertiary,Jalan Barata Jaya 17
+18,503,502,1000.0,0.051,25.0,2,2.0,tertiary,Jalan Barata Jaya 17
+47,959,958,4000.0,0.014,45.0,1,8,tertiary,Jalan Nginden Intan Raya
+48,958,957,4000.0,0.007,45.0,1,8,tertiary,Jalan Nginden Intan Raya
+49,957,956,4000.0,0.002,45.0,1,8,tertiary,Jalan Nginden Intan Raya
+50,956,955,4000.0,0.01,45.0,1,8,tertiary,Jalan Nginden Intan Raya
+51,955,954,4000.0,0.001,45.0,1,8,tertiary,Jalan Nginden Intan Raya
+52,954,953,4000.0,0.016,45.0,1,8,tertiary,Jalan Nginden Intan Raya
+53,953,952,4000.0,0.003,45.0,1,8,tertiary,Jalan Nginden Intan Raya
+54,952,951,4000.0,0.001,45.0,1,8,tertiary,Jalan Nginden Intan Raya
+57,506,505,1500,0.008,20,1,2.75,tertiary,Jalan Barata Jaya 17
+58,505,504,1500,0.005,20,1,2.75,tertiary,Jalan Barata Jaya 17
+59,504,503,1500,0.009,20,1,2.75,tertiary,Jalan Barata Jaya 17
+60,503,494,1500,0.012,20,1,2.75,tertiary,Jalan Barata Jaya 17
+61,494,493,1500,0.005,20,1,2.75,tertiary,Jalan Barata Jaya 17
+62,493,492,1500,0.011,20,1,2.75,tertiary,Jalan Barata Jaya 17
+63,739,740,1500.0,0.0,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+64,740,739,1500.0,0.0,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+65,740,741,1500.0,0.001,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+66,741,740,1500.0,0.001,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+67,741,742,1500.0,0.0,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+68,742,741,1500.0,0.0,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+69,742,743,1500.0,0.0,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+70,743,742,1500.0,0.0,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+71,743,744,1500.0,0.002,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+72,744,743,1500.0,0.002,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+73,744,745,1500.0,0.001,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+74,745,744,1500.0,0.001,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+75,745,746,1500.0,0.001,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+76,746,745,1500.0,0.001,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+77,746,747,1500.0,0.004,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+78,747,746,1500.0,0.004,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+79,747,748,1500.0,0.002,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+80,748,747,1500.0,0.002,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+81,748,749,1500.0,0.006,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+82,749,748,1500.0,0.006,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+83,749,750,1500.0,0.007,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+84,750,749,1500.0,0.007,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+85,750,751,1500.0,0.005,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+86,751,750,1500.0,0.005,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+87,751,752,1500.0,0.004,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+88,752,751,1500.0,0.004,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+89,752,753,1500.0,0.009,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+90,753,752,1500.0,0.009,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+91,753,754,1500.0,0.009,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+92,754,753,1500.0,0.009,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+93,754,755,1500.0,0.002,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+94,755,754,1500.0,0.002,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+95,755,756,1500.0,0.001,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+96,756,755,1500.0,0.001,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+97,756,757,1500.0,0.003,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+98,757,756,1500.0,0.003,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+99,757,758,1500.0,0.004,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+100,758,757,1500.0,0.004,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+101,758,759,1500.0,0.004,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+102,759,758,1500.0,0.004,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+103,759,760,1500.0,0.009,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+104,760,759,1500.0,0.009,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+105,760,761,1500.0,0.006,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+106,761,760,1500.0,0.006,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+107,761,762,1500.0,0.012,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+108,762,761,1500.0,0.012,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+109,762,763,1500.0,0.003,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+110,763,762,1500.0,0.003,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+111,763,764,1500.0,0.005,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+112,764,763,1500.0,0.005,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+113,764,765,1500.0,0.01,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+114,765,764,1500.0,0.01,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+115,765,766,1500.0,0.001,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+116,766,765,1500.0,0.001,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+117,766,767,1500.0,0.003,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+118,767,766,1500.0,0.003,35.0,4,3.0,tertiary,Jalan Klampis Jaya
+119,297,296,750.0,0.029,20.0,2,1.5,tertiary,Jalan Kalibokor Selatan
+120,296,297,750.0,0.029,20.0,2,1.5,tertiary,Jalan Kalibokor Selatan
+121,296,295,750.0,0.045,20.0,2,1.5,tertiary,Jalan Kalibokor Selatan
+122,295,296,750.0,0.045,20.0,2,1.5,tertiary,Jalan Kalibokor Selatan
+123,295,294,750.0,0.237,20.0,2,1.5,tertiary,Jalan Kalibokor Selatan
+124,294,295,750.0,0.237,20.0,2,1.5,tertiary,Jalan Kalibokor Selatan
+125,268,267,1500,0.02,20,1,2.75,secondary,Jalan Raya Menur
+126,267,266,1500,0.008,20,1,2.75,secondary,Jalan Raya Menur
+127,266,265,1500,0.005,20,1,2.75,secondary,Jalan Raya Menur
+128,265,264,1500,0.003,20,1,2.75,secondary,Jalan Raya Menur
+129,264,263,1500,0.002,20,1,2.75,secondary,Jalan Raya Menur
+130,263,262,1500,0.004,20,1,2.75,secondary,Jalan Raya Menur
+131,725,724,1500,0.006,20,1,2.75,tertiary,Jalan Arief Rahman Hakim
+132,724,723,1500,0.027,20,1,2.75,tertiary,Jalan Arief Rahman Hakim
+133,723,722,1500,0.021,20,1,2.75,tertiary,Jalan Arief Rahman Hakim
+134,722,721,1500,0.013,20,1,2.75,tertiary,Jalan Arief Rahman Hakim
+135,721,720,1500,0.008,20,1,2.75,tertiary,Jalan Arief Rahman Hakim
+145,963,962,4000.0,0.023,45.0,1,8,tertiary,Jalan Nginden Intan Raya
+146,962,961,4000.0,0.018,45.0,1,8,tertiary,Jalan Nginden Intan Raya
+147,961,960,4000.0,0.016,45.0,1,8,tertiary,Jalan Nginden Intan Raya
+148,772,771,1500,0.001,20,1,2.75,tertiary,Jalan Klampis Jaya
+149,462,461,12000.0,0.379,65.0,6,24,secondary,Jalan Panjang Jiwo
+150,461,522,12000.0,0.016,65.0,6,24,secondary,Jalan Panjang Jiwo
+151,522,966,12000.0,0.302,65.0,6,24,secondary,Jalan Panjang Jiwo
+152,966,0,12000.0,0.138,65.0,6,24,secondary,Jalan Panjang Jiwo
+153,0,540,12000.0,0.02,65.0,6,24,secondary,Jalan Panjang Jiwo
+154,590,597,4000.0,0.019,25.0,4,8,secondary,Jalan Raya Kedung Baruk
+155,824,823,3000.0,0.011,35.0,2,6,tertiary,Jalan Semolowaru Utara
+156,823,822,3000.0,0.004,35.0,2,6,tertiary,Jalan Semolowaru Utara
+157,822,821,3000.0,0.004,35.0,2,6,tertiary,Jalan Semolowaru Utara
+158,821,820,3000.0,0.003,35.0,2,6,tertiary,Jalan Semolowaru Utara
+159,820,819,3000.0,0.006,35.0,2,6,tertiary,Jalan Semolowaru Utara
+160,819,818,3000.0,0.002,35.0,2,6,tertiary,Jalan Semolowaru Utara
+161,818,817,3000.0,0.003,35.0,2,6,tertiary,Jalan Semolowaru Utara
+162,790,791,2000.0,0.002,45.0,1,4.0,tertiary,Jalan Deles
+163,791,790,2000.0,0.002,45.0,1,4.0,tertiary,Jalan Deles
+164,791,792,2000.0,0.001,45.0,1,4.0,tertiary,Jalan Deles
+165,792,791,2000.0,0.001,45.0,1,4.0,tertiary,Jalan Deles
+166,792,793,2000.0,0.0,45.0,1,4.0,tertiary,Jalan Deles
+167,793,792,2000.0,0.0,45.0,1,4.0,tertiary,Jalan Deles
+168,793,794,2000.0,0.001,45.0,1,4.0,tertiary,Jalan Deles
+169,794,793,2000.0,0.001,45.0,1,4.0,tertiary,Jalan Deles
+170,794,795,2000.0,0.0,45.0,1,4.0,tertiary,Jalan Deles
+171,795,794,2000.0,0.0,45.0,1,4.0,tertiary,Jalan Deles
+172,795,796,2000.0,0.0,45.0,1,4.0,tertiary,Jalan Deles
+173,796,795,2000.0,0.0,45.0,1,4.0,tertiary,Jalan Deles
+174,796,797,2000.0,0.001,45.0,1,4.0,tertiary,Jalan Deles
+175,797,796,2000.0,0.001,45.0,1,4.0,tertiary,Jalan Deles
+176,797,798,2000.0,0.001,45.0,1,4.0,tertiary,Jalan Deles
+177,798,797,2000.0,0.001,45.0,1,4.0,tertiary,Jalan Deles
+178,798,799,2000.0,0.001,45.0,1,4.0,tertiary,Jalan Deles
+179,799,798,2000.0,0.001,45.0,1,4.0,tertiary,Jalan Deles
+180,799,800,2000.0,0.001,45.0,1,4.0,tertiary,Jalan Deles
+181,800,799,2000.0,0.001,45.0,1,4.0,tertiary,Jalan Deles
+182,800,801,2000.0,0.0,45.0,1,4.0,tertiary,Jalan Deles
+183,801,800,2000.0,0.0,45.0,1,4.0,tertiary,Jalan Deles
+184,801,802,2000.0,0.001,45.0,1,4.0,tertiary,Jalan Deles
+185,802,801,2000.0,0.001,45.0,1,4.0,tertiary,Jalan Deles
+186,802,803,2000.0,0.001,45.0,1,4.0,tertiary,Jalan Deles
+187,803,802,2000.0,0.001,45.0,1,4.0,tertiary,Jalan Deles
+188,803,804,2000.0,0.002,45.0,1,4.0,tertiary,Jalan Deles
+189,804,803,2000.0,0.002,45.0,1,4.0,tertiary,Jalan Deles
+190,804,805,2000.0,0.001,45.0,1,4.0,tertiary,Jalan Deles
+191,805,804,2000.0,0.001,45.0,1,4.0,tertiary,Jalan Deles
+192,805,806,2000.0,0.0,45.0,1,4.0,tertiary,Jalan Deles
+193,806,805,2000.0,0.0,45.0,1,4.0,tertiary,Jalan Deles
+194,45,44,3000.0,0.0,35.0,2,6,tertiary,Jalan Semolowaru Utara
+195,44,43,3000.0,0.001,35.0,2,6,tertiary,Jalan Semolowaru Utara
+196,43,42,3000.0,0.001,35.0,2,6,tertiary,Jalan Semolowaru Utara
+197,42,41,3000.0,0.003,35.0,2,6,tertiary,Jalan Semolowaru Utara
+198,41,40,3000.0,0.004,35.0,2,6,tertiary,Jalan Semolowaru Utara
+199,40,39,3000.0,0.003,35.0,2,6,tertiary,Jalan Semolowaru Utara
+200,528,527,1500,0.0,20,1,2.75,secondary_link,n/a
+201,527,526,1500,0.0,20,1,2.75,secondary_link,n/a
+202,526,525,1500,0.0,20,1,2.75,secondary_link,n/a
+203,525,524,1500,0.0,20,1,2.75,secondary_link,n/a
+204,524,523,1500,0.0,20,1,2.75,secondary_link,n/a
+205,523,522,1500,0.002,20,1,2.75,secondary_link,n/a
+206,934,935,1500.0,0.033,35.0,1,3.0,tertiary,Jalan Medokan Semampir AWS
+207,935,934,1500.0,0.033,35.0,1,3.0,tertiary,Jalan Medokan Semampir AWS
+208,935,936,1500.0,0.102,35.0,1,3.0,tertiary,Jalan Medokan Semampir AWS
+209,936,935,1500.0,0.102,35.0,1,3.0,tertiary,Jalan Medokan Semampir AWS
+210,936,937,1500.0,0.08,35.0,1,3.0,tertiary,Jalan Medokan Semampir AWS
+211,937,936,1500.0,0.08,35.0,1,3.0,tertiary,Jalan Medokan Semampir AWS
+212,937,938,1500.0,0.068,35.0,1,3.0,tertiary,Jalan Medokan Semampir AWS
+213,938,937,1500.0,0.068,35.0,1,3.0,tertiary,Jalan Medokan Semampir AWS
+214,938,939,1500.0,0.042,35.0,1,3.0,tertiary,Jalan Medokan Semampir AWS
+215,939,938,1500.0,0.042,35.0,1,3.0,tertiary,Jalan Medokan Semampir AWS
+216,939,940,1500.0,0.042,35.0,1,3.0,tertiary,Jalan Medokan Semampir AWS
+217,940,939,1500.0,0.042,35.0,1,3.0,tertiary,Jalan Medokan Semampir AWS
+218,940,941,1500.0,0.044,35.0,1,3.0,tertiary,Jalan Medokan Semampir AWS
+219,941,940,1500.0,0.044,35.0,1,3.0,tertiary,Jalan Medokan Semampir AWS
+220,941,942,1500.0,0.044,35.0,1,3.0,tertiary,Jalan Medokan Semampir AWS
+221,942,941,1500.0,0.044,35.0,1,3.0,tertiary,Jalan Medokan Semampir AWS
+222,942,943,1500.0,0.043,35.0,1,3.0,tertiary,Jalan Medokan Semampir AWS
+223,943,942,1500.0,0.043,35.0,1,3.0,tertiary,Jalan Medokan Semampir AWS
+224,943,944,1500.0,0.042,35.0,1,3.0,tertiary,Jalan Medokan Semampir AWS
+225,944,943,1500.0,0.042,35.0,1,3.0,tertiary,Jalan Medokan Semampir AWS
+226,944,945,1500.0,0.071,35.0,1,3.0,tertiary,Jalan Medokan Semampir AWS
+227,945,944,1500.0,0.071,35.0,1,3.0,tertiary,Jalan Medokan Semampir AWS
+228,945,946,1500.0,0.017,35.0,1,3.0,tertiary,Jalan Medokan Semampir AWS
+229,946,945,1500.0,0.017,35.0,1,3.0,tertiary,Jalan Medokan Semampir AWS
+230,926,925,1000.0,0.044,25.0,2,2.0,tertiary,Jalan Medokan Semampir Indah
+231,925,926,1000.0,0.044,25.0,2,2.0,tertiary,Jalan Medokan Semampir Indah
+232,934,933,1500.0,0.12,35.0,1,3.0,tertiary,Jalan Medokan Semampir Indah
+233,933,934,1500.0,0.12,35.0,1,3.0,tertiary,Jalan Medokan Semampir Indah
+234,933,932,1500.0,0.016,35.0,1,3.0,tertiary,Jalan Medokan Semampir Indah
+235,932,933,1500.0,0.016,35.0,1,3.0,tertiary,Jalan Medokan Semampir Indah
+236,932,931,1500.0,0.012,35.0,1,3.0,tertiary,Jalan Medokan Semampir Indah
+237,931,932,1500.0,0.012,35.0,1,3.0,tertiary,Jalan Medokan Semampir Indah
+238,931,930,1500.0,0.014,35.0,1,3.0,tertiary,Jalan Medokan Semampir Indah
+239,930,931,1500.0,0.014,35.0,1,3.0,tertiary,Jalan Medokan Semampir Indah
+240,930,929,1500.0,0.028,35.0,1,3.0,tertiary,Jalan Medokan Semampir Indah
+241,929,930,1500.0,0.028,35.0,1,3.0,tertiary,Jalan Medokan Semampir Indah
+242,929,928,1500.0,0.011,35.0,1,3.0,tertiary,Jalan Medokan Semampir Indah
+243,928,929,1500.0,0.011,35.0,1,3.0,tertiary,Jalan Medokan Semampir Indah
+244,928,927,1500.0,0.004,35.0,1,3.0,tertiary,Jalan Medokan Semampir Indah
+245,927,928,1500.0,0.004,35.0,1,3.0,tertiary,Jalan Medokan Semampir Indah
+246,927,926,1500.0,0.006,35.0,1,3.0,tertiary,Jalan Medokan Semampir Indah
+247,926,927,1500.0,0.006,35.0,1,3.0,tertiary,Jalan Medokan Semampir Indah
+271,946,947,2000.0,0.192,45.0,1,4.0,tertiary,Jalan Nginden Intan Selatan
+272,947,946,2000.0,0.192,45.0,1,4.0,tertiary,Jalan Nginden Intan Selatan
+273,947,948,2000.0,0.092,45.0,1,4.0,tertiary,Jalan Nginden Intan Selatan
+274,948,947,2000.0,0.092,45.0,1,4.0,tertiary,Jalan Nginden Intan Selatan
+275,948,949,2000.0,0.075,45.0,1,4.0,tertiary,Jalan Nginden Intan Selatan
+276,949,948,2000.0,0.075,45.0,1,4.0,tertiary,Jalan Nginden Intan Selatan
+277,949,950,2000.0,0.011,45.0,1,4.0,tertiary,Jalan Nginden Intan Selatan
+278,950,949,2000.0,0.011,45.0,1,4.0,tertiary,Jalan Nginden Intan Selatan
+279,950,951,2000.0,0.087,45.0,1,4.0,tertiary,Jalan Nginden Intan Selatan
+280,951,950,2000.0,0.087,45.0,1,4.0,tertiary,Jalan Nginden Intan Selatan
+281,587,586,3000.0,0.003,35.0,1,6,primary_link,n/a
+282,586,585,3000.0,0.004,35.0,1,6,primary_link,n/a
+283,585,584,3000.0,0.002,35.0,1,6,primary_link,n/a
+284,584,583,3000.0,0.002,35.0,1,6,primary_link,n/a
+285,583,582,3000.0,0.001,35.0,1,6,primary_link,n/a
+286,582,581,3000.0,0.0,35.0,1,6,primary_link,n/a
+287,581,580,3000.0,0.001,35.0,1,6,primary_link,n/a
+288,580,579,3000.0,0.002,35.0,1,6,primary_link,n/a
+289,579,578,3000.0,0.003,35.0,1,6,primary_link,n/a
+290,578,577,3000.0,0.002,35.0,1,6,primary_link,n/a
+291,577,576,3000.0,0.001,35.0,1,6,primary_link,n/a
+292,576,575,3000.0,0.001,35.0,1,6,primary_link,n/a
+293,575,926,3000.0,0.006,35.0,1,6,primary_link,n/a
+294,349,350,2000.0,0.001,45.0,1,4.0,tertiary,Jalan Nginden Baru VI
+295,350,349,2000.0,0.001,45.0,1,4.0,tertiary,Jalan Nginden Baru VI
+296,350,351,2000.0,0.001,45.0,1,4.0,tertiary,Jalan Nginden Baru VI
+297,351,350,2000.0,0.001,45.0,1,4.0,tertiary,Jalan Nginden Baru VI
+298,351,352,2000.0,0.001,45.0,1,4.0,tertiary,Jalan Nginden Baru VI
+299,352,351,2000.0,0.001,45.0,1,4.0,tertiary,Jalan Nginden Baru VI
+300,352,353,2000.0,0.003,45.0,1,4.0,tertiary,Jalan Nginden Baru VI
+301,353,352,2000.0,0.003,45.0,1,4.0,tertiary,Jalan Nginden Baru VI
+302,353,354,2000.0,0.002,45.0,1,4.0,tertiary,Jalan Nginden Baru VI
+303,354,353,2000.0,0.002,45.0,1,4.0,tertiary,Jalan Nginden Baru VI
+304,354,355,2000.0,0.001,45.0,1,4.0,tertiary,Jalan Nginden Baru VI
+305,355,354,2000.0,0.001,45.0,1,4.0,tertiary,Jalan Nginden Baru VI
+306,355,356,2000.0,0.002,45.0,1,4.0,tertiary,Jalan Nginden Baru VI
+307,356,355,2000.0,0.002,45.0,1,4.0,tertiary,Jalan Nginden Baru VI
+308,356,357,2000.0,0.001,45.0,1,4.0,tertiary,Jalan Nginden Baru VI
+309,357,356,2000.0,0.001,45.0,1,4.0,tertiary,Jalan Nginden Baru VI
+310,357,358,2000.0,0.001,45.0,1,4.0,tertiary,Jalan Nginden Baru VI
+311,358,357,2000.0,0.001,45.0,1,4.0,tertiary,Jalan Nginden Baru VI
+312,358,359,2000.0,0.001,45.0,1,4.0,tertiary,Jalan Nginden Baru VI
+313,359,358,2000.0,0.001,45.0,1,4.0,tertiary,Jalan Nginden Baru VI
+314,359,360,2000.0,0.001,45.0,1,4.0,tertiary,Jalan Nginden Baru VI
+315,360,359,2000.0,0.001,45.0,1,4.0,tertiary,Jalan Nginden Baru VI
+316,360,388,2000.0,0.003,45.0,1,4.0,tertiary,Jalan Nginden Baru VI
+317,388,360,2000.0,0.003,45.0,1,4.0,tertiary,Jalan Nginden Baru VI
+318,541,540,1500,0.001,20,1,2.75,secondary,Jalan Raya Kalirungkut
+319,161,162,1000.0,0.019,25.0,2,2.0,tertiary_link,Jalan Panjang Jiwo Permai
+320,162,161,1000.0,0.019,25.0,2,2.0,tertiary_link,Jalan Panjang Jiwo Permai
+321,151,150,1500,0.003,20,1,2.75,tertiary_link,n/a
+322,150,149,1500,0.002,20,1,2.75,tertiary_link,n/a
+323,149,148,1500,0.004,20,1,2.75,tertiary_link,n/a
+324,148,147,1500,0.003,20,1,2.75,tertiary_link,n/a
+325,147,146,1500,0.002,20,1,2.75,tertiary_link,n/a
+326,146,145,1500,0.002,20,1,2.75,tertiary_link,n/a
+327,145,144,1500,0.002,20,1,2.75,tertiary_link,n/a
+328,137,136,1500,0.005,20,1,2.75,tertiary_link,n/a
+329,136,135,1500,0.002,20,1,2.75,tertiary_link,n/a
+330,135,134,1500,0.004,20,1,2.75,tertiary_link,n/a
+331,134,133,1500,0.003,20,1,2.75,tertiary_link,n/a
+332,133,132,1500,0.002,20,1,2.75,tertiary_link,n/a
+333,132,131,1500,0.002,20,1,2.75,tertiary_link,n/a
+334,927,875,3000.0,0.007,35.0,1,6,primary_link,n/a
+335,875,874,3000.0,0.0,35.0,1,6,primary_link,n/a
+336,874,873,3000.0,0.002,35.0,1,6,primary_link,n/a
+337,873,872,3000.0,0.003,35.0,1,6,primary_link,n/a
+338,872,871,3000.0,0.004,35.0,1,6,primary_link,n/a
+339,871,870,3000.0,0.005,35.0,1,6,primary_link,n/a
+340,870,869,3000.0,0.012,35.0,1,6,primary_link,n/a
+341,623,622,5000.0,0.002,55.0,2,10,primary_link,n/a
+342,622,621,5000.0,0.002,55.0,2,10,primary_link,n/a
+343,621,620,5000.0,0.003,55.0,2,10,primary_link,n/a
+344,620,619,5000.0,0.003,55.0,2,10,primary_link,n/a
+345,619,618,5000.0,0.003,55.0,2,10,primary_link,n/a
+346,618,617,5000.0,0.003,55.0,2,10,primary_link,n/a
+347,617,616,5000.0,0.002,55.0,2,10,primary_link,n/a
+348,616,853,5000.0,0.002,55.0,2,10,primary_link,n/a
+349,854,9,5000.0,0.002,55.0,2,10,primary_link,n/a
+350,9,8,5000.0,0.002,55.0,2,10,primary_link,n/a
+351,8,7,5000.0,0.002,55.0,2,10,primary_link,n/a
+352,7,6,5000.0,0.002,55.0,2,10,primary_link,n/a
+353,6,5,5000.0,0.002,55.0,2,10,primary_link,n/a
+354,5,4,5000.0,0.002,55.0,2,10,primary_link,n/a
+355,4,3,5000.0,0.002,55.0,2,10,primary_link,n/a
+356,3,2,5000.0,0.002,55.0,2,10,primary_link,n/a
+357,2,1,5000.0,0.002,55.0,2,10,primary_link,n/a
+358,1,615,5000.0,0.001,55.0,2,10,primary_link,n/a
+359,539,542,1500,0.001,20,1,2.75,secondary,Jalan Raya Kalirungkut
+360,199,198,6000.0,0.019,65.0,3,12,secondary,Jalan Jagir Wonokromo
+361,198,197,6000.0,0.019,65.0,3,12,secondary,Jalan Jagir Wonokromo
+362,197,196,6000.0,0.007,65.0,3,12,secondary,Jalan Jagir Wonokromo
+363,196,195,6000.0,0.003,65.0,3,12,secondary,Jalan Jagir Wonokromo
+364,195,194,6000.0,0.007,65.0,3,12,secondary,Jalan Jagir Wonokromo
+380,512,511,1500,0.016,20,1,2.75,secondary,Jalan Jagir Wonokromo
+381,318,329,2750,0.002,20,2,5.5,secondary,Jalan Manyar
+382,329,328,2750,0.011,20,2,5.5,secondary,Jalan Manyar
+383,328,327,2750,0.014,20,2,5.5,secondary,Jalan Manyar
+384,327,326,2750,0.009,20,2,5.5,secondary,Jalan Manyar
+385,326,325,2750,0.001,20,2,5.5,secondary,Jalan Manyar
+386,325,341,2750,0.003,20,2,5.5,secondary,Jalan Manyar
+387,341,340,2750,0.002,20,2,5.5,secondary,Jalan Manyar
+388,340,446,2750,0.001,20,2,5.5,secondary,Jalan Manyar
+389,736,735,4000.0,0.061,45.0,2,8,tertiary,Jalan Arief Rahman Hakim
+390,735,734,4000.0,0.022,45.0,2,8,tertiary,Jalan Arief Rahman Hakim
+391,734,733,4000.0,0.015,45.0,2,8,tertiary,Jalan Arief Rahman Hakim
+392,733,732,4000.0,0.01,45.0,2,8,tertiary,Jalan Arief Rahman Hakim
+393,732,731,4000.0,0.066,45.0,2,8,tertiary,Jalan Arief Rahman Hakim
+394,731,730,4000.0,0.061,45.0,2,8,tertiary,Jalan Arief Rahman Hakim
+395,730,729,4000.0,0.06,45.0,2,8,tertiary,Jalan Arief Rahman Hakim
+396,729,728,4000.0,0.063,45.0,2,8,tertiary,Jalan Arief Rahman Hakim
+397,728,727,4000.0,0.093,45.0,2,8,tertiary,Jalan Arief Rahman Hakim
+398,727,726,4000.0,0.035,45.0,2,8,tertiary,Jalan Arief Rahman Hakim
+399,262,261,4000.0,0.003,25.0,6,8,secondary,Jalan Raya Manyar
+400,261,260,4000.0,0.003,25.0,6,8,secondary,Jalan Raya Manyar
+401,260,259,4000.0,0.009,25.0,6,8,secondary,Jalan Raya Manyar
+402,259,258,4000.0,0.004,25.0,6,8,secondary,Jalan Raya Manyar
+403,258,257,4000.0,0.003,25.0,6,8,secondary,Jalan Raya Manyar
+404,257,256,4000.0,0.004,25.0,6,8,secondary,Jalan Raya Manyar
+405,256,255,4000.0,0.004,25.0,6,8,secondary,Jalan Raya Manyar
+406,255,254,4000.0,0.003,25.0,6,8,secondary,Jalan Raya Manyar
+407,254,253,4000.0,0.004,25.0,6,8,secondary,Jalan Raya Manyar
+408,253,252,4000.0,0.027,25.0,6,8,secondary,Jalan Raya Manyar
+409,252,251,4000.0,0.002,25.0,6,8,secondary,Jalan Raya Manyar
+410,251,250,4000.0,0.012,25.0,6,8,secondary,Jalan Raya Manyar
+411,250,249,4000.0,0.01,25.0,6,8,secondary,Jalan Raya Manyar
+412,249,319,4000.0,0.002,25.0,6,8,secondary,Jalan Raya Manyar
+413,268,248,1500.0,0.027,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+414,248,268,1500.0,0.027,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+415,248,247,1500.0,0.007,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+416,247,248,1500.0,0.007,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+417,247,246,1500.0,0.026,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+418,246,247,1500.0,0.026,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+419,246,245,1500.0,0.011,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+420,245,246,1500.0,0.011,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+421,245,244,1500.0,0.007,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+422,244,245,1500.0,0.007,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+423,244,243,1500.0,0.029,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+424,243,244,1500.0,0.029,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+425,243,242,1500.0,0.051,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+426,242,243,1500.0,0.051,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+427,242,241,1500.0,0.031,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+428,241,242,1500.0,0.031,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+429,241,240,1500.0,0.042,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+430,240,241,1500.0,0.042,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+431,240,239,1500.0,0.012,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+432,239,240,1500.0,0.012,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+433,239,238,1500.0,0.015,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+434,238,239,1500.0,0.015,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+435,238,237,1500.0,0.022,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+436,237,238,1500.0,0.022,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+437,237,236,1500.0,0.085,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+438,236,237,1500.0,0.085,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+439,236,235,1500.0,0.031,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+440,235,236,1500.0,0.031,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+441,235,234,1500.0,0.042,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+442,234,235,1500.0,0.042,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+443,234,233,1500.0,0.01,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+444,233,234,1500.0,0.01,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+445,233,232,1500.0,0.048,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+446,232,233,1500.0,0.048,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+447,232,231,1500.0,0.008,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+448,231,232,1500.0,0.008,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+449,231,230,1500.0,0.005,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+450,230,231,1500.0,0.005,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+451,230,229,1500.0,0.006,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+452,229,230,1500.0,0.006,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+453,925,924,750.0,0.02,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+454,924,925,750.0,0.02,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+455,924,923,750.0,0.011,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+456,923,924,750.0,0.011,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+457,923,922,750.0,0.065,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+458,922,923,750.0,0.065,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+459,922,921,750.0,0.023,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+460,921,922,750.0,0.023,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+461,921,920,750.0,0.004,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+462,920,921,750.0,0.004,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+463,920,919,750.0,0.01,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+464,919,920,750.0,0.01,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+465,919,918,750.0,0.181,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+466,918,919,750.0,0.181,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+467,918,917,750.0,0.005,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+468,917,918,750.0,0.005,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+469,917,916,750.0,0.004,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+470,916,917,750.0,0.004,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+471,916,915,750.0,0.093,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+472,915,916,750.0,0.093,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+473,915,914,750.0,0.022,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+474,914,915,750.0,0.022,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+475,914,913,750.0,0.05,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+476,913,914,750.0,0.05,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+477,913,912,750.0,0.11,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+478,912,913,750.0,0.11,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+479,912,911,750.0,0.016,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+480,911,912,750.0,0.016,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+481,911,910,750.0,0.049,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+482,910,911,750.0,0.049,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+483,910,909,750.0,0.027,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+484,909,910,750.0,0.027,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+485,909,908,750.0,0.034,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+486,908,909,750.0,0.034,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+487,908,907,750.0,0.003,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+488,907,908,750.0,0.003,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+489,907,906,750.0,0.007,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+490,906,907,750.0,0.007,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+491,906,905,750.0,0.064,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+492,905,906,750.0,0.064,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+493,905,904,750.0,0.023,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+494,904,905,750.0,0.023,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+495,904,903,750.0,0.069,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+496,903,904,750.0,0.069,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+497,903,902,750.0,0.065,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+498,902,903,750.0,0.065,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+499,902,901,750.0,0.08,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+500,901,902,750.0,0.08,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+501,901,900,750.0,0.071,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+502,900,901,750.0,0.071,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+503,900,899,750.0,0.054,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+504,899,900,750.0,0.054,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+505,899,898,750.0,0.072,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+506,898,899,750.0,0.072,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+507,898,897,750.0,0.038,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+508,897,898,750.0,0.038,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+509,897,896,750.0,0.019,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+510,896,897,750.0,0.019,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+511,896,895,750.0,0.067,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+512,895,896,750.0,0.067,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+513,895,894,750.0,0.011,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+514,894,895,750.0,0.011,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+515,894,893,750.0,0.011,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+516,893,894,750.0,0.011,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+517,893,892,750.0,0.022,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+518,892,893,750.0,0.022,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+519,892,891,750.0,0.046,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+520,891,892,750.0,0.046,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+521,891,890,750.0,0.046,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+522,890,891,750.0,0.046,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+523,890,889,750.0,0.049,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+524,889,890,750.0,0.049,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+525,889,888,750.0,0.046,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+526,888,889,750.0,0.046,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+527,888,887,750.0,0.031,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+528,887,888,750.0,0.031,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+529,887,886,750.0,0.016,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+530,886,887,750.0,0.016,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+531,886,885,750.0,0.047,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+532,885,886,750.0,0.047,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+533,885,884,750.0,0.045,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+534,884,885,750.0,0.045,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+535,884,883,750.0,0.014,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+536,883,884,750.0,0.014,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+537,883,882,750.0,0.023,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+538,882,883,750.0,0.023,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+539,882,881,750.0,0.057,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+540,881,882,750.0,0.057,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+541,881,880,750.0,0.047,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+542,880,881,750.0,0.047,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+543,880,879,750.0,0.042,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+544,879,880,750.0,0.042,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+545,879,878,750.0,0.034,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+546,878,879,750.0,0.034,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+547,878,877,750.0,0.056,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+548,877,878,750.0,0.056,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+549,877,876,750.0,0.004,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+550,876,877,750.0,0.004,20.0,1,1.5,tertiary,Jalan Medokan Semampir Indah
+551,449,448,1500,0.008,20,1,2.75,secondary,Jalan Nginden Semolo
+572,835,836,4000.0,0.012,45.0,4,8.0,secondary,Jalan Suko Semolo
+574,836,837,4000.0,0.002,45.0,4,8.0,secondary,Jalan Suko Semolo
+576,837,838,4000.0,0.042,45.0,4,8.0,secondary,Jalan Suko Semolo
+578,838,839,4000.0,0.022,45.0,4,8.0,secondary,Jalan Suko Semolo
+580,839,840,4000.0,0.114,45.0,4,8.0,secondary,Jalan Suko Semolo
+582,840,841,4000.0,0.027,45.0,4,8.0,secondary,Jalan Suko Semolo
+584,841,842,4000.0,0.008,45.0,4,8.0,secondary,Jalan Suko Semolo
+586,842,843,4000.0,0.019,45.0,4,8.0,secondary,Jalan Suko Semolo
+588,641,640,1500.0,0.013,35.0,1,3.0,secondary,Jalan Semolowaru
+589,640,641,1500.0,0.013,35.0,1,3.0,secondary,Jalan Semolowaru
+590,640,639,1500.0,0.043,35.0,1,3.0,secondary,Jalan Semolowaru
+591,639,640,1500.0,0.043,35.0,1,3.0,secondary,Jalan Semolowaru
+592,639,638,1500.0,0.114,35.0,1,3.0,secondary,Jalan Semolowaru
+593,638,639,1500.0,0.114,35.0,1,3.0,secondary,Jalan Semolowaru
+594,638,637,1500.0,0.009,35.0,1,3.0,secondary,Jalan Semolowaru
+595,637,638,1500.0,0.009,35.0,1,3.0,secondary,Jalan Semolowaru
+596,637,636,1500.0,0.013,35.0,1,3.0,secondary,Jalan Semolowaru
+597,636,637,1500.0,0.013,35.0,1,3.0,secondary,Jalan Semolowaru
+598,636,635,1500.0,0.02,35.0,1,3.0,secondary,Jalan Semolowaru
+599,635,636,1500.0,0.02,35.0,1,3.0,secondary,Jalan Semolowaru
+600,635,634,1500.0,0.025,35.0,1,3.0,secondary,Jalan Semolowaru
+601,634,635,1500.0,0.025,35.0,1,3.0,secondary,Jalan Semolowaru
+602,634,633,1500.0,0.051,35.0,1,3.0,secondary,Jalan Semolowaru
+603,633,634,1500.0,0.051,35.0,1,3.0,secondary,Jalan Semolowaru
+604,633,632,1500.0,0.078,35.0,1,3.0,secondary,Jalan Semolowaru
+605,632,633,1500.0,0.078,35.0,1,3.0,secondary,Jalan Semolowaru
+606,632,631,1500.0,0.03,35.0,1,3.0,secondary,Jalan Semolowaru
+607,631,632,1500.0,0.03,35.0,1,3.0,secondary,Jalan Semolowaru
+608,631,630,1500.0,0.017,35.0,1,3.0,secondary,Jalan Semolowaru
+609,630,631,1500.0,0.017,35.0,1,3.0,secondary,Jalan Semolowaru
+610,630,629,1500.0,0.012,35.0,1,3.0,secondary,Jalan Semolowaru
+611,629,630,1500.0,0.012,35.0,1,3.0,secondary,Jalan Semolowaru
+612,629,628,1500.0,0.016,35.0,1,3.0,secondary,Jalan Semolowaru
+613,628,629,1500.0,0.016,35.0,1,3.0,secondary,Jalan Semolowaru
+614,769,768,1500,0.02,20,1,2.75,tertiary,Jalan Klampis Jaya
+615,768,767,1500,0.006,20,1,2.75,tertiary,Jalan Klampis Jaya
+616,736,54,1500,0.001,20,1,2.75,tertiary,Jalan Klampis Jaya
+617,54,53,1500,0.002,20,1,2.75,tertiary,Jalan Klampis Jaya
+618,53,773,1500,0.001,20,1,2.75,tertiary,Jalan Klampis Jaya
+619,770,769,1500,0.001,20,1,2.75,tertiary,Jalan Klampis Jaya
+620,771,770,1500,0.003,20,1,2.75,tertiary,Jalan Klampis Jaya
+621,767,738,1500,0.002,20,1,2.75,tertiary,Jalan Klampis Jaya
+622,738,737,1500,0.016,20,1,2.75,tertiary,Jalan Klampis Jaya
+623,737,736,1500,0.003,20,1,2.75,tertiary,Jalan Klampis Jaya
+624,718,717,2000.0,0.02,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+625,717,718,2000.0,0.02,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+626,717,716,2000.0,0.021,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+627,716,717,2000.0,0.021,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+628,716,715,2000.0,0.009,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+629,715,716,2000.0,0.009,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+630,715,714,2000.0,0.039,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+631,714,715,2000.0,0.039,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+632,714,713,2000.0,0.014,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+633,713,714,2000.0,0.014,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+634,713,712,2000.0,0.033,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+635,712,713,2000.0,0.033,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+636,712,711,2000.0,0.046,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+637,711,712,2000.0,0.046,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+638,711,710,2000.0,0.038,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+639,710,711,2000.0,0.038,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+640,710,709,2000.0,0.017,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+641,709,710,2000.0,0.017,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+642,709,708,2000.0,0.028,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+643,708,709,2000.0,0.028,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+644,708,707,2000.0,0.042,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+645,707,708,2000.0,0.042,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+646,707,706,2000.0,0.007,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+647,706,707,2000.0,0.007,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+648,706,705,2000.0,0.008,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+649,705,706,2000.0,0.008,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+650,705,704,2000.0,0.026,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+651,704,705,2000.0,0.026,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+652,704,703,2000.0,0.036,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+653,703,704,2000.0,0.036,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+654,703,702,2000.0,0.023,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+655,702,703,2000.0,0.023,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+656,702,701,2000.0,0.05,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+657,701,702,2000.0,0.05,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+658,701,700,2000.0,0.005,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+659,700,701,2000.0,0.005,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+660,700,699,2000.0,0.006,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+661,699,700,2000.0,0.006,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+662,699,698,2000.0,0.014,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+663,698,699,2000.0,0.014,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+664,698,697,2000.0,0.087,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+665,697,698,2000.0,0.087,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+666,697,696,2000.0,0.016,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+667,696,697,2000.0,0.016,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+668,696,695,2000.0,0.053,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+669,695,696,2000.0,0.053,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+670,695,694,2000.0,0.025,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+671,694,695,2000.0,0.025,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+672,694,693,2000.0,0.014,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+673,693,694,2000.0,0.014,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+674,693,692,2000.0,0.012,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+675,692,693,2000.0,0.012,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+676,692,691,2000.0,0.021,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+677,691,692,2000.0,0.021,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+678,691,690,2000.0,0.005,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+679,690,691,2000.0,0.005,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+680,690,689,2000.0,0.027,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+681,689,690,2000.0,0.027,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+682,689,688,2000.0,0.019,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+683,688,689,2000.0,0.019,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+684,688,687,2000.0,0.006,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+685,687,688,2000.0,0.006,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+686,687,686,2000.0,0.075,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+687,686,687,2000.0,0.075,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+688,686,685,2000.0,0.017,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+689,685,686,2000.0,0.017,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+690,685,684,2000.0,0.026,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+691,684,685,2000.0,0.026,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+692,684,683,2000.0,0.023,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+693,683,684,2000.0,0.023,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+694,683,682,2000.0,0.165,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+695,682,683,2000.0,0.165,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+696,682,681,2000.0,0.028,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+697,681,682,2000.0,0.028,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+698,681,680,2000.0,0.069,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+699,680,681,2000.0,0.069,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+700,680,679,2000.0,0.054,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+701,679,680,2000.0,0.054,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+702,679,678,2000.0,0.014,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+703,678,679,2000.0,0.014,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+704,678,677,2000.0,0.043,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+705,677,678,2000.0,0.043,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+706,677,676,2000.0,0.016,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+707,676,677,2000.0,0.016,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+708,676,675,2000.0,0.046,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+709,675,676,2000.0,0.046,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+710,675,674,2000.0,0.014,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+711,674,675,2000.0,0.014,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+712,674,673,2000.0,0.047,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+713,673,674,2000.0,0.047,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+714,673,672,2000.0,0.026,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+715,672,673,2000.0,0.026,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+716,672,671,2000.0,0.148,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+717,671,672,2000.0,0.148,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+718,671,670,2000.0,0.111,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+719,670,671,2000.0,0.111,45.0,2,4.0,secondary,Jalan Arief Rahman Hakim
+720,194,193,6000.0,0.009,65.0,3,12,secondary,Jalan Jagir Wonokromo
+721,193,192,6000.0,0.003,65.0,3,12,secondary,Jalan Jagir Wonokromo
+722,192,191,6000.0,0.049,65.0,3,12,secondary,Jalan Jagir Wonokromo
+723,191,510,6000.0,0.027,65.0,3,12,secondary,Jalan Jagir Wonokromo
+726,540,539,2750,0.01,20,2,5.5,secondary,Jalan Panjang Jiwo
+728,164,165,1000.0,0.151,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+729,165,164,1000.0,0.151,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+730,165,166,1000.0,0.032,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+731,166,165,1000.0,0.032,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+732,166,167,1000.0,0.084,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+733,167,166,1000.0,0.084,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+734,167,168,1000.0,0.047,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+735,168,167,1000.0,0.047,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+736,168,169,1000.0,0.047,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+737,169,168,1000.0,0.047,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+738,169,170,1000.0,0.023,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+739,170,169,1000.0,0.023,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+740,170,171,1000.0,0.026,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+741,171,170,1000.0,0.026,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+742,171,172,1000.0,0.024,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+743,172,171,1000.0,0.024,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+744,172,173,1000.0,0.159,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+745,173,172,1000.0,0.159,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+746,173,174,1000.0,0.085,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+747,174,173,1000.0,0.085,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+748,174,175,1000.0,0.105,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+749,175,174,1000.0,0.105,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+750,175,176,1000.0,0.1,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+751,176,175,1000.0,0.1,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+752,176,177,1000.0,0.069,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+753,177,176,1000.0,0.069,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+754,177,178,1000.0,0.082,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+755,178,177,1000.0,0.082,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+756,178,179,1000.0,0.123,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+757,179,178,1000.0,0.123,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+758,179,180,1000.0,0.034,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+759,180,179,1000.0,0.034,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+760,180,181,1000.0,0.011,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+761,181,180,1000.0,0.011,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+762,181,182,1000.0,0.083,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+763,182,181,1000.0,0.083,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+764,182,183,1000.0,0.017,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+765,183,182,1000.0,0.017,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+766,183,184,1000.0,0.019,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+767,184,183,1000.0,0.019,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+768,184,185,1000.0,0.06,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+769,185,184,1000.0,0.06,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+770,185,186,1000.0,0.043,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+771,186,185,1000.0,0.043,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+772,186,187,1000.0,0.044,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+773,187,186,1000.0,0.044,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+774,187,188,1000.0,0.034,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+775,188,187,1000.0,0.034,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+776,188,189,1000.0,0.018,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+777,189,188,1000.0,0.018,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+778,189,190,1000.0,0.052,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+779,190,189,1000.0,0.052,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+780,190,194,1000.0,0.045,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+781,194,190,1000.0,0.045,25.0,2,2.0,secondary,Jalan Jagir Wonokromo
+782,463,462,2750,0.005,20,2,5.5,secondary,Jalan Raya Nginden
+804,542,541,1500,0.01,20,1,2.75,secondary,Jalan Panjang Jiwo
+805,446,445,6000.0,0.038,35.0,4,12,secondary,Jalan Nginden Semolo
+806,445,444,6000.0,0.097,35.0,4,12,secondary,Jalan Nginden Semolo
+807,444,443,6000.0,0.016,35.0,4,12,secondary,Jalan Nginden Semolo
+808,443,442,6000.0,0.03,35.0,4,12,secondary,Jalan Nginden Semolo
+809,442,441,6000.0,0.021,35.0,4,12,secondary,Jalan Nginden Semolo
+810,441,440,6000.0,0.059,35.0,4,12,secondary,Jalan Nginden Semolo
+811,440,439,6000.0,0.032,35.0,4,12,secondary,Jalan Nginden Semolo
+812,439,438,6000.0,0.059,35.0,4,12,secondary,Jalan Nginden Semolo
+813,438,437,6000.0,0.011,35.0,4,12,secondary,Jalan Nginden Semolo
+814,437,436,6000.0,0.03,35.0,4,12,secondary,Jalan Nginden Semolo
+815,436,435,6000.0,0.055,35.0,4,12,secondary,Jalan Nginden Semolo
+816,435,434,6000.0,0.031,35.0,4,12,secondary,Jalan Nginden Semolo
+817,434,433,6000.0,0.02,35.0,4,12,secondary,Jalan Nginden Semolo
+818,433,432,6000.0,0.031,35.0,4,12,secondary,Jalan Nginden Semolo
+819,432,431,6000.0,0.043,35.0,4,12,secondary,Jalan Nginden Semolo
+820,431,430,6000.0,0.015,35.0,4,12,secondary,Jalan Nginden Semolo
+821,430,429,6000.0,0.079,35.0,4,12,secondary,Jalan Nginden Semolo
+822,429,428,6000.0,0.029,35.0,4,12,secondary,Jalan Nginden Semolo
+823,428,427,6000.0,0.14,35.0,4,12,secondary,Jalan Nginden Semolo
+824,427,426,6000.0,0.048,35.0,4,12,secondary,Jalan Nginden Semolo
+825,426,425,6000.0,0.028,35.0,4,12,secondary,Jalan Nginden Semolo
+826,425,424,6000.0,0.019,35.0,4,12,secondary,Jalan Nginden Semolo
+827,424,423,6000.0,0.196,35.0,4,12,secondary,Jalan Nginden Semolo
+828,423,422,6000.0,0.006,35.0,4,12,secondary,Jalan Nginden Semolo
+829,422,421,6000.0,0.006,35.0,4,12,secondary,Jalan Nginden Semolo
+857,33,835,2750,0.011,20,2,5.5,secondary,Jalan Suko Semolo
+858,824,33,2750,0.008,20,2,5.5,secondary,Jalan Semolowaru
+859,964,963,1000.0,0.001,25.0,2,2.0,tertiary,Jalan Nginden Intan Raya
+860,963,964,1000.0,0.001,25.0,2,2.0,tertiary,Jalan Nginden Intan Raya
+871,641,843,2000.0,0.018,25.0,4,4.0,secondary,Jalan Suko Semolo
+872,843,24,12000.0,0.005,65.0,4,24,primary,Jalan Dokter Insinyur Haji Soekarno
+873,24,23,12000.0,0.001,65.0,4,24,primary,Jalan Dokter Insinyur Haji Soekarno
+874,23,22,12000.0,0.009,65.0,4,24,primary,Jalan Dokter Insinyur Haji Soekarno
+875,22,21,12000.0,0.006,65.0,4,24,primary,Jalan Dokter Insinyur Haji Soekarno
+876,21,20,12000.0,0.004,65.0,4,24,primary,Jalan Dokter Insinyur Haji Soekarno
+877,20,19,12000.0,0.002,65.0,4,24,primary,Jalan Dokter Insinyur Haji Soekarno
+878,19,111,12000.0,0.001,65.0,4,24,primary,Jalan Dokter Insinyur Haji Soekarno
+879,111,110,12000.0,0.001,65.0,4,24,primary,Jalan Dokter Insinyur Haji Soekarno
+880,110,109,12000.0,0.002,65.0,4,24,primary,Jalan Dokter Insinyur Haji Soekarno
+881,109,108,12000.0,0.0,65.0,4,24,primary,Jalan Dokter Insinyur Haji Soekarno
+882,108,107,12000.0,0.005,65.0,4,24,primary,Jalan Dokter Insinyur Haji Soekarno
+883,107,106,12000.0,0.002,65.0,4,24,primary,Jalan Dokter Insinyur Haji Soekarno
+884,106,105,12000.0,0.002,65.0,4,24,primary,Jalan Dokter Insinyur Haji Soekarno
+885,105,104,12000.0,0.002,65.0,4,24,primary,Jalan Dokter Insinyur Haji Soekarno
+886,104,103,12000.0,0.005,65.0,4,24,primary,Jalan Dokter Insinyur Haji Soekarno
+887,103,102,12000.0,0.004,65.0,4,24,primary,Jalan Dokter Insinyur Haji Soekarno
+888,102,101,12000.0,0.004,65.0,4,24,primary,Jalan Dokter Insinyur Haji Soekarno
+889,101,100,12000.0,0.021,65.0,4,24,primary,Jalan Dokter Insinyur Haji Soekarno
+890,100,99,12000.0,0.014,65.0,4,24,primary,Jalan Dokter Insinyur Haji Soekarno
+891,99,98,12000.0,0.013,65.0,4,24,primary,Jalan Dokter Insinyur Haji Soekarno
+892,98,97,12000.0,0.002,65.0,4,24,primary,Jalan Dokter Insinyur Haji Soekarno
+893,97,96,12000.0,0.005,65.0,4,24,primary,Jalan Dokter Insinyur Haji Soekarno
+894,96,95,12000.0,0.01,65.0,4,24,primary,Jalan Dokter Insinyur Haji Soekarno
+895,95,94,12000.0,0.004,65.0,4,24,primary,Jalan Dokter Insinyur Haji Soekarno
+896,94,93,12000.0,0.007,65.0,4,24,primary,Jalan Dokter Insinyur Haji Soekarno
+897,93,92,12000.0,0.003,65.0,4,24,primary,Jalan Dokter Insinyur Haji Soekarno
+898,92,91,12000.0,0.007,65.0,4,24,primary,Jalan Dokter Insinyur Haji Soekarno
+899,91,90,12000.0,0.009,65.0,4,24,primary,Jalan Dokter Insinyur Haji Soekarno
+900,90,89,12000.0,0.002,65.0,4,24,primary,Jalan Dokter Insinyur Haji Soekarno
+901,89,88,12000.0,0.009,65.0,4,24,primary,Jalan Dokter Insinyur Haji Soekarno
+902,88,87,12000.0,0.004,65.0,4,24,primary,Jalan Dokter Insinyur Haji Soekarno
+903,87,86,12000.0,0.006,65.0,4,24,primary,Jalan Dokter Insinyur Haji Soekarno
+904,86,85,12000.0,0.005,65.0,4,24,primary,Jalan Dokter Insinyur Haji Soekarno
+905,85,84,12000.0,0.004,65.0,4,24,primary,Jalan Dokter Insinyur Haji Soekarno
+906,84,83,12000.0,0.003,65.0,4,24,primary,Jalan Dokter Insinyur Haji Soekarno
+907,83,82,12000.0,0.001,65.0,4,24,primary,Jalan Dokter Insinyur Haji Soekarno
+908,82,81,12000.0,0.001,65.0,4,24,primary,Jalan Dokter Insinyur Haji Soekarno
+909,81,80,12000.0,0.002,65.0,4,24,primary,Jalan Dokter Insinyur Haji Soekarno
+910,80,79,12000.0,0.002,65.0,4,24,primary,Jalan Dokter Insinyur Haji Soekarno
+911,79,78,12000.0,0.0,65.0,4,24,primary,Jalan Dokter Insinyur Haji Soekarno
+912,78,77,12000.0,0.001,65.0,4,24,primary,Jalan Dokter Insinyur Haji Soekarno
+913,77,76,12000.0,0.004,65.0,4,24,primary,Jalan Dokter Insinyur Haji Soekarno
+914,76,75,12000.0,0.001,65.0,4,24,primary,Jalan Dokter Insinyur Haji Soekarno
+915,344,343,1000.0,0.005,25.0,2,2.0,secondary_link,n/a
+916,343,344,1000.0,0.005,25.0,2,2.0,secondary_link,n/a
+917,270,269,1500,0.001,20,1,2.75,secondary,Jalan Raya Menur
+918,269,268,1500,0.002,20,1,2.75,secondary,Jalan Raya Menur
+919,783,784,2000.0,0.0,45.0,1,4.0,tertiary,Jalan Deles
+920,784,783,2000.0,0.0,45.0,1,4.0,tertiary,Jalan Deles
+921,784,785,2000.0,0.004,45.0,1,4.0,tertiary,Jalan Deles
+922,785,784,2000.0,0.004,45.0,1,4.0,tertiary,Jalan Deles
+923,785,786,2000.0,0.001,45.0,1,4.0,tertiary,Jalan Deles
+924,786,785,2000.0,0.001,45.0,1,4.0,tertiary,Jalan Deles
+925,786,787,2000.0,0.003,45.0,1,4.0,tertiary,Jalan Deles
+926,787,786,2000.0,0.003,45.0,1,4.0,tertiary,Jalan Deles
+927,787,788,2000.0,0.002,45.0,1,4.0,tertiary,Jalan Deles
+928,788,787,2000.0,0.002,45.0,1,4.0,tertiary,Jalan Deles
+929,788,789,2000.0,0.004,45.0,1,4.0,tertiary,Jalan Deles
+930,789,788,2000.0,0.004,45.0,1,4.0,tertiary,Jalan Deles
+931,789,790,2000.0,0.002,45.0,1,4.0,tertiary,Jalan Deles
+932,790,789,2000.0,0.002,45.0,1,4.0,tertiary,Jalan Deles
+933,321,320,1500,0.006,20,1,2.75,secondary,Jalan Ngagel Jaya Selatan
+934,320,319,1500,0.007,20,1,2.75,secondary,Jalan Ngagel Jaya Selatan
+935,317,316,1500,0.007,20,1,2.75,secondary,Jalan Ngagel Jaya Selatan
+936,782,781,4000.0,0.043,45.0,2,8,tertiary,Jalan Arief Rahman Hakim
+937,781,780,4000.0,0.091,45.0,2,8,tertiary,Jalan Arief Rahman Hakim
+938,780,779,4000.0,0.03,45.0,2,8,tertiary,Jalan Arief Rahman Hakim
+939,779,778,4000.0,0.005,45.0,2,8,tertiary,Jalan Arief Rahman Hakim
+940,778,777,4000.0,0.048,45.0,2,8,tertiary,Jalan Arief Rahman Hakim
+941,777,776,4000.0,0.03,45.0,2,8,tertiary,Jalan Arief Rahman Hakim
+942,776,775,4000.0,0.152,45.0,2,8,tertiary,Jalan Arief Rahman Hakim
+943,775,774,4000.0,0.088,45.0,2,8,tertiary,Jalan Arief Rahman Hakim
+944,774,773,4000.0,0.014,45.0,2,8,tertiary,Jalan Arief Rahman Hakim
+945,56,55,1500,0.0,20,1,2.75,tertiary,Jalan Deles
+948,535,163,2000.0,0.066,25.0,2,4,tertiary,Jalan Panjang Jiwo Permai
+949,163,162,2000.0,0.009,25.0,2,4,tertiary,Jalan Panjang Jiwo Permai
+950,162,158,2000.0,0.006,25.0,2,4,tertiary,Jalan Panjang Jiwo Permai
+951,158,157,2000.0,0.012,25.0,2,4,tertiary,Jalan Panjang Jiwo Permai
+952,157,156,2000.0,0.006,25.0,2,4,tertiary,Jalan Panjang Jiwo Permai
+953,156,155,2000.0,0.018,25.0,2,4,tertiary,Jalan Panjang Jiwo Permai
+954,155,154,2000.0,0.008,25.0,2,4,tertiary,Jalan Panjang Jiwo Permai
+955,154,153,2000.0,0.021,25.0,2,4,tertiary,Jalan Panjang Jiwo Permai
+956,153,152,2000.0,0.013,25.0,2,4,tertiary,Jalan Panjang Jiwo Permai
+957,152,151,2000.0,0.001,25.0,2,4,tertiary,Jalan Panjang Jiwo Permai
+958,151,141,2000.0,0.009,25.0,2,4,tertiary,Jalan Panjang Jiwo Permai
+959,141,140,2000.0,0.011,25.0,2,4,tertiary,Jalan Panjang Jiwo Permai
+960,140,139,2000.0,0.019,25.0,2,4,tertiary,Jalan Panjang Jiwo Permai
+961,139,138,2000.0,0.018,25.0,2,4,tertiary,Jalan Panjang Jiwo Permai
+962,138,137,2000.0,0.021,25.0,2,4,tertiary,Jalan Panjang Jiwo Permai
+963,282,281,1500,0.005,20,1,2.75,secondary,Jalan Raya Menur
+964,281,280,1500,0.004,20,1,2.75,secondary,Jalan Raya Menur
+965,280,279,1500,0.01,20,1,2.75,secondary,Jalan Raya Menur
+966,279,278,1500,0.015,20,1,2.75,secondary,Jalan Raya Menur
+967,278,277,1500,0.011,20,1,2.75,secondary,Jalan Raya Menur
+968,277,276,1500,0.004,20,1,2.75,secondary,Jalan Raya Menur
+969,276,275,1500,0.004,20,1,2.75,secondary,Jalan Raya Menur
+970,275,274,1500,0.002,20,1,2.75,secondary,Jalan Raya Menur
+971,274,273,1500,0.001,20,1,2.75,secondary,Jalan Raya Menur
+972,273,272,1500,0.001,20,1,2.75,secondary,Jalan Raya Menur
+973,272,271,1500,0.0,20,1,2.75,secondary,Jalan Raya Menur
+974,297,293,1500,0.0,20,1,2.75,secondary,Jalan Raya Menur
+975,293,292,1500,0.0,20,1,2.75,secondary,Jalan Raya Menur
+976,446,348,1500,0.0,20,1,2.75,secondary,Jalan Manyar
+977,480,479,8000.0,0.001,45.0,4,16,secondary,Jalan Raya Nginden
+978,479,478,8000.0,0.001,45.0,4,16,secondary,Jalan Raya Nginden
+979,478,477,8000.0,0.002,45.0,4,16,secondary,Jalan Raya Nginden
+980,477,476,8000.0,0.004,45.0,4,16,secondary,Jalan Raya Nginden
+981,476,475,8000.0,0.002,45.0,4,16,secondary,Jalan Raya Nginden
+982,475,474,8000.0,0.001,45.0,4,16,secondary,Jalan Raya Nginden
+983,474,473,8000.0,0.001,45.0,4,16,secondary,Jalan Raya Nginden
+984,473,472,8000.0,0.0,45.0,4,16,secondary,Jalan Raya Nginden
+985,472,471,8000.0,0.0,45.0,4,16,secondary,Jalan Raya Nginden
+986,471,470,8000.0,0.0,45.0,4,16,secondary,Jalan Raya Nginden
+987,470,469,8000.0,0.004,45.0,4,16,secondary,Jalan Raya Nginden
+988,469,468,8000.0,0.0,45.0,4,16,secondary,Jalan Raya Nginden
+989,468,467,8000.0,0.002,45.0,4,16,secondary,Jalan Raya Nginden
+990,467,466,8000.0,0.0,45.0,4,16,secondary,Jalan Raya Nginden
+991,466,465,8000.0,0.007,45.0,4,16,secondary,Jalan Raya Nginden
+992,465,464,8000.0,0.004,45.0,4,16,secondary,Jalan Raya Nginden
+993,361,362,1000.0,0.001,25.0,2,2.0,secondary_link,n/a
+994,362,361,1000.0,0.001,25.0,2,2.0,secondary_link,n/a
+995,442,363,1000.0,0.0,25.0,2,2.0,secondary_link,n/a
+996,363,442,1000.0,0.0,25.0,2,2.0,secondary_link,n/a
+997,868,867,10000.0,0.0,55.0,4,20,primary,Jalan Dokter Insinyur Haji Soekarno
+998,603,602,10000.0,0.0,55.0,4,20,primary,Jalan Dokter Insinyur Haji Soekarno
+999,588,587,10000.0,0.0,55.0,4,20,primary,Jalan Dokter Insinyur Haji Soekarno
+1000,587,869,10000.0,0.002,55.0,4,20,primary,Jalan Dokter Insinyur Haji Soekarno
+1001,869,868,10000.0,0.004,55.0,4,20,primary,Jalan Dokter Insinyur Haji Soekarno
+1002,602,601,10000.0,0.004,55.0,4,20,primary,Jalan Dokter Insinyur Haji Soekarno
+1003,601,600,10000.0,0.002,55.0,4,20,primary,Jalan Dokter Insinyur Haji Soekarno
+1004,599,598,10000.0,0.0,55.0,4,20,primary,Jalan Dokter Insinyur Haji Soekarno
+1005,598,597,10000.0,0.0,55.0,4,20,primary,Jalan Dokter Insinyur Haji Soekarno
+1006,590,589,10000.0,0.001,55.0,4,20,primary,Jalan Dokter Insinyur Haji Soekarno
+1007,131,130,2000.0,0.021,25.0,2,4,tertiary,Jalan Panjang Jiwo Permai
+1008,130,129,2000.0,0.018,25.0,2,4,tertiary,Jalan Panjang Jiwo Permai
+1009,129,128,2000.0,0.016,25.0,2,4,tertiary,Jalan Panjang Jiwo Permai
+1010,128,127,2000.0,0.013,25.0,2,4,tertiary,Jalan Panjang Jiwo Permai
+1011,127,144,2000.0,0.009,25.0,2,4,tertiary,Jalan Panjang Jiwo Permai
+1012,144,143,2000.0,0.027,25.0,2,4,tertiary,Jalan Panjang Jiwo Permai
+1013,143,142,2000.0,0.05,25.0,2,4,tertiary,Jalan Panjang Jiwo Permai
+1014,142,161,2000.0,0.005,25.0,2,4,tertiary,Jalan Panjang Jiwo Permai
+1015,161,160,2000.0,0.05,25.0,2,4,tertiary,Jalan Panjang Jiwo Permai
+1016,160,159,2000.0,0.013,25.0,2,4,tertiary,Jalan Panjang Jiwo Permai
+1017,159,534,2000.0,0.011,25.0,2,4,tertiary,Jalan Panjang Jiwo Permai
+1018,285,284,1500,0.004,20,1,2.75,secondary,Jalan Raya Menur
+1019,284,283,1500,0.001,20,1,2.75,secondary,Jalan Raya Menur
+1020,291,290,1500,0.003,20,1,2.75,secondary,Jalan Raya Menur
+1021,290,289,1500,0.003,20,1,2.75,secondary,Jalan Raya Menur
+1022,289,288,1500,0.003,20,1,2.75,secondary,Jalan Raya Menur
+1023,288,287,1500,0.004,20,1,2.75,secondary,Jalan Raya Menur
+1024,287,286,1500,0.004,20,1,2.75,secondary,Jalan Raya Menur
+1025,286,285,1500,0.009,20,1,2.75,secondary,Jalan Raya Menur
+1026,304,303,1500,0.001,20,1,2.75,secondary,Jalan Raya Menur
+1027,303,302,1500,0.004,20,1,2.75,secondary,Jalan Raya Menur
+1028,302,301,1500,0.009,20,1,2.75,secondary,Jalan Raya Menur
+1029,301,300,1500,0.003,20,1,2.75,secondary,Jalan Raya Menur
+1030,300,299,1500,0.003,20,1,2.75,secondary,Jalan Raya Menur
+1031,299,298,1500,0.006,20,1,2.75,secondary,Jalan Raya Menur
+1032,298,297,1500,0.001,20,1,2.75,secondary,Jalan Raya Menur
+1033,262,304,1500,0.025,20,1,2.75,secondary,Jalan Raya Menur
+1034,226,225,1500.0,0.01,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+1035,225,226,1500.0,0.01,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+1036,225,224,1500.0,0.023,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+1037,224,225,1500.0,0.023,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+1038,224,223,1500.0,0.022,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+1039,223,224,1500.0,0.022,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+1040,223,222,1500.0,0.046,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+1041,222,223,1500.0,0.046,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+1042,222,221,1500.0,0.026,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+1043,221,222,1500.0,0.026,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+1044,221,220,1500.0,0.014,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+1045,220,221,1500.0,0.014,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+1046,220,219,1500.0,0.014,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+1047,219,220,1500.0,0.014,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+1048,219,218,1500.0,0.01,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+1049,218,219,1500.0,0.01,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+1050,218,217,1500.0,0.024,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+1051,217,218,1500.0,0.024,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+1052,217,216,1500.0,0.032,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+1053,216,217,1500.0,0.032,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+1054,216,215,1500.0,0.022,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+1055,215,216,1500.0,0.022,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+1056,322,321,1500,0.007,20,1,2.75,secondary,Jalan Ngagel Jaya Selatan
+1057,726,725,4000.0,0.01,45.0,1,8,tertiary,Jalan Arief Rahman Hakim
+1058,725,57,4000.0,0.0,45.0,2,8,tertiary,Jalan Deles
+1059,57,56,4000.0,0.0,45.0,2,8,tertiary,Jalan Deles
+1069,48,47,1500,0.0,20,1,2.75,tertiary_link,n/a
+1070,775,48,1500,0.0,20,1,2.75,tertiary_link,n/a
+1071,47,733,1500,0.0,20,1,2.75,tertiary_link,n/a
+1072,481,480,1000.0,0.018,25.0,2,2.0,secondary_link,n/a
+1073,480,481,1000.0,0.018,25.0,2,2.0,secondary_link,n/a
+1074,485,476,1000.0,0.015,25.0,2,2.0,secondary_link,n/a
+1075,476,485,1000.0,0.015,25.0,2,2.0,secondary_link,n/a
+1076,593,592,1500,0.009,20,1,2.75,secondary,Jalan Kedung Baruk
+1077,592,591,1500,0.015,20,1,2.75,secondary,Jalan Kedung Baruk
+1078,591,590,1500,0.019,20,1,2.75,secondary,Jalan Kedung Baruk
+1079,565,566,1000.0,0.003,25.0,2,2.0,secondary_link,Jalan Kedung Baruk
+1080,566,565,1000.0,0.003,25.0,2,2.0,secondary_link,Jalan Kedung Baruk
+1081,550,551,1000.0,0.004,25.0,2,2.0,secondary_link,Jalan Kedung Baruk
+1082,551,550,1000.0,0.004,25.0,2,2.0,secondary_link,Jalan Kedung Baruk
+1083,318,317,1500,0.007,20,1,2.75,secondary,Jalan Ngagel Jaya Selatan
+1084,367,450,3000.0,0.02,35.0,2,6,secondary,Jalan Nginden Semolo
+1085,573,574,2000.0,0.042,25.0,4,4.0,secondary,Jalan Kedung Baruk
+1087,574,593,2000.0,0.217,25.0,4,4.0,secondary,Jalan Kedung Baruk
+1091,94,71,1500,0.002,20,1,2.75,primary_link,n/a
+1092,71,70,1500,0.001,20,1,2.75,primary_link,n/a
+1093,70,69,1500,0.002,20,1,2.75,primary_link,n/a
+1094,69,68,1500,0.002,20,1,2.75,primary_link,n/a
+1095,68,67,1500,0.003,20,1,2.75,primary_link,n/a
+1096,67,66,1500,0.003,20,1,2.75,primary_link,n/a
+1097,66,65,1500,0.002,20,1,2.75,primary_link,n/a
+1098,65,64,1500,0.002,20,1,2.75,primary_link,n/a
+1099,64,657,1500,0.003,20,1,2.75,primary_link,n/a
+1100,658,63,1500,0.002,20,1,2.75,primary_link,n/a
+1101,63,62,1500,0.001,20,1,2.75,primary_link,n/a
+1102,62,61,1500,0.002,20,1,2.75,primary_link,n/a
+1103,61,60,1500,0.003,20,1,2.75,primary_link,n/a
+1104,60,59,1500,0.003,20,1,2.75,primary_link,n/a
+1105,59,58,1500,0.003,20,1,2.75,primary_link,n/a
+1106,58,92,1500,0.003,20,1,2.75,primary_link,n/a
+1107,19,18,1500,0.003,20,1,2.75,primary_link,n/a
+1108,18,17,1500,0.001,20,1,2.75,primary_link,n/a
+1109,17,16,1500,0.001,20,1,2.75,primary_link,n/a
+1110,16,15,1500,0.002,20,1,2.75,primary_link,n/a
+1111,15,14,1500,0.003,20,1,2.75,primary_link,n/a
+1112,14,13,1500,0.003,20,1,2.75,primary_link,n/a
+1113,13,12,1500,0.002,20,1,2.75,primary_link,n/a
+1114,12,11,1500,0.001,20,1,2.75,primary_link,n/a
+1115,11,10,1500,0.001,20,1,2.75,primary_link,n/a
+1116,10,647,1500,0.001,20,1,2.75,primary_link,n/a
+1117,648,120,1500,0.002,20,1,2.75,primary_link,n/a
+1118,120,119,1500,0.001,20,1,2.75,primary_link,n/a
+1119,119,118,1500,0.001,20,1,2.75,primary_link,n/a
+1120,118,117,1500,0.002,20,1,2.75,primary_link,n/a
+1121,117,116,1500,0.002,20,1,2.75,primary_link,n/a
+1122,116,115,1500,0.002,20,1,2.75,primary_link,n/a
+1123,115,114,1500,0.002,20,1,2.75,primary_link,n/a
+1124,114,113,1500,0.001,20,1,2.75,primary_link,n/a
+1125,113,112,1500,0.001,20,1,2.75,primary_link,n/a
+1126,112,111,1500,0.003,20,1,2.75,primary_link,n/a
+1127,271,270,1500,0.001,20,1,2.75,secondary,Jalan Raya Menur
+1128,283,282,1500,0.006,20,1,2.75,secondary,Jalan Raya Menur
+1129,292,291,1500,0.003,20,1,2.75,secondary,Jalan Raya Menur
+1130,49,207,3000.0,0.053,35.0,2,6,tertiary,Jalan Menur Pumpungan
+1131,205,204,1500,0.002,20,1,2.75,tertiary,Jalan Arief Rahman Hakim
+1132,204,203,1500,0.01,20,1,2.75,tertiary,Jalan Arief Rahman Hakim
+1133,342,341,1000.0,0.006,25.0,2,2.0,secondary_link,n/a
+1134,341,342,1000.0,0.006,25.0,2,2.0,secondary_link,n/a
+1135,343,342,1000.0,0.008,25.0,2,2.0,secondary_link,n/a
+1136,342,343,1000.0,0.008,25.0,2,2.0,secondary_link,n/a
+1137,410,404,1000.0,0.001,25.0,2,2.0,secondary_link,n/a
+1138,404,410,1000.0,0.001,25.0,2,2.0,secondary_link,n/a
+1139,362,379,1000.0,0.001,25.0,2,2.0,secondary_link,n/a
+1140,379,362,1000.0,0.001,25.0,2,2.0,secondary_link,n/a
+1141,436,361,1000.0,0.0,25.0,2,2.0,secondary_link,n/a
+1142,361,436,1000.0,0.0,25.0,2,2.0,secondary_link,n/a
+1143,364,372,1000.0,0.0,25.0,2,2.0,secondary_link,n/a
+1144,372,364,1000.0,0.0,25.0,2,2.0,secondary_link,n/a
+1145,363,364,1000.0,0.001,25.0,2,2.0,secondary_link,n/a
+1146,364,363,1000.0,0.001,25.0,2,2.0,secondary_link,n/a
+1147,419,418,6000.0,0.009,35.0,4,12,secondary,Jalan Semolowaru
+1148,421,420,6000.0,0.003,35.0,4,12,secondary,Jalan Semolowaru
+1149,420,419,6000.0,0.003,35.0,4,12,secondary,Jalan Semolowaru
+1150,396,395,6000.0,0.004,35.0,4,12,secondary,Jalan Semolowaru
+1151,397,396,6000.0,0.01,35.0,4,12,secondary,Jalan Semolowaru
+1152,330,329,1500,0.007,20,1,2.75,secondary_link,n/a
+1153,331,330,1500,0.006,20,1,2.75,secondary_link,n/a
+1154,333,332,1500,0.004,20,1,2.75,secondary_link,n/a
+1155,332,331,1500,0.003,20,1,2.75,secondary_link,n/a
+1156,213,212,1500.0,0.026,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+1157,212,213,1500.0,0.026,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+1158,212,211,1500.0,0.02,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+1159,211,212,1500.0,0.02,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+1160,211,210,1500.0,0.015,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+1161,210,211,1500.0,0.015,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+1162,210,209,1500.0,0.017,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+1163,209,210,1500.0,0.017,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+1164,209,208,1500.0,0.033,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+1165,208,209,1500.0,0.033,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+1166,208,207,1500.0,0.026,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+1167,207,208,1500.0,0.026,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+1168,214,213,1500.0,0.006,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+1169,213,214,1500.0,0.006,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+1170,829,830,1000.0,0.001,25.0,2,2.0,secondary_link,n/a
+1171,830,829,1000.0,0.001,25.0,2,2.0,secondary_link,n/a
+1172,782,783,2000.0,0.0,45.0,1,4.0,tertiary,Jalan Deles
+1173,783,782,2000.0,0.0,45.0,1,4.0,tertiary,Jalan Deles
+1174,75,74,4000.0,0.044,45.0,1,8,tertiary,Jalan Arief Rahman Hakim
+1175,74,782,4000.0,0.029,45.0,1,8,tertiary,Jalan Arief Rahman Hakim
+1176,55,782,4000.0,0.0,45.0,2,8,tertiary,Jalan Deles
+1177,667,75,4000.0,0.018,45.0,1,8,tertiary,Jalan Arief Rahman Hakim
+1178,215,214,1500.0,0.128,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+1179,214,215,1500.0,0.128,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+1198,511,199,6000.0,0.029,65.0,3,12,secondary,Jalan Jagir Wonokromo
+1199,46,45,3000.0,0.0,35.0,2,6,tertiary,Jalan Klampis Harapan
+1200,806,46,4000.0,0.004,45.0,1,8,tertiary,Jalan Klampis Harapan
+1201,807,806,4000.0,0.002,45.0,1,8,tertiary,Jalan Klampis Harapan
+1202,809,808,3000.0,0.0,35.0,2,6,tertiary,Jalan Klampis Harapan
+1203,808,807,3000.0,0.0,35.0,2,6,tertiary,Jalan Klampis Harapan
+1204,127,126,1500,0.003,20,1,2.75,tertiary_link,n/a
+1205,126,125,1500,0.003,20,1,2.75,tertiary_link,n/a
+1206,125,124,1500,0.004,20,1,2.75,tertiary_link,n/a
+1207,124,123,1500,0.003,20,1,2.75,tertiary_link,n/a
+1208,123,122,1500,0.003,20,1,2.75,tertiary_link,n/a
+1209,122,121,1500,0.001,20,1,2.75,tertiary_link,n/a
+1210,121,141,1500,0.002,20,1,2.75,tertiary_link,n/a
+1211,720,719,1000.0,0.018,25.0,2,2.0,secondary,Jalan Arief Rahman Hakim
+1212,719,720,1000.0,0.018,25.0,2,2.0,secondary,Jalan Arief Rahman Hakim
+1213,965,964,1000.0,0.007,25.0,2,2.0,tertiary,Jalan Nginden Intan Raya
+1214,964,965,1000.0,0.007,25.0,2,2.0,tertiary,Jalan Nginden Intan Raya
+1215,142,158,1000.0,0.019,25.0,2,2.0,tertiary_link,n/a
+1216,158,142,1000.0,0.019,25.0,2,2.0,tertiary_link,n/a
+1217,461,460,1500,0.0,20,1,2.75,secondary_link,n/a
+1218,460,459,1500,0.0,20,1,2.75,secondary_link,n/a
+1219,459,458,1500,0.0,20,1,2.75,secondary_link,n/a
+1220,458,457,1500,0.0,20,1,2.75,secondary_link,n/a
+1221,457,456,1500,0.0,20,1,2.75,secondary_link,n/a
+1222,456,455,1500,0.0,20,1,2.75,secondary_link,n/a
+1223,455,521,1500,0.001,20,1,2.75,secondary_link,n/a
+1224,719,718,1000.0,0.014,25.0,2,2.0,secondary,Jalan Arief Rahman Hakim
+1225,718,719,1000.0,0.014,25.0,2,2.0,secondary,Jalan Arief Rahman Hakim
+1230,510,462,12000.0,0.015,65.0,6,24,secondary,Jalan Panjang Jiwo
+1271,316,323,1500,0.006,20,1,2.75,secondary,Jalan Ngagel Jaya Selatan
+1289,229,228,1500.0,0.012,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+1290,228,229,1500.0,0.012,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+1291,228,227,1500.0,0.012,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+1292,227,228,1500.0,0.012,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+1293,227,226,1500.0,0.024,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+1294,226,227,1500.0,0.024,35.0,2,3.0,tertiary,Jalan Menur Pumpungan
+1295,773,772,4000.0,0.009,45.0,2,8,tertiary,Jalan Arief Rahman Hakim
+1296,772,52,4000.0,0.046,45.0,2,8,tertiary,Jalan Arief Rahman Hakim
+1297,52,51,4000.0,0.061,45.0,2,8,tertiary,Jalan Arief Rahman Hakim
+1298,51,50,4000.0,0.021,45.0,2,8,tertiary,Jalan Arief Rahman Hakim
+1299,50,49,4000.0,0.011,45.0,2,8,tertiary,Jalan Arief Rahman Hakim
+1300,203,202,4000.0,0.008,45.0,2,8,tertiary,Jalan Arief Rahman Hakim
+1301,202,201,4000.0,0.061,45.0,2,8,tertiary,Jalan Arief Rahman Hakim
+1302,201,200,4000.0,0.049,45.0,2,8,tertiary,Jalan Arief Rahman Hakim
+1303,200,769,4000.0,0.012,45.0,2,8,tertiary,Jalan Arief Rahman Hakim
+1304,769,736,4000.0,0.008,45.0,2,8,tertiary,Jalan Arief Rahman Hakim
+1305,951,963,2000.0,0.026,45.0,1,4.0,tertiary,Jalan Nginden Intan Selatan
+1306,963,951,2000.0,0.026,45.0,1,4.0,tertiary,Jalan Nginden Intan Selatan
+1307,319,318,4000.0,0.0,25.0,6,8,secondary,Jalan Raya Manyar
+1308,348,347,2750,0.0,20,2,5.5,secondary,Jalan Manyar
+1309,347,367,2750,0.0,20,2,5.5,secondary,Jalan Manyar
+1310,448,447,1500,0.006,20,1,2.75,secondary,Jalan Nginden Semolo
+1312,408,407,3000.0,0.081,35.0,2,6,secondary,Jalan Semolowaru
+1314,833,824,3000.0,0.001,35.0,2,6,tertiary,Jalan Semolowaru Utara
+1315,39,38,3000.0,0.004,35.0,2,6,tertiary,Jalan Semolowaru Utara
+1316,38,37,3000.0,0.01,35.0,2,6,tertiary,Jalan Semolowaru Utara
+1317,37,36,3000.0,0.004,35.0,2,6,tertiary,Jalan Semolowaru Utara
+1318,36,35,3000.0,0.005,35.0,2,6,tertiary,Jalan Semolowaru Utara
+1319,35,34,3000.0,0.01,35.0,2,6,tertiary,Jalan Semolowaru Utara
+1320,34,33,3000.0,0.001,35.0,2,6,tertiary,Jalan Semolowaru Utara
+1321,817,816,3000.0,0.004,35.0,2,6,tertiary,Jalan Semolowaru Utara
+1322,816,815,3000.0,0.002,35.0,2,6,tertiary,Jalan Semolowaru Utara
+1323,815,814,3000.0,0.003,35.0,2,6,tertiary,Jalan Semolowaru Utara
+1324,814,813,3000.0,0.0,35.0,2,6,tertiary,Jalan Semolowaru Utara
+1325,813,812,3000.0,0.001,35.0,2,6,tertiary,Jalan Semolowaru Utara
+1326,812,811,3000.0,0.002,35.0,2,6,tertiary,Jalan Semolowaru Utara
+1327,811,810,3000.0,0.0,35.0,2,6,tertiary,Jalan Semolowaru Utara
+1328,810,809,3000.0,0.001,35.0,2,6,tertiary,Jalan Semolowaru Utara
+1329,33,834,3000.0,0.001,35.0,2,6,tertiary,Jalan Semolowaru Utara
+1330,865,864,5000.0,0.002,55.0,2,10,primary,Jalan Dokter Insinyur Haji Soekarno
+1332,207,206,1500,0.038,20,1,2.75,tertiary,Jalan Menur Pumpungan
+1333,206,205,1500,0.018,20,1,2.75,tertiary,Jalan Menur Pumpungan
+1334,349,959,1500.0,0.061,35.0,1,3.0,tertiary,Jalan Nginden Intan Utara
+1335,959,349,1500.0,0.061,35.0,1,3.0,tertiary,Jalan Nginden Intan Utara
+1336,959,960,1500.0,0.022,35.0,1,3.0,tertiary,Jalan Nginden Intan Utara
+1337,960,959,1500.0,0.022,35.0,1,3.0,tertiary,Jalan Nginden Intan Utara
+1338,72,720,6000.0,0.001,65.0,3,12,primary,Jalan Dokter Insinyur Haji Soekarno
+1340,319,323,1500,0.02,20,1,2.75,secondary,Jalan Ngagel Jaya Selatan

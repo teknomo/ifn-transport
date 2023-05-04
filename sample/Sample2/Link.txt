@@ -1,0 +1,259 @@
+LinkID,Node1,Node2,Capacity,Distance,MaxSpeed,NumLane,RoadWidth,RoadType,RoadName
+1,191,190,3000,0.071,35.0,2,6,tertiary,Jalan Citra Raya Niaga
+2,190,189,3000,0.013,35.0,2,6,tertiary,Jalan Citra Raya Niaga
+3,189,188,3000,0.01,35.0,2,6,tertiary,Jalan Citra Raya Niaga
+4,188,187,3000,0.014,35.0,2,6,tertiary,Jalan Citra Raya Niaga
+5,187,186,3000,0.013,35.0,2,6,tertiary,Jalan Citra Raya Niaga
+6,186,185,3000,0.007,35.0,2,6,tertiary,Jalan Citra Raya Niaga
+7,185,184,3000,0.02,35.0,2,6,tertiary,Jalan Citra Raya Niaga
+8,12,11,1500.0,0.001,35.0,2,3.0,tertiary,Jalan Gapura Lontar Barat
+9,11,12,1500.0,0.001,35.0,2,3.0,tertiary,Jalan Gapura Lontar Barat
+10,11,10,1500.0,0.003,35.0,2,3.0,tertiary,Jalan Gapura Lontar Barat
+11,10,11,1500.0,0.003,35.0,2,3.0,tertiary,Jalan Gapura Lontar Barat
+12,134,133,8000.0,0.005,65.0,2,16,tertiary,Niaga Gapura Road
+13,133,132,8000.0,0.013,65.0,2,16,tertiary,Niaga Gapura Road
+14,132,131,8000.0,0.012,65.0,2,16,tertiary,Niaga Gapura Road
+15,131,130,8000.0,0.017,65.0,2,16,tertiary,Niaga Gapura Road
+16,130,129,8000.0,0.002,65.0,2,16,tertiary,Niaga Gapura Road
+17,129,128,8000.0,0.001,65.0,2,16,tertiary,Niaga Gapura Road
+18,128,127,8000.0,0.001,65.0,2,16,tertiary,Niaga Gapura Road
+19,127,126,8000.0,0.001,65.0,2,16,tertiary,Niaga Gapura Road
+20,126,125,8000.0,0.003,65.0,2,16,tertiary,Niaga Gapura Road
+21,125,124,8000.0,0.008,65.0,2,16,tertiary,Niaga Gapura Road
+22,124,123,8000.0,0.0,65.0,2,16,tertiary,Niaga Gapura Road
+23,123,122,8000.0,0.0,65.0,2,16,tertiary,Niaga Gapura Road
+24,122,121,8000.0,0.001,65.0,2,16,tertiary,Niaga Gapura Road
+25,121,120,8000.0,0.004,65.0,2,16,tertiary,Niaga Gapura Road
+26,120,119,8000.0,0.039,65.0,2,16,tertiary,Niaga Gapura Road
+27,119,118,8000.0,0.005,65.0,2,16,tertiary,Niaga Gapura Road
+28,118,117,8000.0,0.003,65.0,2,16,tertiary,Niaga Gapura Road
+29,117,116,8000.0,0.002,65.0,2,16,tertiary,Niaga Gapura Road
+30,116,115,8000.0,0.002,65.0,2,16,tertiary,Niaga Gapura Road
+31,115,114,8000.0,0.014,65.0,2,16,tertiary,Niaga Gapura Road
+32,114,113,8000.0,0.023,65.0,2,16,tertiary,Niaga Gapura Road
+33,113,178,8000.0,0.001,65.0,2,16,tertiary,Niaga Gapura Road
+34,167,168,1500.0,0.002,35.0,2,3.0,tertiary,n/a
+35,168,167,1500.0,0.002,35.0,2,3.0,tertiary,n/a
+36,168,169,1500.0,0.002,35.0,2,3.0,tertiary,n/a
+37,169,168,1500.0,0.002,35.0,2,3.0,tertiary,n/a
+38,169,170,1500.0,0.002,35.0,2,3.0,tertiary,n/a
+39,170,169,1500.0,0.002,35.0,2,3.0,tertiary,n/a
+40,170,171,1500.0,0.0,35.0,2,3.0,tertiary,n/a
+41,171,170,1500.0,0.0,35.0,2,3.0,tertiary,n/a
+42,171,172,1500.0,0.001,35.0,2,3.0,tertiary,n/a
+43,172,171,1500.0,0.001,35.0,2,3.0,tertiary,n/a
+44,172,173,1500.0,0.002,35.0,2,3.0,tertiary,n/a
+45,173,172,1500.0,0.002,35.0,2,3.0,tertiary,n/a
+46,173,174,1500.0,0.002,35.0,2,3.0,tertiary,n/a
+47,174,173,1500.0,0.002,35.0,2,3.0,tertiary,n/a
+48,174,175,1500.0,0.004,35.0,2,3.0,tertiary,n/a
+49,175,174,1500.0,0.004,35.0,2,3.0,tertiary,n/a
+50,175,176,1500.0,0.004,35.0,2,3.0,tertiary,n/a
+51,176,175,1500.0,0.004,35.0,2,3.0,tertiary,n/a
+52,176,177,1500.0,0.004,35.0,2,3.0,tertiary,n/a
+53,177,176,1500.0,0.004,35.0,2,3.0,tertiary,n/a
+54,177,178,1500.0,0.004,35.0,2,3.0,tertiary,n/a
+55,178,177,1500.0,0.004,35.0,2,3.0,tertiary,n/a
+56,178,179,1500.0,0.002,35.0,2,3.0,tertiary,n/a
+57,179,178,1500.0,0.002,35.0,2,3.0,tertiary,n/a
+58,179,180,1500.0,0.001,35.0,2,3.0,tertiary,n/a
+59,180,179,1500.0,0.001,35.0,2,3.0,tertiary,n/a
+60,180,181,1500.0,0.0,35.0,2,3.0,tertiary,n/a
+61,181,180,1500.0,0.0,35.0,2,3.0,tertiary,n/a
+62,181,182,1500.0,0.001,35.0,2,3.0,tertiary,n/a
+63,182,181,1500.0,0.001,35.0,2,3.0,tertiary,n/a
+64,182,183,1500.0,0.002,35.0,2,3.0,tertiary,n/a
+65,183,182,1500.0,0.002,35.0,2,3.0,tertiary,n/a
+66,183,184,1500.0,0.003,35.0,2,3.0,tertiary,n/a
+67,184,183,1500.0,0.003,35.0,2,3.0,tertiary,n/a
+68,184,164,1500.0,0.003,35.0,2,3.0,tertiary,n/a
+69,164,184,1500.0,0.003,35.0,2,3.0,tertiary,n/a
+70,164,165,1500.0,0.003,35.0,2,3.0,tertiary,n/a
+71,165,164,1500.0,0.003,35.0,2,3.0,tertiary,n/a
+72,165,166,1500.0,0.003,35.0,2,3.0,tertiary,n/a
+73,166,165,1500.0,0.003,35.0,2,3.0,tertiary,n/a
+74,166,167,1500.0,0.003,35.0,2,3.0,tertiary,n/a
+75,167,166,1500.0,0.003,35.0,2,3.0,tertiary,n/a
+76,174,153,6000.0,0.004,65.0,1,12,tertiary,Niaga Gapura Road
+77,153,152,6000.0,0.003,65.0,1,12,tertiary,Niaga Gapura Road
+78,152,151,6000.0,0.023,65.0,1,12,tertiary,Niaga Gapura Road
+79,151,150,6000.0,0.016,65.0,1,12,tertiary,Niaga Gapura Road
+80,150,149,6000.0,0.003,65.0,1,12,tertiary,Niaga Gapura Road
+81,149,148,6000.0,0.004,65.0,1,12,tertiary,Niaga Gapura Road
+82,148,147,6000.0,0.004,65.0,1,12,tertiary,Niaga Gapura Road
+83,147,146,6000.0,0.007,65.0,1,12,tertiary,Niaga Gapura Road
+84,167,163,3000.0,0.008,65.0,4,6.0,tertiary,Niaga Gapura Road
+85,163,167,3000.0,0.008,65.0,4,6.0,tertiary,Niaga Gapura Road
+86,163,162,3000.0,0.007,65.0,4,6.0,tertiary,Niaga Gapura Road
+87,162,163,3000.0,0.007,65.0,4,6.0,tertiary,Niaga Gapura Road
+88,162,161,3000.0,0.01,65.0,4,6.0,tertiary,Niaga Gapura Road
+89,161,162,3000.0,0.01,65.0,4,6.0,tertiary,Niaga Gapura Road
+90,161,160,3000.0,0.007,65.0,4,6.0,tertiary,Niaga Gapura Road
+91,160,161,3000.0,0.007,65.0,4,6.0,tertiary,Niaga Gapura Road
+92,160,159,3000.0,0.015,65.0,4,6.0,tertiary,Niaga Gapura Road
+93,159,160,3000.0,0.015,65.0,4,6.0,tertiary,Niaga Gapura Road
+94,159,158,3000.0,0.021,65.0,4,6.0,tertiary,Niaga Gapura Road
+95,158,159,3000.0,0.021,65.0,4,6.0,tertiary,Niaga Gapura Road
+96,158,157,3000.0,0.028,65.0,4,6.0,tertiary,Niaga Gapura Road
+97,157,158,3000.0,0.028,65.0,4,6.0,tertiary,Niaga Gapura Road
+98,157,156,3000.0,0.007,65.0,4,6.0,tertiary,Niaga Gapura Road
+99,156,157,3000.0,0.007,65.0,4,6.0,tertiary,Niaga Gapura Road
+100,156,155,3000.0,0.003,65.0,4,6.0,tertiary,Niaga Gapura Road
+101,155,156,3000.0,0.003,65.0,4,6.0,tertiary,Niaga Gapura Road
+102,155,154,3000.0,0.004,65.0,4,6.0,tertiary,Niaga Gapura Road
+103,154,155,3000.0,0.004,65.0,4,6.0,tertiary,Niaga Gapura Road
+104,78,77,1500,0.002,20,1,2.75,tertiary,n/a
+105,77,76,1500,0.003,20,1,2.75,tertiary,n/a
+106,76,75,1500,0.003,20,1,2.75,tertiary,n/a
+107,75,74,1500,0.003,20,1,2.75,tertiary,n/a
+108,74,73,1500,0.003,20,1,2.75,tertiary,n/a
+109,73,72,1500,0.002,20,1,2.75,tertiary,n/a
+110,72,71,1500,0.002,20,1,2.75,tertiary,n/a
+111,71,70,1500,0.001,20,1,2.75,tertiary,n/a
+112,70,69,1500,0.0,20,1,2.75,tertiary,n/a
+113,69,90,1500,0.0,20,1,2.75,tertiary,n/a
+114,90,89,1500,0.001,20,1,2.75,tertiary,n/a
+115,89,88,1500,0.002,20,1,2.75,tertiary,n/a
+116,88,87,1500,0.003,20,1,2.75,tertiary,n/a
+117,87,86,1500,0.003,20,1,2.75,tertiary,n/a
+118,86,85,1500,0.003,20,1,2.75,tertiary,n/a
+119,85,84,1500,0.003,20,1,2.75,tertiary,n/a
+120,84,83,1500,0.003,20,1,2.75,tertiary,n/a
+121,83,82,1500,0.001,20,1,2.75,tertiary,n/a
+122,82,81,1500,0.001,20,1,2.75,tertiary,n/a
+123,81,80,1500,0.0,20,1,2.75,tertiary,n/a
+124,80,79,1500,0.001,20,1,2.75,tertiary,n/a
+125,79,78,1500,0.002,20,1,2.75,tertiary,n/a
+126,73,68,8000.0,0.005,65.0,2,16,tertiary,Niaga Gapura Road
+127,68,67,8000.0,0.003,65.0,2,16,tertiary,Niaga Gapura Road
+128,67,66,8000.0,0.001,65.0,2,16,tertiary,Niaga Gapura Road
+129,66,65,8000.0,0.002,65.0,2,16,tertiary,Niaga Gapura Road
+130,65,64,8000.0,0.001,65.0,2,16,tertiary,Niaga Gapura Road
+131,64,63,8000.0,0.004,65.0,2,16,tertiary,Niaga Gapura Road
+132,63,62,8000.0,0.024,65.0,2,16,tertiary,Niaga Gapura Road
+133,62,61,8000.0,0.011,65.0,2,16,tertiary,Niaga Gapura Road
+134,61,60,8000.0,0.009,65.0,2,16,tertiary,Niaga Gapura Road
+135,60,59,8000.0,0.015,65.0,2,16,tertiary,Niaga Gapura Road
+136,59,58,8000.0,0.009,65.0,2,16,tertiary,Niaga Gapura Road
+137,58,57,8000.0,0.019,65.0,2,16,tertiary,Niaga Gapura Road
+138,57,105,8000.0,0.004,65.0,2,16,tertiary,Niaga Gapura Road
+139,45,44,1500.0,0.002,35.0,2,3.0,tertiary,n/a
+140,44,45,1500.0,0.002,35.0,2,3.0,tertiary,n/a
+141,44,43,1500.0,0.003,35.0,2,3.0,tertiary,n/a
+142,43,44,1500.0,0.003,35.0,2,3.0,tertiary,n/a
+143,43,103,1500.0,0.004,35.0,2,3.0,tertiary,n/a
+144,103,43,1500.0,0.004,35.0,2,3.0,tertiary,n/a
+145,103,104,1500.0,0.004,35.0,2,3.0,tertiary,n/a
+146,104,103,1500.0,0.004,35.0,2,3.0,tertiary,n/a
+147,104,105,1500.0,0.004,35.0,2,3.0,tertiary,n/a
+148,105,104,1500.0,0.004,35.0,2,3.0,tertiary,n/a
+149,105,106,1500.0,0.003,35.0,2,3.0,tertiary,n/a
+150,106,105,1500.0,0.003,35.0,2,3.0,tertiary,n/a
+151,106,107,1500.0,0.002,35.0,2,3.0,tertiary,n/a
+152,107,106,1500.0,0.002,35.0,2,3.0,tertiary,n/a
+153,107,108,1500.0,0.001,35.0,2,3.0,tertiary,n/a
+154,108,107,1500.0,0.001,35.0,2,3.0,tertiary,n/a
+155,108,109,1500.0,0.0,35.0,2,3.0,tertiary,n/a
+156,109,108,1500.0,0.0,35.0,2,3.0,tertiary,n/a
+157,109,110,1500.0,0.001,35.0,2,3.0,tertiary,n/a
+158,110,109,1500.0,0.001,35.0,2,3.0,tertiary,n/a
+159,110,111,1500.0,0.003,35.0,2,3.0,tertiary,n/a
+160,111,110,1500.0,0.003,35.0,2,3.0,tertiary,n/a
+161,111,112,1500.0,0.003,35.0,2,3.0,tertiary,n/a
+162,112,111,1500.0,0.003,35.0,2,3.0,tertiary,n/a
+163,112,134,1500.0,0.004,35.0,2,3.0,tertiary,n/a
+164,134,112,1500.0,0.004,35.0,2,3.0,tertiary,n/a
+165,134,135,1500.0,0.004,35.0,2,3.0,tertiary,n/a
+166,135,134,1500.0,0.004,35.0,2,3.0,tertiary,n/a
+167,135,136,1500.0,0.004,35.0,2,3.0,tertiary,n/a
+168,136,135,1500.0,0.004,35.0,2,3.0,tertiary,n/a
+169,136,40,1500.0,0.003,35.0,2,3.0,tertiary,n/a
+170,40,136,1500.0,0.003,35.0,2,3.0,tertiary,n/a
+171,40,41,1500.0,0.002,35.0,2,3.0,tertiary,n/a
+172,41,40,1500.0,0.002,35.0,2,3.0,tertiary,n/a
+173,41,42,1500.0,0.0,35.0,2,3.0,tertiary,n/a
+174,42,41,1500.0,0.0,35.0,2,3.0,tertiary,n/a
+175,42,45,1500.0,0.001,35.0,2,3.0,tertiary,n/a
+176,45,42,1500.0,0.001,35.0,2,3.0,tertiary,n/a
+177,21,20,8000.0,0.008,85.0,2,16,tertiary,Jalan Balerina Lontar
+178,20,19,8000.0,0.053,85.0,2,16,tertiary,Jalan Balerina Lontar
+179,19,18,8000.0,0.003,85.0,2,16,tertiary,Jalan Balerina Lontar
+180,18,17,8000.0,0.003,85.0,2,16,tertiary,Jalan Balerina Lontar
+181,17,32,8000.0,0.004,85.0,2,16,tertiary,Jalan Balerina Lontar
+182,149,47,2500.0,0.015,55.0,2,5.0,service,Jalan Gapura Timur
+183,47,149,2500.0,0.015,55.0,2,5.0,service,Jalan Gapura Timur
+184,47,48,2500.0,0.003,55.0,2,5.0,service,Jalan Gapura Timur
+185,48,47,2500.0,0.003,55.0,2,5.0,service,Jalan Gapura Timur
+186,48,49,2500.0,0.001,55.0,2,5.0,service,Jalan Gapura Timur
+187,49,48,2500.0,0.001,55.0,2,5.0,service,Jalan Gapura Timur
+188,49,50,2500.0,0.0,55.0,2,5.0,service,Jalan Gapura Timur
+189,50,49,2500.0,0.0,55.0,2,5.0,service,Jalan Gapura Timur
+190,50,51,2500.0,0.024,55.0,2,5.0,service,Jalan Gapura Timur
+191,51,50,2500.0,0.024,55.0,2,5.0,service,Jalan Gapura Timur
+192,51,52,2500.0,0.023,55.0,2,5.0,service,Jalan Gapura Timur
+193,52,51,2500.0,0.023,55.0,2,5.0,service,Jalan Gapura Timur
+194,52,53,2500.0,0.004,55.0,2,5.0,service,Jalan Gapura Timur
+195,53,52,2500.0,0.004,55.0,2,5.0,service,Jalan Gapura Timur
+196,20,28,5000.0,0.0,55.0,2,10,tertiary,Jalan Gapura Lontar Barat
+197,28,27,5000.0,0.001,55.0,2,10,tertiary,Jalan Gapura Lontar Barat
+198,27,26,5000.0,0.005,55.0,2,10,tertiary,Jalan Gapura Lontar Barat
+199,26,25,5000.0,0.007,55.0,2,10,tertiary,Jalan Gapura Lontar Barat
+200,25,24,5000.0,0.0,55.0,2,10,tertiary,Jalan Gapura Lontar Barat
+201,24,23,5000.0,0.001,55.0,2,10,tertiary,Jalan Gapura Lontar Barat
+202,23,75,5000.0,0.006,55.0,2,10,tertiary,Jalan Gapura Lontar Barat
+203,139,46,2000.0,0.017,45.0,2,4.0,service,n/a
+204,46,139,2000.0,0.017,45.0,2,4.0,service,n/a
+205,46,51,2000.0,0.045,45.0,2,4.0,service,n/a
+206,51,46,2000.0,0.045,45.0,2,4.0,service,n/a
+207,45,53,2500.0,0.057,55.0,4,5.0,service,n/a
+208,53,45,2500.0,0.057,55.0,4,5.0,service,n/a
+209,39,38,2500.0,0.045,55.0,2,5.0,service,Jalan Gapura Timur
+210,38,39,2500.0,0.045,55.0,2,5.0,service,Jalan Gapura Timur
+211,38,37,2500.0,0.008,55.0,2,5.0,service,Jalan Gapura Timur
+212,37,38,2500.0,0.008,55.0,2,5.0,service,Jalan Gapura Timur
+213,37,36,2500.0,0.001,55.0,2,5.0,service,Jalan Gapura Timur
+214,36,37,2500.0,0.001,55.0,2,5.0,service,Jalan Gapura Timur
+215,36,35,2500.0,0.001,55.0,2,5.0,service,Jalan Gapura Timur
+216,35,36,2500.0,0.001,55.0,2,5.0,service,Jalan Gapura Timur
+217,35,34,2500.0,0.002,55.0,2,5.0,service,Jalan Gapura Timur
+218,34,35,2500.0,0.002,55.0,2,5.0,service,Jalan Gapura Timur
+219,34,33,2500.0,0.003,55.0,2,5.0,service,Jalan Gapura Timur
+220,33,34,2500.0,0.003,55.0,2,5.0,service,Jalan Gapura Timur
+221,32,31,8000.0,0.003,85.0,2,16,tertiary,Jalan Balerina Lontar
+222,31,30,8000.0,0.004,85.0,2,16,tertiary,Jalan Balerina Lontar
+223,30,29,8000.0,0.005,85.0,2,16,tertiary,Jalan Balerina Lontar
+224,29,28,8000.0,0.052,85.0,2,16,tertiary,Jalan Balerina Lontar
+225,28,22,8000.0,0.008,85.0,2,16,tertiary,Jalan Balerina Lontar
+226,180,5,3000,0.018,35.0,2,6,tertiary,Jalan Citra Raya Niaga
+227,5,4,3000,0.005,35.0,2,6,tertiary,Jalan Citra Raya Niaga
+228,4,3,3000,0.026,35.0,2,6,tertiary,Jalan Citra Raya Niaga
+229,3,2,3000,0.019,35.0,2,6,tertiary,Jalan Citra Raya Niaga
+230,2,1,3000,0.073,35.0,2,6,tertiary,Jalan Citra Raya Niaga
+231,1,0,3000,0.047,35.0,2,6,tertiary,Jalan Citra Raya Niaga
+232,0,10,3000,0.05,35.0,2,6,tertiary,Jalan Citra Raya Niaga
+233,191,1,1000.0,0.003,25.0,2,2.0,tertiary_link,n/a
+234,1,191,1000.0,0.003,25.0,2,2.0,tertiary_link,n/a
+235,53,54,2500.0,0.024,55.0,2,5.0,service,Jalan Gapura Timur
+236,54,53,2500.0,0.024,55.0,2,5.0,service,Jalan Gapura Timur
+237,54,55,2500.0,0.041,55.0,2,5.0,service,Jalan Gapura Timur
+238,55,54,2500.0,0.041,55.0,2,5.0,service,Jalan Gapura Timur
+239,55,39,2500.0,0.028,55.0,2,5.0,service,Jalan Gapura Timur
+240,39,55,2500.0,0.028,55.0,2,5.0,service,Jalan Gapura Timur
+241,109,32,3000.0,0.038,65.0,4,6.0,tertiary,Jalan Balerina Lontar
+242,32,109,3000.0,0.038,65.0,4,6.0,tertiary,Jalan Balerina Lontar
+243,146,125,6000.0,0.04,65.0,1,12,tertiary_link,n/a
+244,22,21,5000.0,0.0,55.0,2,10,tertiary,Jalan Gapura Lontar Barat
+245,97,56,1500.0,0.058,35.0,2,3.0,service,n/a
+246,56,97,1500.0,0.058,35.0,2,3.0,service,n/a
+247,56,55,1500.0,0.011,35.0,2,3.0,service,n/a
+248,55,56,1500.0,0.011,35.0,2,3.0,service,n/a
+249,8,7,5000.0,0.001,55.0,2,10,tertiary,Jalan Gapura Lontar Barat
+250,7,6,5000.0,0.0,55.0,2,10,tertiary,Jalan Gapura Lontar Barat
+251,6,20,5000.0,0.007,55.0,2,10,tertiary,Jalan Gapura Lontar Barat
+252,21,16,5000.0,0.007,55.0,2,10,tertiary,Jalan Gapura Lontar Barat
+253,16,15,5000.0,0.0,55.0,2,10,tertiary,Jalan Gapura Lontar Barat
+254,15,14,5000.0,0.0,55.0,2,10,tertiary,Jalan Gapura Lontar Barat
+255,12,9,5000.0,0.001,55.0,2,10,tertiary,Jalan Gapura Lontar Barat
+256,9,8,5000.0,0.002,55.0,2,10,tertiary,Jalan Gapura Lontar Barat
+257,14,13,5000.0,0.003,55.0,2,10,tertiary,Jalan Gapura Lontar Barat
+258,13,12,5000.0,0.001,55.0,2,10,tertiary,Jalan Gapura Lontar Barat
