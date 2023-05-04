@@ -1,0 +1,9 @@
+PySimpleGUI
+pandas
+matplotlib
+networkx
+numpy
+overpy
+webbrowser
+tarjan
+requests

@@ -38,7 +38,10 @@ If you would like to know more about the scientific basis of this work. The foll
 
 
 # Installation
-There is no need for installation on the FN-Transport itself. Simply [download the zip file](https://github.com/teknomo/ifn-transport/archive/refs/heads/main.zip) and unzip the whole code into a local folder. You need to install the latest [Python 3.x](https://www.python.org/downloads/) in order to run this software.
+There is no need for installation on the FN-Transport itself. Simply [download the zip file](https://github.com/teknomo/ifn-transport/archive/refs/heads/main.zip) and unzip the whole code into a local folder. You need to install [Python 3.10](https://www.python.org/downloads/) in order to run this software.
+
+Then in command prompt, cd to the code folder and install the requirements:
+> pip install -r requirements.txt
 
 # Run the IFN-Transport
 Run **main.py** in any Python IDE.
