@@ -4,6 +4,6 @@ matplotlib
 networkx
 numpy
 overpy
-webbrowser
 tarjan
 requests
+scipy
