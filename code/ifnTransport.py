@@ -225,12 +225,9 @@ class IFN_Transport():
             avgFlow=(count-1)/count*avgFlow+flow/count
             # print('linkID',linkID,'basis',basis,'flow',flow,'scaling',scaling,'avgScale',avgScale)
         
-        SST=0
-        for linkID, row in dfFlow.iterrows():
-            flow=row["ActualFlow"]
-            SST=SST+math.pow(flow-avgFlow,2)
+            
         # print('SST',SST)
-        
+        SST=0
         dicSSE={}
         dicRsq={}
         for scale in range(int(avgScale)-50,int(avgScale)+50):
@@ -239,6 +236,7 @@ class IFN_Transport():
                 basis=self.dfLink["BasisFlow"].loc[linkID]
                 flow=row["ActualFlow"]
                 estFlow=scale*basis
+                SST=SST+math.pow(flow-avgFlow,2)
                 sqErr=math.pow(flow-estFlow,2)
                 SSE=SSE+sqErr
             Rsq=1-SSE/SST
