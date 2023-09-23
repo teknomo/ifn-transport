@@ -213,7 +213,7 @@ def gui():
             linkFName=os.path.join(folder,values['txtLinkFileName'])
             realFlowFName=os.path.join(folder,values['txtRealFlowFName'])
             try:
-                net=ifn.IFN_Transport(scenarioFName)
+                net=ifn.IFNTransport(scenarioFName)
                 retVal=net.findOptScaling(linkFName,realFlowFName)
                 
                 if retVal==None:
@@ -290,7 +290,7 @@ def gui():
             
             if scenarioFName!="":
                 try:
-                    net=ifn.IFN_Transport(scenarioFName)
+                    net=ifn.IFNTransport(scenarioFName)
                     net.runScenario()
                     # window['txtInfo'].update("Check the result in "+outputFName)
                 except Exception as err:

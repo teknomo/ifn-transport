@@ -88,7 +88,7 @@ def gui():
         
             if scenarioFName!="":
                 try:
-                    net=ifn.IFN_Transport("")
+                    net=ifn.IFNTransport("")
                     # net.dfLink=pd.read_csv(folder+linkFName,index_col='LinkID')
                     net.dfLink=dfLink
                     result=net.isStronglyConnectedNetwork()

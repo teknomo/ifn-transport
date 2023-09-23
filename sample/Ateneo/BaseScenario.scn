@@ -1,0 +1,8 @@
+ScenarioName=Base Scenario
+
+Node=Nodes.csv
+Link=Links.csv
+travelTimeModel=Greenhields
+maxAllowableCongestion=0.9
+calibrationBasis=maxCongestion
+cloudNode=78

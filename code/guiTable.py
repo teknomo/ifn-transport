@@ -48,10 +48,3 @@ def main(df,title='Table'):
     except:
         pass
 
-if __name__=='__main__':
-    import Data
-    dt=Data.Data()
-    stock_symbol="GOOG"
-    df=dt.readData(stock_symbol,numData=0)
-    df=dt.df2Thousand(df)
-    main(df)
