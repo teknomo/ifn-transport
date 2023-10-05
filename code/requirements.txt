@@ -7,3 +7,6 @@ overpy
 tarjan
 requests
 scipy
+osmnx
+folium
+branca

@@ -1,6 +1,6 @@
 # IFN-Transport
 
-IFN-Transport is an extension of [Ideal Flow Network (IFN)](https://github.com/teknomo/IdealFlowNetwork) for transportation networks synthesis and analysis written in Python. The online version of IFN-Transport is also available in [Revoledu](https://people.revoledu.com/kardi/tutorial/IFN/IFN-transport.html).
+IFN-Transport is an extension and an application of [Ideal Flow Network (IFN)](https://github.com/teknomo/IdealFlowNetwork) for transportation networks synthesis and analysis written in Python. The online version of IFN-Transport is also available in [Revoledu](https://people.revoledu.com/kardi/tutorial/IFN/IFN-transport.html).
 
 One appealing reason why transportation engineers should use IFN Transport is because the existing transportation models only encourage widening the road in order to solve traffic congestion. IFN provides an alternative model that enable the engineers to justify the reduction of road width in order to reduce traffic congestion. 
 
@@ -38,7 +38,7 @@ If you would like to know more about the scientific basis of this work. The foll
 
 
 # Installation
-There is no need for installation on the FN-Transport itself. Simply [download the zip file](https://github.com/teknomo/ifn-transport/archive/refs/heads/main.zip) and unzip the whole code into a local folder. You need to install [Python 3.10](https://www.python.org/downloads/) in order to run this software.
+There is no need for installation on the IFN-Transport itself. Simply [download the zip file](https://github.com/teknomo/ifn-transport/archive/refs/heads/main.zip) and unzip the whole code into a local folder. You need to install [Python 3.10](https://www.python.org/downloads/) in order to run this software.
 
 Then in command prompt, cd to the code folder and install the requirements:
 > pip install -r requirements.txt
@@ -185,7 +185,7 @@ The IFN would automatically calibrate the result based on certain assumptions. Y
 
 1. Maintain the maximum congestion level
 2. Maintain the demand of flow in the entire network
-3.  Based on real observation flow from teh field survey
+3. Based on real observation flow from the field survey
 
 Maintaining the maximum congestion level would require you to specify the maximum allowable congestion parameter. The default value of the maximum allowable congestion is one. This option would set the maximum congestion level to your specification. It means you want to keep the maximum congestion in any link to be a constant among the scenarios that you are comparing. This option will help you to know what would be the maximum demand of flow that you can accommodate in your network.
 
@@ -213,11 +213,15 @@ Without specifying the travel time model, the program will use BPR travel time m
 travelTimeModel=BPR
 
 ## Cloud Node
-For more advance users, you need to know that the IFN requires the network to be strongly connected. If it happens that your network is weakly connected, then you need to create a cloud node and connect each of the source node (or source component) in the network into the cloud node through dummy links and connect the cloud node to each of the sink node (or sink component) in the network using dummy links. When you use a cloud node, you need to specify the node ID of the cloud node. This parameter will affect to hide all the dummy links from showing and the link performance of the dummy links would be set to nan (not-a-number). The network performance would be free from the dummy links. If you do not specify the cloud node, the program assume that your network has no cloud node and no dummy links and the network must be strongly connected.
+Transportation network is always strongly connected. When you can go somewhere, you must be able to go home. Sometimes your network (that you downloaded from the OSM) is not strongly connected. In tha case, you can either clean the network data based on the largest strongly connected component, or add a cloud node with dummy links. IFN theorem states that you only one cloud node to convert weakly connected network into a strongly connected network. 
+
+If it happens that your network is weakly connected, then you need to create a cloud node and connect each of the source node (or source component) in the network into the cloud node through dummy links and connect the cloud node to each of the sink node (or sink component) in the network using dummy links. When you use a cloud node, you need to specify the node ID of the cloud node. This parameter will affect to hide all the dummy links from showing and the link performance of the dummy links would be set to nan (not-a-number). The network performance would be free from the dummy links. If you do not specify the cloud node, the program assume that your network has no cloud node and no dummy links and the network must be strongly connected.
 
 
 # Future Development
 There are a lot of fun stuff to develop further and if you have any critics, comments or suggestions to improve, [drop me a note](https://github.com/teknomo/ifn-transport/issues). I would welcome your contribution by any means, your programming time, donation or scientific ideas and so on.
+
+In near future version, we will no longer use .scn file and we will use json format instead. You can preview the JSON format from the sample folders.
 
 # Do your part
 I hope you find this program useful for your study or work. You can help your own city by setting the base network on your city, and compute the scenarios that most likely will help to solve traffic congestion in your city. Share your ideas in social media and compare it with your friends. Talk with your city government about your ideas.
