@@ -11,7 +11,7 @@ v0.1.1
 
 import PySimpleGUI as sg
 import osm2ifn
-import scenario
+import guiScenario
 import networkcheck
    
  
@@ -62,7 +62,7 @@ def main():
         if event == 'btnDownload':
             osm2ifn.gui()
         if event == 'btnDefine':
-            scenario.gui()
+            guiScenario.gui()
         if event == 'btnIsIrreducible':
             networkcheck.gui()
         

@@ -216,8 +216,8 @@ class IFNTransport:
         if "BasisFlow" not in self.dfLink:
             C = self.mLink2WeightedAdjacency(field='Capacity')
             F = ifn.capacity2idealFlow(C)
-            scaling = ifn.globalScaling(F, 'min', 1)
-            F1 = ifn.equivalentIFN(F, scaling)
+            # scaling = ifn.globalScaling(F, 'min', 1)
+            # F1 = ifn.equivalentIFN(F, scaling)
             self.addField2dfLink(F1, "BasisFlow")
         
         avgScale = 0
@@ -248,16 +248,14 @@ class IFNTransport:
                 estFlow = scale*basis
                 sqErr = math.pow(flow-estFlow,2)
                 SSE = SSE+sqErr
-            Rsq = 1-SSE/SST
-            dicRsq[scale] = Rsq
+            if SST != 0:
+                Rsq = 1-SSE/SST
+                dicRsq[scale] = Rsq
             dicSSE[scale] = SSE
                         
         opt_scaling = max(dicRsq, key=dicRsq.get)
         opt_Rsq = dicRsq[opt_scaling]
         return opt_scaling, opt_Rsq, dicRsq, dicSSE, SST
-
-
-   
 
 
     def computeLinkPerformance(self):
@@ -320,6 +318,7 @@ class IFNTransport:
         self.dfLink['TravelTime'] = arrTravelTime
         self.dfLink['Delay'] = arrDelay
         
+
     def isStronglyConnectedNetwork(self):
         C = self.mLink2WeightedAdjacency(field='Capacity')  # capacity
         S = ifn.capacity2stochastic(C)               # Markov stochastic
@@ -329,6 +328,7 @@ class IFNTransport:
             return "Your network is not strongly connected. Clean the network data either by finding the largest " \
                    "strongly connected component or add a cloud node and dummy links."
         
+
     def mLink2WeightedAdjacency(self,field='Capacity'):
         """
         return capacity matrix (by default)
@@ -369,7 +369,7 @@ class IFNTransport:
 
 
         """
-        
+        plt.figure()
         G = nx.DiGraph()
         
         maxFieldValue = max(self.dfLink[field])

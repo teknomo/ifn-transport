@@ -1,0 +1,32 @@
+scenario id = scenario-2
+scenario name = scenario-2 on the same network as base scenario
+folder = C:\Users\kardi.TEKNOMO\Documents\Kardi\Personal\Tutorial\NetworkScience\IdealFlow\Software\Python\Transportation\Dev\IFN14\GitHub\projects\Triangle
+description = calibrate based on BPR and observation flow
+travel_cost = BPR
+model_parameters = {'alpha': 15, 'beta': 4}
+calibration_basis = real-flow
+calibration_parameter = {'criterion': 'SSE'}
+total_flow = 1.0000000000000002
+max_allowable_congestion = None
+data = {'flow': 'RealFlow.txt'}
+
+	network id = network-0
+	network name = 
+	folder = C:\Users\kardi.TEKNOMO\Documents\Kardi\Personal\Tutorial\NetworkScience\IdealFlow\Software\Python\Transportation\Dev\IFN14\GitHub\projects\Triangle
+	description = 
+	node_file_name = Node.txt
+	link_file_name = Link.txt
+	graph_file_name = 
+	cloud_node_id = 
+	network_weight = 1
+
+Network performance:
+	Total Flow = 4950.0 pcu/hour
+	Max Congestion = 0.825
+	Avg Link Speed =5.0322 km/hour
+	Avg Link Travel Time = 11.9231 min/km
+	Avg Link Delay = 625.388 seconds/km
+Basis:
+	Avg Link Distance = 250.0 m/link
+	Avg Link Travel Time = 178847.0068 seconds/link
+	Avg Link Delay = 156347.0068 seconds/link

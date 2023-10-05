@@ -1,0 +1,22 @@
+{
+    "project": {
+        "name": "ateneo de manila",
+        "description": "example of a road network with a cloud node", 
+        "scenario-0": {
+            "name": "road network of Ateneo de Manila before 2015", 
+            "description": "calibrate based on Greenshield with max-congestion=0.9",
+            "network-0":{
+                "node": "Nodes.csv",
+                "link": "Links.csv",
+                "cloud": 78
+            },
+            "model": {
+                "travel-cost": "Greenhields",
+                "calibration": {
+                    "calibration-basis": "max-congestion",
+                    "calibration-parameter": {"max-allowable-congestion": 0.9}
+                }
+            }
+        }
+    }
+}

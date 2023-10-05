@@ -1,346 +1,593 @@
 # -*- coding: utf-8 -*-
 """
 scenario.py
-v0.1
+v1.4
 
-graphical user interface of scenario
+project, scenario, network 
+IFN-Transport: application of Ideal Flow Network for Transportation Network 
 
 @author: Kardi Teknomo
 http://people.revoledu.com/kardi/
 """
-import os
-import PySimpleGUI as sg
+import IdealFlowNetwork as ifn
 import pandas as pd
 import matplotlib.pyplot as plt
-import guiTable
-import ifnTransport as ifn
+import numpy as np
+import os
+import json
+import csv
+import networkx as nx
+import math
 
 
-def gui():
-    '''
-    graphical user interface of scenario
+class Project():
+    def __init__(self, file_path):
+        # super().__init__()
+        self.file_path = file_path  # project file name (including path
 
-    Returns
-    -------
-    None.
+        # initialization
+        self.scenarios = None
+        self.folder_path = ""  # project folder
+        self.project_data = ""  # JSON content of the project
 
-    '''
-    sg.ChangeLookAndFeel('LightGreen') 
-    curDir=os.getcwd()
-    existingScenario=getExistingScenarios()
-    
-    comboTravelTimeModel=tuple(['Greenshield','BPR' ])
-    comboConstraint=tuple(['Max Congestion Level', 'Total Flow', 'Real Flow']) # ,  'Max Flow'
-    comboExistingScenario=tuple(existingScenario)
-    
-    section1=[
-                [sg.Text("Real Flows File Name",size=(22, 2)),
-                 sg.InputText("RealFlow.txt",key='txtRealFlowFName',size=(18, 1),tooltip='Type Real Flow File Name'),
-                ],
-                [sg.Text("Real Flows is in a text file using format of LinkID,Node1,Node2,ActualFlow",font=("Helvetica", 6),size=(65, 2))],
-                [sg.Text("Run this button to get optimal scaling factor",font=("Helvetica", 6),size=(35, 1)),
-                 sg.Button("Find Scaling Factor", key='btnFindOptScaling')],
-             ]
-    
-    
-    layout = [ 
-              [sg.Text('Define and Run a Scenario', size=(38, 1), justification='center', font=("Helvetica", 12), relief=sg.RELIEF_RIDGE)],
-              [sg.Text("Scenario Description ",size=(22, 1)),
-               sg.Multiline(default_text='Base Scenario', key='txtScenarioName', size=(22, 1), tooltip='Type Scenario Name or Description')
-              ],
-              
-              [sg.Text('Set Project Folder', size=(22, 1)), 
-               sg.InputText(key='txtFolderName',size=(18, 1),justification='right', enable_events=True), sg.FolderBrowse(key='btnSetFolder',enable_events=True)],
-              [sg.Text("Select Existing Scenario",size=(22, 1)),
-               sg.InputCombo(key='cmbExistingScenario',values=comboExistingScenario,enable_events=True,tooltip='Select Existing Scenario',size=(17, 1)),
-              ],
-              [sg.Text("Scenario Filename ",size=(22, 1)),
-               sg.InputText("BaseScenario.scn",key='txtScenarioFileName',size=(18, 1),tooltip='Type Scenario Name'),
-               sg.Button("Load", key='btnLoadScenario'),
-              ],
-              
-              [sg.Text("Input Node File Name ",size=(22, 1)),
-               sg.InputText("Node.txt",key='txtNodeFileName',size=(18, 1),tooltip='Node File Name'),
-               sg.Button("Show", key='btnShowNode')
-              ],          
-              [sg.Text("Input Link File Name ",size=(22, 1)),
-               sg.InputText("Link.txt",key='txtLinkFileName',size=(18, 1),tooltip='Link File Name'),
-               sg.Button("Show", key='btnShowLink'),
-              ],
-              # [sg.Text("Output File Name ",size=(22, 1)),
-              #  sg.InputText("Output.csv",key='txtOutputFileName',size=(18, 1),tooltip='Output File Name'),
-              # ],
-              
-              [sg.Text("")],
-              [sg.Text("Travel Time Model",size=(22, 1)),
-               sg.InputCombo(key='cmbTravelTimeModel',values=comboTravelTimeModel,default_value=comboTravelTimeModel[0],enable_events=True,tooltip='Select Travel Time Model',size=(18, 1))
-              ],
-              [sg.Checkbox('Cloud Node ID ', key='chkCloudNode', size=(20,1), enable_events=True),
-               sg.InputText(-1,key='txtCoudNode',size=(18, 1),tooltip='Cloud Node ID (if exists > 0)')],
-              [sg.Text("Calibration Constraint ",size=(22, 1)),
-               sg.InputCombo(key='cmbConstraint',values=comboConstraint,default_value=comboConstraint[0],enable_events=True,tooltip='Select Model Constraint',size=(18, 1)),
-              ],
-              [sg.Text(comboConstraint[0], key="txtInput",size=(22, 1)),
-               sg.InputText(0.9,key='txtInputValue',size=(18, 1),tooltip='Type the value')],
-              [collapse(section1, '-SEC1-')],
-              
-              [sg.Text("")],
-              [sg.Button("Define and Save Scenario", key='btnSaveScenario'),
-               sg.Button("Run Scenario", key='btnRun'),
-               sg.Button("Exit", key='btnExit')],
-              [sg.Text("",key='txtInfo',size=(55, 1))]]
-    
-    # Create the window
-    window = sg.Window("IFN-Transport: Scenario", layout,
-                       finalize=True,
-                       icon='ifn-transport.ico',
-                       location=(450, 50), 
-                       return_keyboard_events=True,
-                       use_default_focus=False, 
-                       grab_anywhere=False)
-    
-    # default value
-    scenarioFName=""
-    window['txtInfo'].update("")
-    window['-SEC1-'].update(visible=False)
-    window['txtFolderName'].update(curDir)
-    
-    # Create an event loop
-    while True:
-        event, values = window.read()
-        # print(event, values)
-        
-        # End program if user closes window or presses the Exit button
-        if event == "Exit" or event == "btnExit" or event == sg.WIN_CLOSED:
-            break
-        
-        if event == 'cmbExistingScenario':
-            scn=values['cmbExistingScenario']
-            window['txtScenarioFileName'].update(scn)
-        
-        
-        if event == 'txtFolderName':
-            folder=values['txtFolderName']
-            try:
-                existingScenario=getExistingScenarios(folder)
-                comboExistingScenario=tuple(existingScenario)
-                window['cmbExistingScenario'].update(value=comboExistingScenario[0],values=comboExistingScenario)
-            except:
-                pass
-            
-        
-        if event == 'btnLoadScenario':
-            try:
-                scenarioFName=values['txtScenarioFileName']
-                # folder=os.path.dirname(scenarioFName)
-                folder=values['txtFolderName']
-                scnFName=os.path.join(folder, scenarioFName)
-                lines=open(scnFName,"r").read().splitlines()
-    
-                # parsing scenario
-                for item in lines:
-                    if "=" in item:
-                        (lhs,rhs)=item.split('=')
-                        if lhs=='ScenarioName':
-                            window['txtScenarioName'].update(rhs)
-                        if lhs=='Node':
-                            window['txtNodeFileName'].update(rhs)
-                        if lhs=="Link":
-                            window['txtLinkFileName'].update(rhs)
-                        if lhs=='calibrationBasis':
-                            if rhs=="realFlow":
-                                window['-SEC1-'].update(visible=True)
-                                window['cmbConstraint'].update(value=comboConstraint[2])
-                            elif rhs=='totalFlow':
-                                window['-SEC1-'].update(visible=False)
-                                window['cmbConstraint'].update(value=comboConstraint[1])
-                            else:
-                                window['-SEC1-'].update(visible=False)
-                                window['cmbConstraint'].update(value=comboConstraint[0])
-                        if lhs=='maxAllowableCongestion':
-                            window['txtInputValue'].update(rhs)
-                            window["txtInput"].update('Max Congestion Level')
-                        if lhs=='travelTimeModel':
-                            window['cmbTravelTimeModel'].update(rhs)
-                        if lhs=='totalFlow':
-                            window['txtInputValue'].update(rhs)
-                            window["txtInput"].update('Total Flow')
-                        if lhs=='scalingFactor':
-                            window['txtInputValue'].update(rhs)
-                            window["txtInput"].update('Scaling Factor')
-                            
-            except Exception as err:
-                window['txtInfo'].update("Error:"+str(err.args))
-        
-        
-        if event == 'btnShowNode':
-            try:
-                nodeFName=values['txtNodeFileName']
-                dfNode=pd.read_csv(nodeFName)
-                guiTable.main(dfNode,'Nodes')
-            except Exception as err:
-                window['txtInfo'].update("Error:"+str(err.args))
-        
-        
-        if event == 'btnShowLink':
-            try:
-                linkFName=values['txtLinkFileName']
-                dfLink=pd.read_csv(linkFName)
-                guiTable.main(dfLink,'Links')
-            except Exception as err:
-                window['txtInfo'].update("Error:"+str(err.args))
-        
-        
-        if event == 'cmbConstraint':
-            constraint=values['cmbConstraint']
-            if constraint=='Total Flow':
-                window['-SEC1-'].update(visible=False)
-                defaultInput=14000
-            elif constraint=='Max Congestion Level':
-                window['-SEC1-'].update(visible=False)
-                defaultInput=0.9
-            elif constraint=='Real Flow':
-                window['-SEC1-'].update(visible=True)
-                constraint="Scaling Factor"
-                defaultInput=1
-                
-            window["txtInput"].update(constraint)
-            window['txtInputValue'].update(defaultInput)
-            
-        if event == 'btnFindOptScaling':
-            folder=values['txtFolderName']
-            scenarioFName=os.path.join(folder,values['txtScenarioFileName'])
-            linkFName=os.path.join(folder,values['txtLinkFileName'])
-            realFlowFName=os.path.join(folder,values['txtRealFlowFName'])
-            try:
-                net=ifn.IFNTransport(scenarioFName)
-                retVal=net.findOptScaling(linkFName,realFlowFName)
-                
-                if retVal==None:
-                    window['txtInfo'].update("Real Flow LinkID, Node1, Node2 must matched")
+        # load project JSON file
+        if os.path.exists(file_path):
+            self.folder_path = os.path.dirname(os.path.realpath(file_path))
+            print("project path", self.folder_path)
+            self.load_default(file_path)
+            self.run_scenarios()
+
+    def run_scenarios(self):
+        # extract and run each scenario
+        self.scenarios = self.extract_scenarios()
+        for scn_id, dict_scenario in self.scenarios.items():
+            scn = Scenario(scn_id, dict_scenario, self.folder_path)
+            # scn.run_scenario()
+            print(scn, '\n')
+
+    def load_default(self, file_path):
+        # load from project json file to fill self.project_data
+        with open(file_path, 'r') as file:
+            dic = json.load(file)
+            self.project_data = dic["project"]  # project is the root
+
+    def extract_scenarios(self):
+        scenarios = {}
+        for key, value in self.project_data.items():
+            if key.startswith("scenario-"):
+                scenarios[key] = value
+        return scenarios
+
+
+class Scenario():
+    def __init__(self, id, dict_scenario, folder_path):
+        self.dfLink = None
+        self.nodeIds = None
+        self.id = id  # scenario id
+        self.dict_scenario = dict_scenario  # dictionary_scenario
+
+        # initialize input values of a scenario
+        self.name = ""
+        self.folder_path = folder_path  # initial scenario folder assume to be the same as project folder
+        self.description = ""  # string
+        self.networks = None  # dictionary of networks
+        self.model = None  # dictionary of model
+        self.calibration = None  # dictionary of calibration model
+        self.travel_cost_model = ""  # "BPR" or "Greenhields"
+        self.travel_cost_model_parameters = None  # {'alpha': 15, 'beta': 4} for BPR; "Greenhields" has no external model parameter
+        self.calibration_basis = ""  # "max-congestion", "total-flow", "real-flow"
+        self.calibration_parameter = None
+        """ choice of calibration_parameter
+                {'max-allowable-congestion': 0.9},  # for "max-congestion"
+                {'total-flow': 15000},              # for "total-flow"
+                {'criterion':'SSE'},                # for "real-flow"
+                {'criterion': 'R^2'}                # for "real-flow"
+        """
+        self.total_flow = None
+        self.max_allowable_congestion = None
+        self.data = None  # {"flow": "file path of real world flow data"}
+
+        # initialize internal state values
+        self.scalingFactor = 0
+
+        # initial run: parse dictionary into internal values
+        self.parse_scenario()
+        self.run_scenario()
+
+    def __str__(self):
+        return "scenario id = " + str(self.id) + \
+            "\nscenario name = " + str(self.name) + \
+            "\nfolder = " + str(self.folder_path) + \
+            "\ndescription = " + str(self.description) + \
+            "\ntravel_cost = " + str(self.travel_cost_model) + \
+            "\nmodel_parameters = " + str(self.travel_cost_model_parameters) + \
+            "\ncalibration_basis = " + str(self.calibration_basis) + \
+            "\ncalibration_parameter = " + str(self.calibration_parameter) + \
+            "\ntotal_flow = " + str(self.total_flow) + \
+            "\nmax_allowable_congestion = " + str(self.max_allowable_congestion) + \
+            "\ndata = " + str(self.data)
+
+    def run_scenario(self):
+        self.runScenario()
+
+    def parse_scenario(self):
+        """
+        a scenario consists of networks, model and optionally data
+        here we fill up the properties of this scenario object
+        """
+        # extract scenario name (if specified by user)
+        if "name" in self.dict_scenario:
+            self.name = self.dict_scenario["name"]
+
+        # extract folder name (if specified by user)
+        # if not use project folder as default
+        if "folder" in self.dict_scenario:
+            self.folder_path = self.dict_scenario["folder"]
+        print('scenario folder = ', self.folder_path)
+
+        # extract description
+        if "description" in self.dict_scenario:
+            self.description = self.dict_scenario["description"]
+
+        # extract networks
+        self.extract_networks_from_scenario()
+        self.dfLink = self.networks['network-0'].dfLink
+
+        # extract model
+        self.extract_model_from_scenario()
+
+        # extract data
+        if "data" in self.dict_scenario:
+            self.data = self.dict_scenario["data"]
+
+    def extract_networks_from_scenario(self):
+        networks = {}
+        for key, value in self.dict_scenario.items():
+            if key.startswith("network-"):
+                net = Network(key, value, self.folder_path)
+                networks[key] = net
+                print(net, '\n')
+        self.networks = networks
+        return networks
+
+    def extract_model_from_scenario(self):
+        # extract model
+        if "model" in self.dict_scenario:
+            self.model = self.dict_scenario["model"]
+
+            if "travel-cost" in self.model:
+                self.travel_cost_model = self.model["travel-cost"]
+
+            if "travel-cost-parameters" in self.model:
+                self.travel_cost_model_parameters = self.model["travel-cost-parameters"]
+
+            if "calibration" in self.model:
+                self.calibration = self.model["calibration"]
+
+                if "calibration-basis" in self.calibration:
+                    self.calibration_basis = self.calibration["calibration-basis"]
+
+                if "calibration-parameter" in self.calibration:
+                    self.calibration_parameter = self.calibration["calibration-parameter"]
+
+                    if "total-flow" in self.calibration_parameter:
+                        self.total_flow = self.calibration_parameter["total-flow"]
+                    if "max-allowable-congestion" in self.calibration_parameter:
+                        self.max_allowable_congestion = self.calibration_parameter["max-allowable-congestion"]
+
+    def runScenario(self):
+        C = self.mLink2WeightedAdjacency(field='Capacity')  # capacity
+        S = ifn.capacity2stochastic(C)  # Markov stochastic
+        if not ifn.isIrreducible(S):
+            print("Your network is not strongly connected. Clean the network data either by finding the largest "
+                  "strongly connected component or add a cloud node and dummy links.")
+            return None
+
+        # first try at kappa=1
+        pi = ifn.markov(S, kappa=1)  # node values
+        F = ifn.idealFlow(S, pi)  # ideal flow
+        G = ifn.hadamardDivision(F, C)  # congestion
+        maxCongestion = np.max(G)
+
+        kappa = 1
+        if self.calibration_basis == "total-flow":
+            # calibrate with new kappa to reach totalFlow
+            kappa = self.total_flow
+        elif self.calibration_basis == "max-congestion":
+            # calibrate with new kappa to reach max congestion level
+            kappa = float(self.max_allowable_congestion) / maxCongestion  # total flow
+        elif self.calibration_basis == "real-flow":
+            self.find_optimum_scaling()
+            self.total_flow = np.sum(ifn.sumOfRow(F))
+            kappa = self.total_flow*self.scalingFactor
+
+        # compute ideal flow and congestion
+        # scaling=ifn.globalScaling(F,'min',1)
+        # F1=ifn.equivalentIFN(F, scaling)
+        F1 = ifn.equivalentIFN(F, kappa)
+        # pi=ifn.markov(S,kappa)               # node values
+        # F3=ifn.idealFlow(S,pi)               # scaled ideal flow
+        G = ifn.hadamardDivision(F1, C)  # congestion
+        maxCongestion = np.max(G)
+
+        # compute link performances
+        self.addField2dfLink(G, 'Congestion')
+        self.addField2dfLink(F, "BasisFlow")
+        self.addField2dfLink(F1, "EstFlow")
+        self.computeLinkPerformance()
+
+        # save output mLink
+        dfLink_file_name = os.path.join(self.folder_path, self.id + ".csv")
+        self.dfLink.to_csv(dfLink_file_name, quoting=csv.QUOTE_NONNUMERIC)
+
+        # network performance
+        avgSpeed = np.nanmean(self.dfLink['Speed'])
+        avgTravelTime = np.nanmean(self.dfLink['TravelTime'])
+        avgDelay = np.nanmean(self.dfLink['Delay'])
+        avgDist = np.nanmean(self.dfLink['Distance'])
+
+        # report
+        report = (str(self.__str__()) + \
+                  "\n\n" + str(self.networks['network-0']) + \
+                  "\n\nNetwork performance:\n" + \
+                  "\tTotal Flow = " + str(round(kappa, 2)) + " pcu/hour" + "\n" + \
+                  "\tMax Congestion = " + str(round(maxCongestion, 4)) + "\n" + \
+                  "\tAvg Link Speed =" + str(round(avgSpeed, 4)) + " km/hour\n" + \
+                  "\tAvg Link Travel Time = " + str(round(60 * avgTravelTime / avgDist, 4)) + " min/km\n" + \
+                  "\tAvg Link Delay = " + str(round(3600 * avgDelay / avgDist, 4)) + " seconds/km\n" + \
+                  "Basis:\n" + \
+                  "\tAvg Link Distance = " + str(round(avgDist, 4)) + " m/link\n" + \
+                  "\tAvg Link Travel Time = " + str(round(3600 * avgTravelTime, 4)) + " seconds/link\n" + \
+                  "\tAvg Link Delay = " + str(round(3600 * avgDelay, 4)) + " seconds/link\n")
+        print(report)
+        # save network performance
+        report_file_name = os.path.join(self.folder_path, self.id + ".net")
+        with open(report_file_name, 'w') as fh:
+            fh.write(report)  # i
+
+        plt = self.networks['network-0'].display_network('Congestion')  # display network congestion
+        plt.show()
+
+    def addField2dfLink(self, F, field):
+        """
+        update self.dfLink with additional column about matrix F.
+        Matrix F size must be n by n, where n is number of nodes
+        """
+        if not self.nodeIds:
+            # get unique node IDs from second and third fields of mLink
+            self.nodeIds = list(np.union1d(self.dfLink.Node1, self.dfLink.Node2))
+
+        mR, mC = self.dfLink.shape
+        arrF = []
+        for index, row in self.dfLink.iterrows():
+            r = self.nodeIds.index(row.Node1)
+            c = self.nodeIds.index(row.Node2)
+            v = F[r - 1, c - 1]
+            arrF.append(v)
+        self.dfLink[field] = arrF
+
+
+
+    def computeLinkPerformance(self):
+        """
+        return mLink with additional link performance
+
+        """
+        travelTimeModel = self.travel_cost_model
+        cloudNode = self.networks['network-0'].cloud_node_id
+        mR, mC = self.dfLink.shape
+        arrSpeed = []
+        arrTravelTime = []
+        arrDelay = []
+        for index, row in self.dfLink.iterrows():
+            node1 = row.Node1
+            node2 = row.Node2
+            if cloudNode is not None and (cloudNode == str(node1) or cloudNode == str(node2)):
+                speed = np.nan  # v
+                travelTime = np.nan  # t
+                minTravelTime = np.nan  # t0
+                delay = np.nan  # delta
+            else:
+                maxSpeed = row.MaxSpeed  # u in km/hour
+                dist = row.Distance  # d in km; mLink[4,j] in km
+                congestion = row.Congestion  # g
+
+                if travelTimeModel == 'Greenshield':
+                    # based on greenshield
+                    if congestion <= 1:
+                        speed = maxSpeed / 2 * (1 + math.sqrt(1 - congestion))  # v in km/hour
+                        if speed > 0:
+                            travelTime = dist / speed  # t   in hour
+                        else:
+                            travelTime = np.inf
+                        if maxSpeed > 0:
+                            minTravelTime = dist / maxSpeed  # t0  in hour
+                        else:
+                            minTravelTime = np.inf
+                        delay = travelTime - minTravelTime  # delta in hour
+                    else:
+                        speed = 0
+                        travelTime = np.inf
+                        minTravelTime = np.inf
+                        delay = np.inf
                 else:
-                    opt_scaling,opt_Rsq,dicRsq,dicSSE,SST=retVal
-                    x=dicRsq.keys()
-                    y=dicRsq.values()
-                    plt.figure()
-                    plt.plot(x,y,opt_scaling,opt_Rsq,'or')
-                    plt.xlabel("scaling")
-                    plt.ylabel("R-Square")
-                    
-                    # SSE plot
-                    plt.figure()
-                    x=dicSSE.keys()
-                    y=dicSSE.values()
-                    opt_scale=min(dicSSE, key=dicSSE.get)
-                    optSSE=dicSSE[opt_scale]
-                    plt.plot(x,y,opt_scale,optSSE,'or')
-                    plt.xlabel("scaling")
-                    plt.ylabel("SSE")
-                    # print(opt_scaling,opt_Rsq,opt_scale,optSSE,SST)
-                    window['txtInfo'].update('Optimum scaling = '+str(opt_scaling)+'; Optimum R-square = '+str(round(opt_Rsq,4)))
-            except Exception as err:
-                window['txtInfo'].update("Error:"+str(err.args))
-            
-        if event == 'btnSaveScenario':
-            scenarioName=values['txtScenarioName']
-            ttModel=values['cmbTravelTimeModel']
-            constraint=values['cmbConstraint']
-            defaultInput=values['txtInputValue']
-            if constraint=='Total Flow':
-                strConstraint='totalFlow='+defaultInput+"\n"+\
-                    'calibrationBasis=totalFlow'+"\n"
-            elif constraint=='Max Congestion Level':
-                strConstraint='maxAllowableCongestion='+defaultInput+"\n"+\
-                    'calibrationBasis=maxCongestion'+"\n"
-            elif constraint=='Real Flow':
-                strConstraint='scalingFactor='+defaultInput+"\n"+\
-                    'calibrationBasis=realFlow'+"\n"
-                    
-            linkFName=values['txtLinkFileName']
-            nodeFName=values['txtNodeFileName']
-            # outputFName=values['txtOutputFileName']
-            folder=values['txtFolderName']
-            scenarioFName=os.path.join(folder,values['txtScenarioFileName'])
-            
-            if values['chkCloudNode']:
-                strCloudNode="cloudNode="+values['txtCoudNode']+"\n"
+                    # based on BPR (by default)
+                    minTravelTime = dist / maxSpeed  # t0  in hour
+                    travelTime = minTravelTime * (1 + 15 * congestion ** 4)  # t in hour
+                    if travelTime > 0:
+                        speed = dist / travelTime  # v  in km/hour
+                    else:
+                        speed = 0
+                    delay = travelTime - minTravelTime  # delta in hour
+
+            arrSpeed.append(speed)
+            arrTravelTime.append(travelTime)
+            arrDelay.append(delay)
+
+        self.dfLink['Speed'] = arrSpeed
+        self.dfLink['TravelTime'] = arrTravelTime
+        self.dfLink['Delay'] = arrDelay
+
+    def isStronglyConnectedNetwork(self):
+        C = self.mLink2WeightedAdjacency(field='Capacity')  # capacity
+        S = ifn.capacity2stochastic(C)  # Markov stochastic
+        if ifn.isIrreducible(S):
+            return "Your network is strongly connected."
+        else:
+            return "Your network is not strongly connected. Clean the network data either by finding the largest " \
+                   "strongly connected component or add a cloud node and dummy links."
+
+    def mLink2WeightedAdjacency(self, field='Capacity'):
+        """
+        return capacity matrix (by default)
+        but depending on the fieldNo, it can also return Dist,Lanes,MaxSpeed
+
+        assume fields in mLink at least contain
+            LinkID,Node1,Node2,Capacity,Dist,MaxSpeed,....
+
+        """
+        mLink = self.networks['network-0'].dfLink
+        # get unique node IDs from second and third fields of mLink
+        self.nodeIds = list(np.union1d(mLink.Node1, mLink.Node2))
+        n = np.prod(len(self.nodeIds))
+        A = np.zeros((n, n), dtype=np.float64)
+        # fill up with 1 when there is a link
+        coord = zip(mLink.Node1, mLink.Node2, mLink[field])
+        for item in coord:
+            (node1, node2, k) = item
+            r = self.nodeIds.index(node1)
+            c = self.nodeIds.index(node2)
+            A[int(r) - 1, int(c) - 1] = float(k)
+        return A
+
+    def findOptScaling(self):
+        """
+        search for optimal scaling factor
+
+        Returns
+        -------
+        opt_scaling : float
+            optimal scaling factor
+        opt_Rsq : float
+            R^2 at optimal scaling
+        dicRsq : dictionary             to compute R^2
+        dicSSE : dictionary             to compute SSE
+        SST : float
+            Sum Square Total (to be used to compute R^2)
+
+        """
+        # get real flow data
+        real_flow_file_name = self.data["flow"]
+        dfFlow = pd.read_csv(os.path.join(self.folder_path, real_flow_file_name), index_col='LinkID')
+
+        # Check if all links in actual flow match the link file
+        for linkID, row in dfFlow.iterrows():
+            a_link = self.dfLink.loc[linkID]
+            if not (a_link.Node1 == row.Node1 and a_link.Node2 == row.Node2):
+                return None
+
+        if "BasisFlow" not in self.dfLink:
+            C = self.mLink2WeightedAdjacency(field='Capacity')
+            F = ifn.capacity2idealFlow(C)
+            self.addField2dfLink(F, "BasisFlow")
+
+        avgScale = 0
+        count = 0
+        avgFlow = 0
+        for linkID, row in dfFlow.iterrows():
+            basis = self.dfLink["BasisFlow"].loc[linkID]
+            flow = row["ActualFlow"]
+            scaling = flow / basis
+            count = count + 1
+            avgScale = (count - 1) / count * avgScale + scaling / count
+            avgFlow = (count - 1) / count * avgFlow + flow / count
+            # print('linkID',linkID,'basis',basis,'flow',flow,'scaling',scaling,'avgScale',avgScale)
+
+        SST = 0
+        for linkID, row in dfFlow.iterrows():
+            flow = row["ActualFlow"]
+            SST = SST + math.pow(flow - avgFlow, 2)
+        # print('SST',SST)
+
+        dicSSE = {}
+        dicRsq = {}
+        for scale in range(int(avgScale) - 2500, int(avgScale) + 2500):
+            SSE = 0
+            for linkID, row in dfFlow.iterrows():
+                basis = self.dfLink["BasisFlow"].loc[linkID]
+                flow = row["ActualFlow"]
+                estFlow = scale * basis
+                sqErr = math.pow(flow - estFlow, 2)
+                SSE = SSE + sqErr
+            if SST > 0:
+                Rsq = 1 - SSE / SST
             else:
-                strCloudNode=""
-                
-            if scenarioFName!="":
-                strScenario="ScenarioName="+scenarioName+"\n"+\
-                    "Node="+nodeFName+"\n"+\
-                    "Link="+linkFName+"\n"+\
-                    "travelTimeModel="+ttModel+"\n"+\
-                    strConstraint+strCloudNode
-                with open(scenarioFName, 'w') as fp:
-                    fp.write(strScenario)       
-                
-                nb_lines=strScenario.count("\n")
-                window['txtInfo'].update("Saved in " +scenarioFName+":\n"+strScenario)
-                window['txtInfo'].set_size((35,nb_lines+1))
-            else:
-                window['txtInfo'].set_size("Cannot save because scenario file name is empty")
+                Rsq = 1  # actually undefined when SST=1 (i.e. only one data)
+            dicRsq[scale] = Rsq
+            dicSSE[scale] = SSE
 
-        if event == 'btnRun':
-            window['txtInfo'].set_size((35,2))
-            
-            folder=values['txtFolderName']
-            scenarioFName=os.path.join(folder,values['txtScenarioFileName'])
-            
-            if scenarioFName!="":
-                try:
-                    net=ifn.IFNTransport(scenarioFName)
-                    net.runScenario()
-                    # window['txtInfo'].update("Check the result in "+outputFName)
-                except Exception as err:
-                     window['txtInfo'].update("Error:"+str(err.args))
-            else:
-                window['txtInfo'].update("Set Scenario File Name and Save Scenario First")
-    
-    window.close()     
+        # opt_scaling = max(dicRsq, key=dicRsq.get)
+        # opt_Rsq = dicRsq[opt_scaling]
+        opt_scaling = min(dicSSE, key=dicSSE.get)
+        opt_SSE = dicSSE[opt_scaling]
+        return opt_scaling, opt_SSE, dicRsq, dicSSE, SST
 
+    def find_optimum_scaling(self):
+        opt_scaling, opt_SSE, dicRsq, dicSSE, SST = self.findOptScaling()
+        self.scalingFactor = opt_scaling
 
-
-def collapse(layout, key):
-    """
-    Helper function that creates a Column that can be later made hidden, thus appearing "collapsed"
-    :param layout: The layout for the section
-    :param key: Key used to make this seciton visible / invisible
-    :return: A pinned column that can be placed directly into your layout
-    :rtype: sg.pin
-    """
-    return sg.pin(sg.Column(layout, key=key))
+        # if self.calibration_parameter["criterion"] == "R^2":
+        x = dicRsq.keys()
+        y = dicRsq.values()
+        opt_scale = max(dicRsq, key=dicRsq.get)
+        opt_Rsq = dicRsq[opt_scale]
+        plt.figure()
+        plt.plot(x, y, opt_scale, opt_Rsq, 'or')
+        plt.xlabel("scaling")
+        plt.ylabel("R-Square")
+        # if self.calibration_parameter["criterion"] == "SSE":
+        # SSE plot
+        plt.figure()
+        x = dicSSE.keys()
+        y = dicSSE.values()
+        opt_scale = min(dicSSE, key=dicSSE.get)
+        optSSE = dicSSE[opt_scale]
+        plt.plot(x, y, opt_scale, optSSE, 'or')
+        plt.xlabel("scaling")
+        plt.ylabel("SSE")
+        # print(opt_scaling, opt_SSE)
+        # print('Optimum scaling = ' + str(opt_scaling) + '; Optimum R-square = ' + str(round(opt_Rsq, 4)))
+        print('Optimum scaling = ' + str(opt_scaling) + '; Min-SSE = ' + str(round(opt_SSE, 4)))
 
 
+class Network():
+    def __init__(self, id, dict_network, folder_path):
+        self.id = id  # network-#
+        self.dict_network = dict_network  # dictionary_network
 
-def getExistingScenarios(folder=""):
-    '''
-    
-    Parameters
-    ----------
-    folder : string, optional
-        path of the directory. The default is "".
+        # initialize input values of a network
+        self.folder_path = folder_path  # initial network folder = scenario folder
+        self.description = ""  # string
+        self.name = ""
+        self.node_file_name = ""
+        self.link_file_name = ""
+        self.graph_file_name = ""
+        self.cloud_node_id = ""
+        self.network_weight = 1
+        self.nodeIds = None
+        self.dfLink = None
+        self.dfNode = None
 
-    Returns
-    -------
-    existingScenario : list
-        list of existing scenarios (.scn) in the given folder
+        # initial command
+        self.parse_network_dictionary()
 
-    '''
-    existingScenario=[]
-    if folder=="":
-        curDir=os.getcwd()
-    else:
-        curDir=folder
-    for file in os.listdir(curDir):
-        if file.endswith(".scn"):
-            base=os.path.basename(file)
-            if base!="":
-                existingScenario.append(base)
-    return existingScenario
+    def __str__(self):
+        return "\tnetwork id = " + str(self.id) + \
+            "\n\tnetwork name = " + str(self.name) + \
+            "\n\tfolder = " + str(self.folder_path) + \
+            "\n\tdescription = " + str(self.description) + \
+            "\n\tnode_file_name = " + str(self.node_file_name) + \
+            "\n\tlink_file_name = " + str(self.link_file_name) + \
+            "\n\tgraph_file_name = " + str(self.graph_file_name) + \
+            "\n\tcloud_node_id = " + str(self.cloud_node_id) + \
+            "\n\tnetwork_weight = " + str(self.network_weight)
 
+    def parse_network_dictionary(self):
+        """
+        a scenario consists of networks, model and optionally data
+        here we fill up the properties of this scenario object
+        """
+        # extract folder name (if specified by user in JSON)
+        if "folder" in self.dict_network:
+            self.folder_path = self.dict_network["folder"]
+
+        # extract description
+        if "description" in self.dict_network:
+            self.description = self.dict_network["description"]
+
+        # extract name
+        if "name" in self.dict_network:
+            self.name = self.dict_network["name"]
+
+        # extract node_file_name
+        if "node" in self.dict_network:
+            self.node_file_name = self.dict_network["node"]
+            node_file_name = os.path.join(self.folder_path, self.node_file_name)
+            print("loading nodes:", node_file_name)
+            self.dfNode = pd.read_csv(node_file_name, index_col='NodeID')
+
+        # extract link_file_name
+        if "link" in self.dict_network:
+            self.link_file_name = self.dict_network["link"]
+            link_file_name = os.path.join(self.folder_path, self.link_file_name)
+            print("loading links:", link_file_name)
+            self.dfLink = pd.read_csv(link_file_name, index_col='LinkID')
+
+        # extract graph_file_name
+        if "graph" in self.dict_network:
+            self.graph_file_name = self.dict_network["graph"]
+
+        # extract cloud_node_id
+        if "cloud" in self.dict_network:
+            self.cloud_node_id = self.dict_network["cloud"]
+
+        # extract network_weight
+        if "weight" in self.dict_network:
+            self.network_weight = self.dict_network["weight"]
+        else:
+            self.network_weight = 1
+
+    def display_network(self, field='Capacity'):
+        """
+        display network based on field in self.dfLink
+        and node coordinate in self.dfNode
+
+        Parameters
+        ----------
+        field : string, optional
+            field in self.dfLink. The default is 'Capacity'.
+
+        Returns
+        -------
+        plt : plot
+
+
+        """
+        plt.figure()
+        G = nx.DiGraph()
+
+        maxFieldValue = max(self.dfLink[field])
+        for index, row in self.dfNode.iterrows():
+            if self.cloud_node_id != index:
+                x = row.X
+                y = row.Y
+                G.add_node(index, pos=(x, y))
+        for index, row in self.dfLink.iterrows():
+
+            node1 = row.Node1
+            node2 = row.Node2
+            if self.cloud_node_id != node1 and self.cloud_node_id != node2:
+                weight = (maxFieldValue - row[field]) * 100
+
+                G.add_edge(node1, node2, weight=weight)
+
+        pos = nx.get_node_attributes(G, 'pos')  # node position
+
+        # edges
+        edges, weights = zip(*nx.get_edge_attributes(G, 'weight').items())
+        nx.draw(G, pos, node_color='w', edgelist=edges, edge_color=weights, width=1.0, edge_cmap=plt.cm.RdYlGn)
+
+        # nodes
+        nodes = nx.draw_networkx_nodes(G, pos, node_color='w', node_size=3)
+        nodes.set_edgecolor('b')
+
+        plt.axis('off')
+        return plt
 
 
 if __name__ == '__main__':
-    gui()
+    # sample usage
+    folder = r"..\..\IFN14\GitHub\projects\Triangle"
+    project_file_name = "triangle.json"
+    file_path = os.path.join(folder, project_file_name)
+    prj = Project(file_path)

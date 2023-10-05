@@ -1,0 +1,21 @@
+{
+    "project": {
+        "name": "surabaya",
+        "description": "example of a real road network of Surabaya, Indonesia", 
+        "scenario-0": {
+            "name": "base-scenario", 
+            "description": "calibrate based on Greenshield with known total flow",
+            "network-0":{
+                "node": "Node.txt",
+                "link": "Link.txt",
+            },
+            "model": {
+                "travel-cost": "Greenhields",
+                "calibration": {
+                    "calibration-basis": "total-flow",
+                    "calibration-parameter": {"total-flow": 78591}
+                }
+            }
+        }
+    }
+}

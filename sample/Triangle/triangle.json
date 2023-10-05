@@ -1,0 +1,56 @@
+{
+    "project": {
+        "name": "triangle",
+        "description": "example of a hypothetical network of only three nodes", 
+        "scenario-0": {
+            "name": "base-scenario", 
+            "description": "calibrate based on BPR and max-congestion",
+            "network-0":{
+                "node": "Node.txt",
+                "link": "Link.txt"
+            },
+            "model": {
+                "travel-cost": "BPR",
+                "travel-cost-parameters": {"alpha": 15, "beta": 4},
+                "calibration": {
+                    "calibration-basis": "max-congestion",
+                    "calibration-parameter": {"max-allowable-congestion": 0.9}
+                }
+            }
+        },
+        "scenario-1": {
+            "name": "scenario-1 on the same network as base scenario", 
+            "description": "calibrate based on Greenhields and total flow",
+            "network-0":{
+                "node": "Node.txt",
+                "link": "Link.txt"
+            },
+            "model": {
+                "travel-cost": "Greenhields",
+                "calibration": {
+                    "calibration-basis": "total-flow",
+                    "calibration-parameter": {"total-flow": 5400}
+                }
+            }
+        },
+        "scenario-2": {
+            "name": "scenario-2 on the same network as base scenario", 
+            "description": "calibrate based on BPR and observation flow",
+            "network-0":{
+                "node": "Node.txt",
+                "link": "Link.txt"
+            },
+            "model": {
+                "travel-cost": "BPR",
+                "travel-cost-parameters": {"alpha": 15, "beta": 4},
+                "calibration": {
+                    "calibration-basis": "real-flow",
+                    "calibration-parameter": {"criterion": "SSE"}
+                }
+            },
+            "data": {
+                "flow": "RealFlow.txt"
+            }
+        }
+    }
+}

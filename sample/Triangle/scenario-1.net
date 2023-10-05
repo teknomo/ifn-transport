@@ -1,0 +1,32 @@
+scenario id = scenario-1
+scenario name = scenario-1 on the same network as base scenario
+folder = C:\Users\kardi.TEKNOMO\Documents\Kardi\Personal\Tutorial\NetworkScience\IdealFlow\Software\Python\Transportation\Dev\IFN14\GitHub\projects\Triangle
+description = calibrate based on Greenhields and total flow
+travel_cost = Greenhields
+model_parameters = None
+calibration_basis = total-flow
+calibration_parameter = {'total-flow': 5400}
+total_flow = 5400
+max_allowable_congestion = None
+data = None
+
+	network id = network-0
+	network name = 
+	folder = C:\Users\kardi.TEKNOMO\Documents\Kardi\Personal\Tutorial\NetworkScience\IdealFlow\Software\Python\Transportation\Dev\IFN14\GitHub\projects\Triangle
+	description = 
+	node_file_name = Node.txt
+	link_file_name = Link.txt
+	graph_file_name = 
+	cloud_node_id = 
+	network_weight = 1
+
+Network performance:
+	Total Flow = 5400 pcu/hour
+	Max Congestion = 0.9
+	Avg Link Speed =3.6895 km/hour
+	Avg Link Travel Time = 16.2623 min/km
+	Avg Link Delay = 885.735 seconds/km
+Basis:
+	Avg Link Distance = 250.0 m/link
+	Avg Link Travel Time = 243933.75 seconds/link
+	Avg Link Delay = 221433.75 seconds/link

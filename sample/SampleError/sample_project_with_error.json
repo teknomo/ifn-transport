@@ -1,0 +1,21 @@
+{
+    "project": {
+        "name": "sample project with error",
+        "description": "The link.txt file contains a network that is not strongly connected and therefore we cannot use in IFN.", 
+        "scenario-0": {
+            "name": "base-scenario", 
+            "description": "calibrate based on Greenshield with known total flow",
+            "network-0":{
+                "node": "Node.txt",
+                "link": "Link.txt",
+            },
+            "model": {
+                "travel-cost": "Greenhields",
+                "calibration": {
+                    "calibration-basis": "total-flow",
+                    "calibration-parameter": {"total-flow": 369527}
+                }
+            }
+        }
+    }
+}
