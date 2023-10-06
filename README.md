@@ -2,6 +2,17 @@
 
 IFN-Transport is an extension and an application of [Ideal Flow Network (IFN)](https://github.com/teknomo/IdealFlowNetwork) for transportation networks synthesis and analysis written in Python. The online version of IFN-Transport is also available in [Revoledu](https://people.revoledu.com/kardi/tutorial/IFN/IFN-transport.html).
 
+## Overview of IFN-Transport Idea
+Here's the underlying concept:
+
+1. **Supply's Role in Demand:** The structure of a network, which we refer to as the supply side, greatly influences its utilization or demand side. This implies that by understanding the network's design, such as road width or the number of lanes, combined with its connectivity (data which can be sourced from platforms like Google Map or Open Street Map), we can predict traffic volume and congestion on individual links. This invaluable information can further be utilized to estimate factors like speed, travel time, delays, environmental impacts, energy consumption, and the economic implications of proposed projects. Such insights are crucial for effective planning, design, evaluation, and management of traffic flow throughout the network.
+
+2. **Estimation through MEP:** The Maximum Entropy Principle (MEP, as articulated by Jaynes in 1956), provides a robust framework for making predictions, even when confronted with significant missing data. This principle, an extension of the "principle of indifference" or the "principle of insufficient reason" as discussed by giants like Keynes, Leibnitz, Laplace, Bernoulli, and Poincare, states that in the absence of definitive data, assuming a uniform probability distribution is the most rational approach. As more data becomes available, our predictions naturally refine and become more accurate.
+
+3. **IFN's Comprehensive Approach:** IFN operates on a principle of "global scaling" applied across the entire network. By understanding certain variables, such as the scaling factor 'kappa' and the network's stochastic probabilities, we can predict traffic flow on individual links. This prediction aligns with the notion that the total traffic flow in the network is commensurate with 'kappa'. These calculations are rooted in the steady states of the Markov Chain model.
+
+4. **Impact of Road Attributes on Traffic Flow:** Features like the road width and number of lanes directly influence road capacity, referred to as "link capacity." By evaluating this capacity, we can deduce the network's stochastic probability. Essentially, the network structure (supply) gives insights into predicting vehicular flow (demand). Using IFN in this manner ensures a balanced distribution of traffic, optimizing the entire network's capacity utilization.
+
 One appealing reason why transportation engineers should use IFN Transport is because the existing transportation models only encourage widening the road in order to solve traffic congestion. IFN provides an alternative model that enable the engineers to justify the reduction of road width in order to reduce traffic congestion. 
 
 Imagine sharing the road width equally for vehicles and pedestrians. How are we going to justify the important of walkway? It is actually cheaper because all the utility lines (water, internet, sewerage, electricity) can be put under the walkway and it is cheaper to open the tiles of the walkway than to destroy the asphalt or concrete road. If the government will think of long-term solution, they should create the same amount of walkway width and vehicle road width. It would also make the city very beautiful. City who honor pedestrian would eventually honor themselves. This is where the IFN kicked in. Using IFN, we think in term of overall network balance solutions and therefore we can actually reduce the road width for vehicular traffic (and provide wider width for walkway) in order to reduce traffic congestion. Check this [video on YouTube](https://youtube.com/watch?v=h2YN3QYdZqk&feature=share) about the concept of Rebalancing Congestion. Note that we should use maximum congestion instead of averaging the performance.
@@ -139,9 +150,9 @@ Set the scaling factor based on the suggested scaling factor and save the scenar
 Click "Run Scenario" in Scenario window to get the results. The result would be at the same name of the scenario file name but with extension of .CSV and .NET.
 
 # IFN Transport Documentation
-This document is the user guide to use the python code for Traffic Assignment based on Ideal Flow Network (IFN). The current version of this program should be run in Python 3.7 or higher version. The code include sample scenarios and documentation.
+This document is the user guide to use the python code for Traffic Assignment based on Ideal Flow Network (IFN). The current version of this program should be run in Python 3.10 or higher version. The code include sample scenarios and documentation.
 
-You do not need to know python programming language to use the program. You need to download python 3.7 or above including IDLE. If you know python programming language, it would be your advantage because you can analyze the results in more details than what explained in this document.
+You do not need to know python programming language to use the program. You need to download python 3.10 or above including IDLE. If you know python programming language, it would be your advantage because you can analyze the results in more details than what explained in this document.
 
 ## Agreement of the Inputs
 Each scenario in IFN requires three files: scenario file, node file and link file. 
