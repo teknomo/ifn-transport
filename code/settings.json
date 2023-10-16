@@ -1,0 +1,37 @@
+{   "road_width": {
+        "default_width": 3,
+        "default_one_way_road_width": 2.75,
+        "default_two_ways_road_width": 4
+    },
+    "num_lane": {
+        "default_one_way_num_lane": 1,
+        "default_two_ways_num_lane": 2
+    },
+    "capacity": {
+            "gradient_num_lane": 1500,
+            "gradient_road_width": 500
+    },
+    "regulated_max_speeds": {
+            "motorway": 120,
+            "motorway_link": 60,
+            "trunk": 100,
+            "trunk_link": 50,
+            "primary": 70,
+            "primary_link": 50,
+            "secondary": 60,
+            "secondary_link": 40,
+            "tertiary": 50,
+            "tertiary_link": 40,
+            "unclassified": 40,
+            "residential": 30,
+            "living_street": 20,
+            "pedestrian": 6,
+            "service": 30,
+            "track": 20,
+            "road": 40
+        },
+    "computed_max_speed": {
+            "gradient_num_lane": 15,
+            "intercept_num_lane": 20
+    }
+}

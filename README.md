@@ -1,6 +1,6 @@
 # IFN-Transport
 
-IFN-Transport is an extension and an application of [Ideal Flow Network (IFN)](https://github.com/teknomo/IdealFlowNetwork) for transportation networks synthesis and analysis written in Python. The online version of IFN-Transport is also available in [Revoledu](https://people.revoledu.com/kardi/tutorial/IFN/IFN-transport.html).
+IFN-Transport is an extension and an application of [Ideal Flow Network (IFN)](https://github.com/teknomo/IdealFlowNetwork) for transportation networks synthesis and analysis written in Python. The online version of IFN-Transport is also available in [Revoledu](https://people.revoledu.com/kardi/tutorial/IFN/IFN-transport.html). Check this [video on YouTube](https://www.youtube.com/watch?v=kEr_IbcEbKw) on how the IFN-Transport works.
 
 ## Overview of IFN-Transport Idea
 Here's the underlying concept:
